@@ -59,9 +59,9 @@ flowchart TD
         ThresholdCheck -->|"Failed"| Fail([Block Pull Request ❌])
     end
 
-    style InputDataset fill:#f8fafc,stroke:#94a3b8
-    style CoreEngine fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style CI_Output fill:#f0fdf4,stroke:#16a34a
+    style InputDataset fill:#f8fafc,stroke:#94a3b8,color:#000000
+    style CoreEngine fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style CI_Output fill:#f0fdf4,stroke:#16a34a,color:#000000
 ```
 
 ---
@@ -165,9 +165,9 @@ flowchart TD
     Critic -->|"Pass"| GoldenSet[("Golden Evaluation Dataset<br/>(question, contexts, ground_truth)")]
     Critic -->|"Fail"| Discard([Discard Candidate])
 
-    style RawDocs fill:#f1f5f9,stroke:#64748b
-    style EvolInstruct fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style GoldenSet fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style RawDocs fill:#f1f5f9,stroke:#64748b,color:#000000
+    style EvolInstruct fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style GoldenSet fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
 ```
 
 ### Synthetic Evolution Distribution in Production
@@ -460,7 +460,7 @@ flowchart LR
     F_Check & R_Check & P_Check -->|"All Passed"| Success([Pass CI & Merge PR ✅])
     F_Check & R_Check & P_Check -->|"Any Failed"| Block([Fail CI & Block Merge ❌])
 
-    style Thresholds fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style Success fill:#dcfce7,stroke:#16a34a,stroke-width:2px
-    style Block fill:#fee2e2,stroke:#ef4444,stroke-width:2px
+    style Thresholds fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style Success fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
+    style Block fill:#fee2e2,stroke:#ef4444,stroke-width:2px,color:#000000
 ```

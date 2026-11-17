@@ -106,10 +106,10 @@ flowchart TD
 
     M1 & M2 & M3 --> SumScore["Total Score = 0.89 + 0.98 + 0.84 = 2.71"]
 
-    style QueryTokens fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style DocTokens fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
-    style MaxSimReduction fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
-    style SumScore fill:#fffde7,stroke:#fbc02d,stroke-width:1px
+    style QueryTokens fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style DocTokens fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#000000
+    style MaxSimReduction fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
+    style SumScore fill:#fffde7,stroke:#fbc02d,stroke-width:1px,color:#000000
 ```
 
 Because all vectors are $L_2$-normalized, the inner product $\mathbf{E}_{q, i} \cdot \mathbf{E}_{d, j}^T$ is equivalent to cosine similarity $\cos(\theta_{i, j}) \in [-1, 1]$.
@@ -150,8 +150,8 @@ flowchart LR
     CentroidAssign --> PLAIDIndex[("PLAID Compressed Index<br/>~16-24 KB per Document")]
     ResidualQuant --> PLAIDIndex
 
-    style BERT fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style PLAIDIndex fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style BERT fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style PLAIDIndex fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 ### The PLAID Multi-Stage Pruning Funnel:
@@ -453,10 +453,10 @@ flowchart TD
     Req -->|"High Accuracy + Technical Domain + Sub-30ms SLA"| C["ColBERTv2 + PLAID Engine (Ragatouille / Vespa)"]
     Req -->|"Large Document Summaries & Global Themes"| D["RAPTOR / GraphRAG Hierarchical Pipeline"]
 
-    style A fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style B fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
-    style C fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
-    style D fill:#fffde7,stroke:#fbc02d,stroke-width:1px
+    style A fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style B fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#000000
+    style C fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
+    style D fill:#fffde7,stroke:#fbc02d,stroke-width:1px,color:#000000
 ```
 
 * **MaxSim Formula:** $S(q, d) = \sum_{i=1}^{|Q|} \max_{j=1}^{|D|} (\mathbf{e}_{q, i} \cdot \mathbf{e}_{d, j}^T)$.

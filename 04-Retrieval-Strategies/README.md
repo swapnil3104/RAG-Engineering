@@ -42,15 +42,15 @@ flowchart TD
     
     M8 --> M9["9. Post-Retrieval Diversity Optimization<br/>(Vectorized Maximal Marginal Relevance, Redundancy Elimination)"]
 
-    style M1 fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
-    style M2 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
-    style M3 fill:#ede7f6,stroke:#512da8,stroke-width:2px
-    style M4 fill:#fff8e1,stroke:#f57f17,stroke-width:2px
-    style M5 fill:#ffebee,stroke:#c62828,stroke-width:2px
-    style M6 fill:#fce4ec,stroke:#c2185b,stroke-width:2px
-    style M7 fill:#fff3e0,stroke:#e65100,stroke-width:2px
-    style M8 fill:#e0f7fa,stroke:#00838f,stroke-width:2px
-    style M9 fill:#f1f8e9,stroke:#558b2f,stroke-width:2px
+    style M1 fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#000000
+    style M2 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000000
+    style M3 fill:#ede7f6,stroke:#512da8,stroke-width:2px,color:#000000
+    style M4 fill:#fff8e1,stroke:#f57f17,stroke-width:2px,color:#000000
+    style M5 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#000000
+    style M6 fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#000000
+    style M7 fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000000
+    style M8 fill:#e0f7fa,stroke:#00838f,stroke-width:2px,color:#000000
+    style M9 fill:#f1f8e9,stroke:#558b2f,stroke-width:2px,color:#000000
 ```
 
 ---

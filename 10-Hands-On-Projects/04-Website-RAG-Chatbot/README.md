@@ -51,9 +51,9 @@ flowchart TD
 
     CrawlEngine --> ChangeDetection --> VectorTier
 
-    style CrawlEngine fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px
-    style ChangeDetection fill:#fefce8,stroke:#ca8a04,stroke-width:1.5px
-    style VectorTier fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px
+    style CrawlEngine fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px,color:#000000
+    style ChangeDetection fill:#fefce8,stroke:#ca8a04,stroke-width:1.5px,color:#000000
+    style VectorTier fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px,color:#000000
 ```
 
 ---
@@ -454,8 +454,8 @@ flowchart LR
     Qdrant --> Search["Vector ANN Query"]
     Search --> LLM["Grounded LLM Generation with Verified Hyperlinks"]
 
-    style URL fill:#e0f2fe,stroke:#0284c7
-    style HashCheck fill:#fef3c7,stroke:#d97706
-    style Qdrant fill:#dcfce7,stroke:#16a34a
-    style LLM fill:#f3e8ff,stroke:#9333ea
+    style URL fill:#e0f2fe,stroke:#0284c7,color:#000000
+    style HashCheck fill:#fef3c7,stroke:#d97706,color:#000000
+    style Qdrant fill:#dcfce7,stroke:#16a34a,color:#000000
+    style LLM fill:#f3e8ff,stroke:#9333ea,color:#000000
 ```

@@ -50,8 +50,8 @@ flowchart TD
     
     StagingIndex --> AtomicSwap["Zero-Downtime Atomic Alias Swap<br/>(Active Live Collection)"]
 
-    style IngestionWorkers fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
-    style DedupCheck fill:#fff3e0,stroke:#e65100,stroke-width:1px
+    style IngestionWorkers fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#000000
+    style DedupCheck fill:#fff3e0,stroke:#e65100,stroke-width:1px,color:#000000
 ```
 
 ---

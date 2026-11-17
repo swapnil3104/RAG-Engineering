@@ -54,9 +54,9 @@ flowchart TD
     Ref --> Level3
     Gen --> Level3
 
-    style Level1 fill:#f8fafc,stroke:#94a3b8
-    style Level2 fill:#fef3c7,stroke:#d97706
-    style Level3 fill:#dcfce7,stroke:#15803d,stroke-width:2px
+    style Level1 fill:#f8fafc,stroke:#94a3b8,color:#000000
+    style Level2 fill:#fef3c7,stroke:#d97706,color:#000000
+    style Level3 fill:#dcfce7,stroke:#15803d,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -174,9 +174,9 @@ flowchart TD
     B3 --> Prompt
     Prompt --> JSON --> Temp --> FinalScore([Calibrated Objective Metric])
 
-    style Biases fill:#fee2e2,stroke:#ef4444
-    style Architecture fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style FinalScore fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style Biases fill:#fee2e2,stroke:#ef4444,color:#000000
+    style Architecture fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style FinalScore fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
 ```
 
 ### The 4 Crucial Mitigation Rules for LLM Judges
@@ -485,9 +485,9 @@ flowchart TD
     ScaleCheck -->|"Yes"| Tiered["Deploy Tiered Evaluation:<br/>SLM 8B Judge + 5% Frontier LLM Audit"]
     ScaleCheck -->|"No"| FullFrontier["Direct Frontier Judge Evaluation<br/>(GPT-4o / Claude 3.5)"]
 
-    style Start fill:#f1f5f9,stroke:#64748b
-    style Fast fill:#fef3c7,stroke:#d97706
-    style Sem fill:#e0f2fe,stroke:#0284c7
-    style Judge fill:#dcfce7,stroke:#16a34a,stroke-width:2px
-    style Tiered fill:#f3e8ff,stroke:#9333ea,stroke-width:2px
+    style Start fill:#f1f5f9,stroke:#64748b,color:#000000
+    style Fast fill:#fef3c7,stroke:#d97706,color:#000000
+    style Sem fill:#e0f2fe,stroke:#0284c7,color:#000000
+    style Judge fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
+    style Tiered fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#000000
 ```

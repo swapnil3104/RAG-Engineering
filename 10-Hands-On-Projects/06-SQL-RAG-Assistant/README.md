@@ -51,8 +51,8 @@ flowchart TD
 
     OfflineSchemaIndexing -.-> OnlineInference
 
-    style OfflineSchemaIndexing fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px
-    style OnlineInference fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px
+    style OfflineSchemaIndexing fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px,color:#000000
+    style OnlineInference fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px,color:#000000
 ```
 
 ---
@@ -524,8 +524,8 @@ flowchart LR
     ASTValidator --> ReadOnlyDB["Execute on Read-Only DB"]
     ReadOnlyDB --> NaturalSynth["LLM Synthesizes Natural Language Answer"]
 
-    style Question fill:#e0f2fe,stroke:#0284c7
-    style SchemaStore fill:#fef3c7,stroke:#d97706
-    style ASTValidator fill:#fee2e2,stroke:#ef4444
-    style NaturalSynth fill:#dcfce7,stroke:#16a34a
+    style Question fill:#e0f2fe,stroke:#0284c7,color:#000000
+    style SchemaStore fill:#fef3c7,stroke:#d97706,color:#000000
+    style ASTValidator fill:#fee2e2,stroke:#ef4444,color:#000000
+    style NaturalSynth fill:#dcfce7,stroke:#16a34a,color:#000000
 ```

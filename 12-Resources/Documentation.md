@@ -54,11 +54,11 @@ flowchart TD
     Layer2 --> Layer3 & Layer4
     Layer2 -.-> Layer5
 
-    style Layer1 fill:#f8fafc,stroke:#475569,stroke-width:2px
-    style Layer2 fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style Layer3 fill:#ecfdf5,stroke:#059669,stroke-width:2px
-    style Layer4 fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style Layer5 fill:#fdf4ff,stroke:#a21caf,stroke-width:2px
+    style Layer1 fill:#f8fafc,stroke:#475569,stroke-width:2px,color:#000000
+    style Layer2 fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style Layer3 fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
+    style Layer4 fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style Layer5 fill:#fdf4ff,stroke:#a21caf,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -382,9 +382,9 @@ flowchart LR
     Dev --> Models["Foundation APIs<br/>• platform.openai.com<br/>• docs.anthropic.com"]
     Dev --> Evals["Observability<br/>• docs.ragas.io<br/>• docs.smith.langchain.com"]
 
-    style Dev fill:#f8fafc,stroke:#475569,stroke-width:2px
-    style Fw fill:#eff6ff,stroke:#1d4ed8,stroke-width:1px
-    style Vdb fill:#ecfdf5,stroke:#059669,stroke-width:1px
-    style Models fill:#fef3c7,stroke:#d97706,stroke-width:1px
-    style Evals fill:#fdf4ff,stroke:#a21caf,stroke-width:1px
+    style Dev fill:#f8fafc,stroke:#475569,stroke-width:2px,color:#000000
+    style Fw fill:#eff6ff,stroke:#1d4ed8,stroke-width:1px,color:#000000
+    style Vdb fill:#ecfdf5,stroke:#059669,stroke-width:1px,color:#000000
+    style Models fill:#fef3c7,stroke:#d97706,stroke-width:1px,color:#000000
+    style Evals fill:#fdf4ff,stroke:#a21caf,stroke-width:1px,color:#000000
 ```

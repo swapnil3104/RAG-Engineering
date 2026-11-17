@@ -132,10 +132,10 @@ flowchart TD
     Layer3 --> ScoreHead["[CLS] Representation: High Contradiction Penalty"]
     ScoreHead --> Logit["Final Logit: -4.82 (P = 0.0079)"]
 
-    style InputTokens fill:#fffde7,stroke:#fbc02d,stroke-width:1px
-    style Layer2 fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style Layer3 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
-    style Logit fill:#ffebee,stroke:#c62828,stroke-width:1px
+    style InputTokens fill:#fffde7,stroke:#fbc02d,stroke-width:1px,color:#000000
+    style Layer2 fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style Layer3 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#000000
+    style Logit fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
 ```
 
 1. **Token Co-reference:** The word *"delegate"* in the query directly cross-attends to *"delegated administrative permissions"* in the passage.
@@ -508,10 +508,10 @@ flowchart LR
     CE_Decision -->|Managed Zero-Ops| CE3["Cohere Rerank v3.5 API<br/>(High precision, token-billed)"]
     CE_Decision -->|Custom Proprietary Domain| CE4["Fine-Tuned RoBERTa-Large<br/>(Trained with MarginMSE on Triton)"]
 
-    style CE1 fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
-    style CE2 fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style CE3 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
-    style CE4 fill:#fffde7,stroke:#fbc02d,stroke-width:1px
+    style CE1 fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
+    style CE2 fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style CE3 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#000000
+    style CE4 fill:#fffde7,stroke:#fbc02d,stroke-width:1px,color:#000000
 ```
 
 * **The Core Mechanism:** Joint sequence self-attention $\mathbf{A} \in \mathbb{R}^{L \times L}$ enables bidirectional token interaction between query and document.

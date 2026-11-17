@@ -56,14 +56,14 @@ flowchart TD
     
     Critic -->|"Verdict: 100% Grounded"| FinalOutput([Verified Executive Deliverable])
 
-    style Orchestrator fill:#ede9fe,stroke:#7c3aed,stroke-width:2px
-    style ParallelWorkers fill:#f8fafc,stroke:#3b82f6,stroke-width:1px
-    style W_SQL fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    style W_DOC fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    style W_WEB fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    style ReviewLoop fill:#fffbeb,stroke:#d97706,stroke-width:1px
-    style Critic fill:#fee2e2,stroke:#dc2626,stroke-width:2px
-    style FinalOutput fill:#dcfce7,stroke:#15803d,stroke-width:2px
+    style Orchestrator fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#000000
+    style ParallelWorkers fill:#f8fafc,stroke:#3b82f6,stroke-width:1px,color:#000000
+    style W_SQL fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
+    style W_DOC fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
+    style W_WEB fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
+    style ReviewLoop fill:#fffbeb,stroke:#d97706,stroke-width:1px,color:#000000
+    style Critic fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#000000
+    style FinalOutput fill:#dcfce7,stroke:#15803d,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -170,10 +170,10 @@ flowchart TD
     
     RevisionReq --> Generator
 
-    style Generator fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style Critic fill:#fef2f2,stroke:#dc2626,stroke-width:2px
-    style Audit fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style Deliverable fill:#f0fdf4,stroke:#16a34a,stroke-width:2px
+    style Generator fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style Critic fill:#fef2f2,stroke:#dc2626,stroke-width:2px,color:#000000
+    style Audit fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style Deliverable fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -195,13 +195,13 @@ graph TD
     Lead_Fin --> W_GL["Level 3: General Ledger Worker<br/>(SAP SQL)"]
     Lead_Fin --> W_Tax["Level 3: International Tax Specialist<br/>(Statute Vector DB)"]
 
-    style Director fill:#ede9fe,stroke:#7c3aed,stroke-width:2px
-    style Lead_Sec fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    style Lead_Fin fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    style W_IAM fill:#f8fafc,stroke:#64748b
-    style W_Net fill:#f8fafc,stroke:#64748b
-    style W_GL fill:#f8fafc,stroke:#64748b
-    style W_Tax fill:#f8fafc,stroke:#64748b
+    style Director fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#000000
+    style Lead_Sec fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
+    style Lead_Fin fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
+    style W_IAM fill:#f8fafc,stroke:#64748b,color:#000000
+    style W_Net fill:#f8fafc,stroke:#64748b,color:#000000
+    style W_GL fill:#f8fafc,stroke:#64748b,color:#000000
+    style W_Tax fill:#f8fafc,stroke:#64748b,color:#000000
 ```
 
 In this architecture, Level 3 specialist workers conduct the low-level retrieval and tool execution. Level 2 leads aggregate and verify their sub-domain reports. Level 1 synthesizes the board-level deliverable.
@@ -526,7 +526,7 @@ flowchart TD
     Q2 -->|Yes: Zero-tolerance for error| FullSwarm[Orchestrator-Worker Swarm<br/>+ Independent Adversarial Critic]
     Q2 -->|No: Internal informal research| OrchOnly[Standard Orchestrator-Worker<br/>Parallel workers + Fast Synthesizer]
 
-    style Monolith fill:#f1f5f9,stroke:#64748b,stroke-width:1px
-    style OrchOnly fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
-    style FullSwarm fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style Monolith fill:#f1f5f9,stroke:#64748b,stroke-width:1px,color:#000000
+    style OrchOnly fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#000000
+    style FullSwarm fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
 ```

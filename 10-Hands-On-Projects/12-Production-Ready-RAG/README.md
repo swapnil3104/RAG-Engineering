@@ -51,10 +51,10 @@ flowchart TD
     CachingTier --> RetrievalGeneration
     RetrievalGeneration --> ObservabilityCI
 
-    style ClientEdge fill:#f8fafc,stroke:#64748b,stroke-width:1.5px
-    style CachingTier fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px
-    style RetrievalGeneration fill:#fefce8,stroke:#ca8a04,stroke-width:1.5px
-    style ObservabilityCI fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px
+    style ClientEdge fill:#f8fafc,stroke:#64748b,stroke-width:1.5px,color:#000000
+    style CachingTier fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px,color:#000000
+    style RetrievalGeneration fill:#fefce8,stroke:#ca8a04,stroke-width:1.5px,color:#000000
+    style ObservabilityCI fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px,color:#000000
 ```
 
 ---
@@ -585,9 +585,9 @@ flowchart LR
     OpenAI --> SSE["SSE Token Stream to User"]
     SSE --> Telemetry["OpenTelemetry Spans to Prometheus & Grafana"]
 
-    style Client fill:#e0f2fe,stroke:#0284c7
-    style API fill:#eff6ff,stroke:#2563eb
-    style Cache fill:#fef3c7,stroke:#d97706
-    style StreamFast fill:#dcfce7,stroke:#16a34a
-    style Telemetry fill:#faf5ff,stroke:#9333ea
+    style Client fill:#e0f2fe,stroke:#0284c7,color:#000000
+    style API fill:#eff6ff,stroke:#2563eb,color:#000000
+    style Cache fill:#fef3c7,stroke:#d97706,color:#000000
+    style StreamFast fill:#dcfce7,stroke:#16a34a,color:#000000
+    style Telemetry fill:#faf5ff,stroke:#9333ea,color:#000000
 ```

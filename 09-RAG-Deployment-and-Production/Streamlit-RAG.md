@@ -45,9 +45,9 @@ flowchart TD
     
     StreamBlock --> DOMUpdate([Real-Time Browser DOM Update via WebSockets])
     
-    style UserEvent fill:#eff6ff,stroke:#2563eb
-    style ExecutionPlane fill:#f8fafc,stroke:#64748b
-    style DOMUpdate fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style UserEvent fill:#eff6ff,stroke:#2563eb,color:#000000
+    style ExecutionPlane fill:#f8fafc,stroke:#64748b,color:#000000
+    style DOMUpdate fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -505,11 +505,11 @@ flowchart LR
     E --> F["Interactive Streaming<br/>(st.write_stream)"]
     F --> G["Audit & Feedback<br/>(st.feedback / DB Sync)"]
 
-    style A fill:#f8fafc,stroke:#64748b
-    style B fill:#eff6ff,stroke:#3b82f6
-    style C fill:#fef3c7,stroke:#f59e0b
-    style D fill:#fce7f3,stroke:#ec4899
-    style E fill:#e0e7ff,stroke:#6366f1
-    style F fill:#dcfce7,stroke:#10b981,stroke-width:2px
-    style G fill:#ede9fe,stroke:#8b5cf6
+    style A fill:#f8fafc,stroke:#64748b,color:#000000
+    style B fill:#eff6ff,stroke:#3b82f6,color:#000000
+    style C fill:#fef3c7,stroke:#f59e0b,color:#000000
+    style D fill:#fce7f3,stroke:#ec4899,color:#000000
+    style E fill:#e0e7ff,stroke:#6366f1,color:#000000
+    style F fill:#dcfce7,stroke:#10b981,stroke-width:2px,color:#000000
+    style G fill:#ede9fe,stroke:#8b5cf6,color:#000000
 ```

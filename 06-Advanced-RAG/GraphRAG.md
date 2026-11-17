@@ -45,10 +45,10 @@ flowchart TD
     IndexReport --> GlobalQ
     KG --> LocalQ
 
-    style Extraction fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style KG fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
-    style Leiden fill:#fffde7,stroke:#fbc02d,stroke-width:1px
-    style QueryEngines fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style Extraction fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style KG fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#000000
+    style Leiden fill:#fffde7,stroke:#fbc02d,stroke-width:1px,color:#000000
+    style QueryEngines fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 ---
@@ -166,9 +166,9 @@ flowchart TD
     LocalEngine --> Output([Final Grounded Response])
     GlobalEngine --> Output
 
-    style Router fill:#fffde7,stroke:#fbc02d,stroke-width:2px
-    style LocalEngine fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style GlobalEngine fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
+    style Router fill:#fffde7,stroke:#fbc02d,stroke-width:2px,color:#000000
+    style LocalEngine fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style GlobalEngine fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#000000
 ```
 
 ### Local Search:
@@ -451,8 +451,8 @@ flowchart LR
     GraphChoice -->|"Entity / Specific Fact"| ModeLocal["Local Search<br/>1. Seed Entity Lookup<br/>2. 2-Hop Graph Traversal<br/>3. Subgraph Reranking"]
     GraphChoice -->|"Holistic Dataset Summary"| ModeGlobal["Global Search<br/>1. Map Stage over Community Reports<br/>2. Score & Filter<br/>3. Reduce Stage Synthesis"]
 
-    style ModeLocal fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style ModeGlobal fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
+    style ModeLocal fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style ModeGlobal fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#000000
 ```
 
 * **Core Breakthrough:** Slices unstructured text into knowledge graphs partitioned into hierarchical communities via the Leiden algorithm.

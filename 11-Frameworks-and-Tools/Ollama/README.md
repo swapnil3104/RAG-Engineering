@@ -53,9 +53,9 @@ flowchart TD
     LayerSplitter --> CUDA_GPU
     LayerSplitter --> CPU_RAM
 
-    style ClientLayer fill:#f8fafc,stroke:#64748b
-    style OllamaDaemon fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style EngineCore fill:#ecfdf5,stroke:#059669,stroke-width:2px
+    style ClientLayer fill:#f8fafc,stroke:#64748b,color:#000000
+    style OllamaDaemon fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style EngineCore fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -101,10 +101,10 @@ graph LR
     Q5_K_M --> Q4_K_M["Q4_K_M (4-bit K-Quant)<br/>Model Size: 4.7 GB<br/>Perplexity: +0.080 (Sweet Spot)"]
     Q4_K_M --> Q2_K["Q2_K (2-bit Quant)<br/>Model Size: 2.7 GB<br/>Perplexity: +0.850 (Degraded)"]
 
-    style FP16 fill:#fee2e2,stroke:#dc2626
-    style Q5_K_M fill:#e0f2fe,stroke:#0284c7
-    style Q4_K_M fill:#dcfce7,stroke:#16a34a,stroke-width:2px
-    style Q2_K fill:#fef2f2,stroke:#ef4444
+    style FP16 fill:#fee2e2,stroke:#dc2626,color:#000000
+    style Q5_K_M fill:#e0f2fe,stroke:#0284c7,color:#000000
+    style Q4_K_M fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
+    style Q2_K fill:#fef2f2,stroke:#ef4444,color:#000000
 ```
 
 ### Quantization Trade-Off Matrix (8B Model Baseline):
@@ -455,4 +455,4 @@ if __name__ == "__main__":
 | **Embeddings API** | `ollama.embed(model=..., input=...)` | High-speed local dense vector extraction without cloud calls. |
 | **Concurrency Limit**| `OLLAMA_NUM_PARALLEL=4` | Configures daemon to process up to 4 parallel inference requests. |
 | **GPU Offloading** | `PARAMETER num_gpu 99` | Forces all model layers to offload to GPU VRAM. |
-| **Stop Tokens** | `PARAMETER stop "<|eot_id|>"` | Prevents model from hallucinating continuing dialog. |
+| **Stop Tokens** | <code>PARAMETER stop "&lt;&#124;eot_id&#124;&gt;"</code> | Prevents model from hallucinating continuing dialog. |

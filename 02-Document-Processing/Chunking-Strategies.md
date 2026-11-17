@@ -500,7 +500,7 @@ flowchart TD
 
     Hierarchical --> VectorDB["Index Child Vectors into Vector DB<br/>Store Parent Context in Document Store"]
 
-    style In fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
-    style Hierarchical fill:#fff8e1,stroke:#f57f17,stroke-width:2px
-    style VectorDB fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style In fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#000000
+    style Hierarchical fill:#fff8e1,stroke:#f57f17,stroke-width:2px,color:#000000
+    style VectorDB fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000000
 ```

@@ -40,8 +40,8 @@ flowchart TD
         IndexUnit -->|Vector Match Triggers Expansion| ContextUnit
     end
 
-    style TraditionalTrap fill:#ffebee,stroke:#c62828,stroke-width:1px
-    style SmallToBigParadigm fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style TraditionalTrap fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
+    style SmallToBigParadigm fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 ### The Small-to-Big Philosophy
@@ -134,8 +134,8 @@ flowchart TD
         ChildSplit --> ChildIndex
     end
 
-    style SentPath fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style TreePath fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
+    style SentPath fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style TreePath fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#000000
 ```
 
 ### Strategy A: Sentence Window Retrieval
@@ -169,8 +169,8 @@ flowchart LR
     V1 -->|Resolve parent_id| P1
     P1 -->|Deliver Full Context| LLM([LLM Prompt Engine])
 
-    style VectorDB fill:#e3f2fd,stroke:#1565c0,stroke-width:1px
-    style KVStore fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style VectorDB fill:#e3f2fd,stroke:#1565c0,stroke-width:1px,color:#000000
+    style KVStore fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 By decoupling storage:
@@ -466,9 +466,9 @@ flowchart TD
     DocType -->|"Structured sections & multi-page narratives"| ChoiceB["Hierarchical Parent-Child Trees<br/>Child (150 tok) -> Parent (1000 tok in Redis)"]
     DocType -->|"Uniform conversational text & simple FAQs"| ChoiceC["Standard Sliding Window Chunks<br/>(300 tokens, 15% overlap)"]
 
-    style ChoiceA fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style ChoiceB fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
-    style ChoiceC fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style ChoiceA fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style ChoiceB fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#000000
+    style ChoiceC fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 * **Core Innovation:** Small text for vector matching; Big text for generative synthesis.

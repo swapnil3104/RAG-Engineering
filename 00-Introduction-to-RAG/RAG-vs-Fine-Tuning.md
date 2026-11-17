@@ -38,8 +38,8 @@ flowchart LR
         Context --> FrozenLLM["Frozen Foundation Model Weights θ<br/>(Reads Facts at Query Time)"]
     end
 
-    style SFT fill:#fce4ec,stroke:#c2185b,stroke-width:2px
-    style RAG fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style SFT fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#000000
+    style RAG fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000000
 ```
 
 > 💡 **Core Analogy:** **Fine-Tuning** is like sending a medical doctor to specialized surgical residency for 3 years so they intuitively master the physical instincts and precise jargon of open-heart surgery. **RAG** is handing that surgeon the specific patient's updated lab tests, allergy chart, and surgical notes right before they step into the operating room. A surgeon needs both; one cannot replace the other.
@@ -81,9 +81,9 @@ flowchart LR
     B --> SUM
     SUM --> Y[Output Vector h]
 
-    style W0 fill:#cfd8dc,stroke:#37474f
-    style A fill:#ffcc80,stroke:#e65100
-    style B fill:#ffe082,stroke:#f57f17
+    style W0 fill:#cfd8dc,stroke:#37474f,color:#000000
+    style A fill:#ffcc80,stroke:#e65100,color:#000000
+    style B fill:#ffe082,stroke:#f57f17,color:#000000
 ```
 
 ### When Fine-Tuning Excels:
@@ -120,7 +120,7 @@ flowchart TD
         C3["Attention Degradation: The 'Lost-in-the-Middle' effect"]
         C4["Scalability Wall: Cannot fit a 50GB corporate database"]
     end
-    style Long_Context_Challenges fill:#fff3e0,stroke:#e65100
+    style Long_Context_Challenges fill:#fff3e0,stroke:#e65100,color:#000000
 ```
 
 ### Quantitative Reality:
@@ -151,9 +151,9 @@ flowchart TD
     Prompt --> SpecializedLLM
     SpecializedLLM --> FinalOutput["Guaranteed Schema Output Grounded in Verifiable Facts"]
 
-    style EnterpriseData fill:#f3e5f5,stroke:#7b1fa2
-    style SpecializedLLM fill:#fff8e1,stroke:#f57f17
-    style FinalOutput fill:#e8f5e9,stroke:#2e7d32
+    style EnterpriseData fill:#f3e5f5,stroke:#7b1fa2,color:#000000
+    style SpecializedLLM fill:#fff8e1,stroke:#f57f17,color:#000000
+    style FinalOutput fill:#e8f5e9,stroke:#2e7d32,color:#000000
 ```
 
 ### Industry Case Examples of the Hybrid Pattern:
@@ -309,9 +309,9 @@ flowchart TD
     Q6 -->|Yes| Hybrid
     Q6 -->|No| PureRAG[Pure RAG Architecture]
 
-    style Hybrid fill:#fff8e1,stroke:#f57f17,stroke-width:2px
-    style PureRAG fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
-    style PureSFT fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    style Hybrid fill:#fff8e1,stroke:#f57f17,stroke-width:2px,color:#000000
+    style PureRAG fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000000
+    style PureSFT fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#000000
 ```
 
 ---

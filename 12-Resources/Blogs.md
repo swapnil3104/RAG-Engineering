@@ -40,9 +40,9 @@ flowchart TD
 
     SignalSources --> FiltrationPlane --> ProductionPlane
 
-    style SignalSources fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style FiltrationPlane fill:#ecfdf5,stroke:#059669,stroke-width:2px
-    style ProductionPlane fill:#fef3c7,stroke:#d97706,stroke-width:2px
+    style SignalSources fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style FiltrationPlane fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
+    style ProductionPlane fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -387,7 +387,7 @@ flowchart LR
 
     Mon --> Wed --> Fri
 
-    style Mon fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style Wed fill:#ecfdf5,stroke:#059669,stroke-width:2px
-    style Fri fill:#fef3c7,stroke:#d97706,stroke-width:2px
+    style Mon fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style Wed fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
+    style Fri fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
 ```

@@ -46,11 +46,11 @@ flowchart TD
     Verify -->|"No (Fallback)"| BigLLM
     BigLLM --> Stream2([Return Verified Response])
 
-    style CacheCheck fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style CheapAns fill:#dcfce7,stroke:#16a34a,stroke-width:2px
-    style Compress fill:#e0f2fe,stroke:#0284c7
-    style SmallLLM fill:#dbeafe,stroke:#1d4ed8
-    style BigLLM fill:#f3e8ff,stroke:#9333ea
+    style CacheCheck fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style CheapAns fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
+    style Compress fill:#e0f2fe,stroke:#0284c7,color:#000000
+    style SmallLLM fill:#dbeafe,stroke:#1d4ed8,color:#000000
+    style BigLLM fill:#f3e8ff,stroke:#9333ea,color:#000000
 ```
 
 ---
@@ -141,10 +141,10 @@ flowchart LR
     SLM --> FinalOut([Generated Answer])
     Frontier --> FinalOut
 
-    style Layer1 fill:#fef3c7,stroke:#d97706
-    style Layer2 fill:#e0f2fe,stroke:#0284c7
-    style Layer3 fill:#f3e8ff,stroke:#9333ea,stroke-width:2px
-    style ReturnCache fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style Layer1 fill:#fef3c7,stroke:#d97706,color:#000000
+    style Layer2 fill:#e0f2fe,stroke:#0284c7,color:#000000
+    style Layer3 fill:#f3e8ff,stroke:#9333ea,stroke-width:2px,color:#000000
+    style ReturnCache fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -481,10 +481,10 @@ flowchart TD
     Step3 --> Step4["Minify System Prompts<br/>(Remove boilerplate instructions)"]
     Step4 --> Achieved([Sustainable Production Economics: 75-85% Cost Reduction 💰])
 
-    style Start fill:#fee2e2,stroke:#ef4444
-    style Step1 fill:#fef3c7,stroke:#d97706
-    style Step2 fill:#e0f2fe,stroke:#0284c7
-    style Step3 fill:#dbeafe,stroke:#1d4ed8
-    style Step4 fill:#dcfce7,stroke:#16a34a
+    style Start fill:#fee2e2,stroke:#ef4444,color:#000000
+    style Step1 fill:#fef3c7,stroke:#d97706,color:#000000
+    style Step2 fill:#e0f2fe,stroke:#0284c7,color:#000000
+    style Step3 fill:#dbeafe,stroke:#1d4ed8,color:#000000
+    style Step4 fill:#dcfce7,stroke:#16a34a,color:#000000
     style Achieved fill:#16a34a,color:#ffffff,stroke-width:2px
 ```

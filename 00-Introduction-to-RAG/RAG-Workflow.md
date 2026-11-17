@@ -43,8 +43,8 @@ flowchart TD
         Q6 --> Q7[Output Verification & Citations]
     end
 
-    style DataPlane fill:#e8eaf6,stroke:#283593,stroke-width:2px
-    style QueryPlane fill:#e0f2f1,stroke:#00695c,stroke-width:2px
+    style DataPlane fill:#e8eaf6,stroke:#283593,stroke-width:2px,color:#000000
+    style QueryPlane fill:#e0f2f1,stroke:#00695c,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -106,11 +106,11 @@ flowchart LR
     S3 --> S4[4. Vector Embedding]
     S4 --> S5[5. Index Upsert & Catalog]
 
-    style S1 fill:#f3e5f5,stroke:#7b1fa2
-    style S2 fill:#ede7f6,stroke:#512da8
-    style S3 fill:#e8eaf6,stroke:#303f9f
-    style S4 fill:#e3f2fd,stroke:#1976d2
-    style S5 fill:#e0f2f1,stroke:#00796b
+    style S1 fill:#f3e5f5,stroke:#7b1fa2,color:#000000
+    style S2 fill:#ede7f6,stroke:#512da8,color:#000000
+    style S3 fill:#e8eaf6,stroke:#303f9f,color:#000000
+    style S4 fill:#e3f2fd,stroke:#1976d2,color:#000000
+    style S5 fill:#e0f2f1,stroke:#00796b,color:#000000
 ```
 
 ### Detailed Breakdown of Ingestion Steps:
@@ -142,11 +142,11 @@ flowchart LR
     S8 --> S9[9. Prompt Assembly]
     S9 --> S10[10. Stream & Verify]
 
-    style S6 fill:#fff3e0,stroke:#e65100
-    style S7 fill:#ffe0b2,stroke:#f57c00
-    style S8 fill:#ffcc80,stroke:#fb8c00
-    style S9 fill:#ffb74d,stroke:#ffa726
-    style S10 fill:#ffa726,stroke:#ff9800
+    style S6 fill:#fff3e0,stroke:#e65100,color:#000000
+    style S7 fill:#ffe0b2,stroke:#f57c00,color:#000000
+    style S8 fill:#ffcc80,stroke:#fb8c00,color:#000000
+    style S9 fill:#ffb74d,stroke:#ffa726,color:#000000
+    style S10 fill:#ffa726,stroke:#ff9800,color:#000000
 ```
 
 ### Detailed Breakdown of Inference Steps:
@@ -188,8 +188,8 @@ flowchart TD
         PurgePipeline --> VectorDB
     end
 
-    style Enterprise_Sources fill:#f1f8e9,stroke:#558b2f
-    style Streaming_ETL fill:#ede7f6,stroke:#4527a0
+    style Enterprise_Sources fill:#f1f8e9,stroke:#558b2f,color:#000000
+    style Streaming_ETL fill:#ede7f6,stroke:#4527a0,color:#000000
 ```
 
 ### CDC Event Contract Example:

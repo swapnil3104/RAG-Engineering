@@ -40,8 +40,8 @@ flowchart TD
         UnifiedVector --> MultimodalVLM["Multimodal VLM (e.g., GPT-4o / Claude 3.5 Sonnet / PaliGemma)<br/>Inspects Original Visual Page"]
     end
 
-    style TraditionalTrap fill:#ffebee,stroke:#c62828,stroke-width:1px
-    style MultiModalParadigm fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style TraditionalTrap fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
+    style MultiModalParadigm fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 **Multi-Modal RAG** re-architects the pipeline by treating visual information (images, diagrams, tables, page layouts) as first-class citizens alongside textual tokens.
@@ -83,8 +83,8 @@ flowchart LR
     QueryVecs & PatchVecs --> MaxSimOp["Visual MaxSim Operator:<br/>Every Query Token matches against its Best Visual Patch"]
     MaxSimOp --> Score["Relevance Score: S(q, Image)"]
 
-    style ViT fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style MaxSimOp fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style ViT fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style MaxSimOp fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 Let the query produce $|Q|$ token embeddings $\mathbf{E}_q \in \mathbb{R}^{|Q| \times D}$.
@@ -157,8 +157,8 @@ flowchart TD
         C3 --> C4["Compressed Multi-Vector Index (PLAID)"]
     end
 
-    style LegacyStack fill:#ffebee,stroke:#c62828,stroke-width:1px
-    style ColPaliStack fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style LegacyStack fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
+    style ColPaliStack fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 By leveraging PaliGemma's pre-trained visual understanding:
@@ -450,9 +450,9 @@ flowchart TD
     DocNature -->|"Photos / Product Catalog Imagery"| Opt2["Dual-Encoder Multi-Modal (SigLIP / CLIP)"]
     DocNature -->|"Complex PDFs / Blueprints / Financial Tables"| Opt3["ColPali End-to-End Visual Retrieval<br/>(Render to Images -> Visual MaxSim -> VLM)"]
 
-    style Opt1 fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style Opt2 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
-    style Opt3 fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style Opt1 fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style Opt2 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#000000
+    style Opt3 fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 * **Core Breakthrough:** Stop scraping text from complex PDFs. Render pages as images and retrieve visually.

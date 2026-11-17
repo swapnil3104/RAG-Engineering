@@ -54,13 +54,13 @@ flowchart TD
     GroundCheck -->|"Yes"| EndNode([Final Answer])
     GroundCheck -->|"Hallucination Detected"| GeneratorNode
 
-    style AgentNode fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style ToolNode fill:#f0fdf4,stroke:#16a34a,stroke-width:1px
-    style DocumentGrader fill:#fffbeb,stroke:#d97706,stroke-width:1px
-    style RewriteNode fill:#fef2f2,stroke:#dc2626,stroke-width:1px
-    style GeneratorNode fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    style HallucinationGrader fill:#f3e8ff,stroke:#7c3aed,stroke-width:2px
-    style EndNode fill:#dcfce7,stroke:#15803d,stroke-width:2px
+    style AgentNode fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style ToolNode fill:#f0fdf4,stroke:#16a34a,stroke-width:1px,color:#000000
+    style DocumentGrader fill:#fffbeb,stroke:#d97706,stroke-width:1px,color:#000000
+    style RewriteNode fill:#fef2f2,stroke:#dc2626,stroke-width:1px,color:#000000
+    style GeneratorNode fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
+    style HallucinationGrader fill:#f3e8ff,stroke:#7c3aed,stroke-width:2px,color:#000000
+    style EndNode fill:#dcfce7,stroke:#15803d,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -128,12 +128,12 @@ graph TD
     NodesDef --> Reducers
     EdgesDef --> Checkpointers
 
-    style Primitives fill:#f8fafc,stroke:#3b82f6,stroke-width:2px
-    style StateDef fill:#eff6ff,stroke:#1d4ed8,stroke-width:1px
-    style NodesDef fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    style EdgesDef fill:#fef3c7,stroke:#d97706,stroke-width:1px
-    style Reducers fill:#ede9fe,stroke:#7c3aed,stroke-width:1px
-    style Checkpointers fill:#dcfce7,stroke:#16a34a,stroke-width:1px
+    style Primitives fill:#f8fafc,stroke:#3b82f6,stroke-width:2px,color:#000000
+    style StateDef fill:#eff6ff,stroke:#1d4ed8,stroke-width:1px,color:#000000
+    style NodesDef fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
+    style EdgesDef fill:#fef3c7,stroke:#d97706,stroke-width:1px,color:#000000
+    style Reducers fill:#ede9fe,stroke:#7c3aed,stroke-width:1px,color:#000000
+    style Checkpointers fill:#dcfce7,stroke:#16a34a,stroke-width:1px,color:#000000
 ```
 
 ### Python State Definition with Annotated Reducers
@@ -172,11 +172,11 @@ flowchart TD
     CondEdge -->|"state['relevance'] == 'INCORRECT' & retries < 2"| RewriteNode[Node: Rewrite Query]
     CondEdge -->|"state['relevance'] == 'INCORRECT' & retries >= 2"| FallbackNode[Node: Knowledge Absent Handler]
 
-    style GradeNode fill:#eff6ff,stroke:#2563eb,stroke-width:1px
-    style CondEdge fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style GenNode fill:#dcfce7,stroke:#16a34a,stroke-width:1px
-    style RewriteNode fill:#fee2e2,stroke:#ef4444,stroke-width:1px
-    style FallbackNode fill:#f1f5f9,stroke:#64748b,stroke-width:1px
+    style GradeNode fill:#eff6ff,stroke:#2563eb,stroke-width:1px,color:#000000
+    style CondEdge fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style GenNode fill:#dcfce7,stroke:#16a34a,stroke-width:1px,color:#000000
+    style RewriteNode fill:#fee2e2,stroke:#ef4444,stroke-width:1px,color:#000000
+    style FallbackNode fill:#f1f5f9,stroke:#64748b,stroke-width:1px,color:#000000
 ```
 
 ### Production Conditional Routing Function
@@ -258,11 +258,11 @@ flowchart TD
     AutoExec --> EndNode([Transaction Complete])
     CancelNode --> EndNode
 
-    style PlanNode fill:#eff6ff,stroke:#2563eb,stroke-width:1px
-    style CheckGate fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style InterruptPoint fill:#fee2e2,stroke:#dc2626,stroke-width:2px
-    style HumanInbox fill:#fefce8,stroke:#ca8a04,stroke-width:2px
-    style AutoExec fill:#dcfce7,stroke:#16a34a,stroke-width:1px
+    style PlanNode fill:#eff6ff,stroke:#2563eb,stroke-width:1px,color:#000000
+    style CheckGate fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style InterruptPoint fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#000000
+    style HumanInbox fill:#fefce8,stroke:#ca8a04,stroke-width:2px,color:#000000
+    style AutoExec fill:#dcfce7,stroke:#16a34a,stroke-width:1px,color:#000000
 ```
 
 ---

@@ -56,9 +56,9 @@ flowchart TD
 
     VectorSimilarity --> Score([Answer Relevancy Score: 0.94])
 
-    style ReverseEngineering fill:#f8fafc,stroke:#64748b
-    style VectorSimilarity fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style Score fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style ReverseEngineering fill:#f8fafc,stroke:#64748b,color:#000000
+    style VectorSimilarity fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style Score fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -134,8 +134,8 @@ flowchart LR
         Q_inv2 <-->|"Low Cosine Sim (0.28)"| Orig2["User Query: 'What is the deadline?'"]
     end
 
-    style DirectAnswer fill:#f0fdf4,stroke:#16a34a,stroke-width:2px
-    style EvasiveAnswer fill:#fef2f2,stroke:#ef4444,stroke-width:2px
+    style DirectAnswer fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#000000
+    style EvasiveAnswer fill:#fef2f2,stroke:#ef4444,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -427,9 +427,9 @@ flowchart TD
     Fix3 --> Retest
     Retest --> Passed([Answer Relevancy >= 0.85 ✅])
 
-    style Start fill:#fee2e2,stroke:#ef4444
-    style Fix1 fill:#dcfce7,stroke:#16a34a
-    style Fix2 fill:#dcfce7,stroke:#16a34a
-    style Fix3 fill:#dcfce7,stroke:#16a34a
+    style Start fill:#fee2e2,stroke:#ef4444,color:#000000
+    style Fix1 fill:#dcfce7,stroke:#16a34a,color:#000000
+    style Fix2 fill:#dcfce7,stroke:#16a34a,color:#000000
+    style Fix3 fill:#dcfce7,stroke:#16a34a,color:#000000
     style Passed fill:#16a34a,color:#ffffff,stroke-width:2px
 ```

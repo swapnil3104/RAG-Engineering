@@ -127,10 +127,10 @@ flowchart LR
 
     FullVec --> Sub1 --> Sub2 --> Sub3
 
-    style FullVec fill:#e1f5fe,stroke:#0288d1
-    style Sub1 fill:#e8f5e9,stroke:#2e7d32
-    style Sub2 fill:#fff3e0,stroke:#f57c00
-    style Sub3 fill:#ffebee,stroke:#d32f2f
+    style FullVec fill:#e1f5fe,stroke:#0288d1,color:#000000
+    style Sub1 fill:#e8f5e9,stroke:#2e7d32,color:#000000
+    style Sub2 fill:#fff3e0,stroke:#f57c00,color:#000000
+    style Sub3 fill:#ffebee,stroke:#d32f2f,color:#000000
 ```
 
 ### # MRL Multi-Granularity Loss Objective

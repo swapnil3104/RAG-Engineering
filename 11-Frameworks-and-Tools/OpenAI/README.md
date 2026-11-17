@@ -36,8 +36,8 @@ flowchart TD
         SSEStream --> Res2["Streamed Text + Inline Footnotes"]
     end
 
-    style Track1 fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style Track2 fill:#ecfdf5,stroke:#059669,stroke-width:2px
+    style Track1 fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style Track2 fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
 ```
 
 ### Strategic Decision Framework:
@@ -106,8 +106,8 @@ flowchart LR
     
     Sampler --> OutputToken["Next Token: 'true'"]
 
-    style CFG_Check fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style Sampler fill:#ecfdf5,stroke:#059669
+    style CFG_Check fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style Sampler fill:#ecfdf5,stroke:#059669,color:#000000
 ```
 
 ### Pydantic v2 Integration for Grounded Citations

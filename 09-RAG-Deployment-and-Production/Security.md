@@ -42,9 +42,9 @@ flowchart TD
 
     Synthesis -->|"Exfiltrates Data via Markdown Image"| LeakedData([Attacker Webhook: http://evil.com/leak?data=...])
 
-    style AttackerSurface fill:#fee2e2,stroke:#ef4444
-    style RAGPipeline fill:#f8fafc,stroke:#64748b
-    style LeakedData fill:#fef2f2,stroke:#b91c1c,stroke-width:2px
+    style AttackerSurface fill:#fee2e2,stroke:#ef4444,color:#000000
+    style RAGPipeline fill:#f8fafc,stroke:#64748b,color:#000000
+    style LeakedData fill:#fef2f2,stroke:#b91c1c,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -120,7 +120,7 @@ sequenceDiagram
         GuardIn->>Retriever: Query Vector Database
         Retriever-->>Sanitizer: Raw Retrieved Chunks
         Note over Sanitizer: XML Tag Wrapping & Regex Stripping (Removes exfiltration URLs)
-        Sanitizer->>LLM: Dispatch: <system> + <documents> + <user_query>
+        Sanitizer->>LLM: Dispatch: &lt;system&gt; + &lt;documents&gt; + &lt;user_query&gt;
         LLM-->>GuardOut: Raw Generated Response Tokens
         Note over GuardOut: Validate Citations & Strip Unauthorized Markdown Images
         GuardOut-->>User: 200 OK (Sanitized Verified Response)
@@ -431,10 +431,10 @@ flowchart LR
     D --> E["Outbound Filter<br/>• Redact image links<br/>• Hallucination check"]
     E --> F["Safe User Response<br/>• Verified Citations<br/>• Full Audit Log"]
 
-    style A fill:#fee2e2,stroke:#ef4444
-    style B fill:#eff6ff,stroke:#3b82f6
-    style C fill:#fef3c7,stroke:#f59e0b
-    style D fill:#fce7f3,stroke:#ec4899
-    style E fill:#dcfce7,stroke:#10b981,stroke-width:2px
-    style F fill:#ede9fe,stroke:#8b5cf6
+    style A fill:#fee2e2,stroke:#ef4444,color:#000000
+    style B fill:#eff6ff,stroke:#3b82f6,color:#000000
+    style C fill:#fef3c7,stroke:#f59e0b,color:#000000
+    style D fill:#fce7f3,stroke:#ec4899,color:#000000
+    style E fill:#dcfce7,stroke:#10b981,stroke-width:2px,color:#000000
+    style F fill:#ede9fe,stroke:#8b5cf6,color:#000000
 ```

@@ -55,9 +55,9 @@ flowchart TB
         Guardrail --> ClientOutput["Grounded Response + Exact Citations"]
     end
 
-    style Tier1 fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
-    style Tier2 fill:#fff8e1,stroke:#f57f17,stroke-width:2px
-    style Tier3 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style Tier1 fill:#e3f2fd,stroke:#1565c0,stroke-width:2px,color:#000000
+    style Tier2 fill:#fff8e1,stroke:#f57f17,stroke-width:2px,color:#000000
+    style Tier3 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -141,9 +141,9 @@ flowchart LR
     RRF --> CE[Cross-Encoder Reranker<br/>Full Attention Matrix]
     CE --> TOP[Top 5 Precision Chunks]
 
-    style HYB fill:#e1f5fe,stroke:#0288d1
-    style CE fill:#fff3e0,stroke:#f57c00
-    style TOP fill:#e8f5e9,stroke:#388e3c
+    style HYB fill:#e1f5fe,stroke:#0288d1,color:#000000
+    style CE fill:#fff3e0,stroke:#f57c00,color:#000000
+    style TOP fill:#e8f5e9,stroke:#388e3c,color:#000000
 ```
 
 ### Stage 1: Hybrid Retrieval & Rank Fusion
@@ -176,7 +176,7 @@ flowchart TD
         P4["Rank 4 Chunk (Moderate Relevance) -> Middle"]
         P2["Rank 2 Chunk (Second Highest) -> Bottom of Prompt Context"]
     end
-    style Context_Assembly fill:#ede7f6,stroke:#512da8
+    style Context_Assembly fill:#ede7f6,stroke:#512da8,color:#000000
 ```
 
 ### 2. Guardrails & Citation Verification

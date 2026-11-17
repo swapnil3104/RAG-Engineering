@@ -49,8 +49,8 @@ flowchart TD
     
     DynamicCutoff --> FinalContext([Final Curated Context: Top 3-5 Chunks])
 
-    style ParallelFanOut fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
-    style Stage2Rerank fill:#ede7f6,stroke:#512da8,stroke-width:1px
+    style ParallelFanOut fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
+    style Stage2Rerank fill:#ede7f6,stroke:#512da8,stroke-width:1px,color:#000000
 ```
 
 ---

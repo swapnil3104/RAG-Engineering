@@ -40,14 +40,14 @@ flowchart TD
     
     M7 --> M8["8. Source Attribution & Citation Synthesis<br/>(Provenance Mapping, Interactive Footnote Hydration, Verifiability Auditing)"]
 
-    style M1 fill:#ffebee,stroke:#c62828,stroke-width:2px
-    style M2 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    style M3 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
-    style M4 fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
-    style M5 fill:#fff3e0,stroke:#e65100,stroke-width:2px
-    style M6 fill:#e0f7fa,stroke:#00838f,stroke-width:2px
-    style M7 fill:#ede7f6,stroke:#512da8,stroke-width:2px
-    style M8 fill:#f1f8e9,stroke:#558b2f,stroke-width:2px
+    style M1 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#000000
+    style M2 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px,color:#000000
+    style M3 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000000
+    style M4 fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#000000
+    style M5 fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000000
+    style M6 fill:#e0f7fa,stroke:#00838f,stroke-width:2px,color:#000000
+    style M7 fill:#ede7f6,stroke:#512da8,stroke-width:2px,color:#000000
+    style M8 fill:#f1f8e9,stroke:#558b2f,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -112,8 +112,8 @@ flowchart TD
         CitationHydrator --> Client
     end
 
-    style IngestionPlane fill:#fcfcfc,stroke:#b0bec5,stroke-width:1px
-    style QueryPlane fill:#f0f4f8,stroke:#1565c0,stroke-width:2px
+    style IngestionPlane fill:#fcfcfc,stroke:#b0bec5,stroke-width:1px,color:#000000
+    style QueryPlane fill:#f0f4f8,stroke:#1565c0,stroke-width:2px,color:#000000
 ```
 
 ---

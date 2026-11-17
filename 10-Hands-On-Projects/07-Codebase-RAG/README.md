@@ -51,9 +51,9 @@ flowchart TD
 
     ASTParsing --> VectorTier --> Inference
 
-    style ASTParsing fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px
-    style VectorTier fill:#fefce8,stroke:#ca8a04,stroke-width:1.5px
-    style Inference fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px
+    style ASTParsing fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px,color:#000000
+    style VectorTier fill:#fefce8,stroke:#ca8a04,stroke-width:1.5px,color:#000000
+    style Inference fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px,color:#000000
 ```
 
 ---
@@ -507,8 +507,8 @@ flowchart LR
     VectorStore --> Search["Developer Architectural Query"]
     Search --> GroundedAnswer["LLM Answer with [file.py#L40-L65] Citations"]
 
-    style SourceCode fill:#fee2e2,stroke:#ef4444
-    style ASTParser fill:#fef3c7,stroke:#d97706
-    style VectorStore fill:#eff6ff,stroke:#2563eb
-    style GroundedAnswer fill:#dcfce7,stroke:#16a34a
+    style SourceCode fill:#fee2e2,stroke:#ef4444,color:#000000
+    style ASTParser fill:#fef3c7,stroke:#d97706,color:#000000
+    style VectorStore fill:#eff6ff,stroke:#2563eb,color:#000000
+    style GroundedAnswer fill:#dcfce7,stroke:#16a34a,color:#000000
 ```

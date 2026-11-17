@@ -47,11 +47,11 @@ flowchart TD
     DAG_Pipelines <--> SovereignOpenSource
     AppOrchestration <--> ManagedCloud
 
-    style AppOrchestration fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style DataCentric fill:#ecfdf5,stroke:#059669,stroke-width:2px
-    style DAG_Pipelines fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style SovereignOpenSource fill:#fdf4ff,stroke:#a21caf,stroke-width:2px
-    style ManagedCloud fill:#f8fafc,stroke:#475569,stroke-width:2px
+    style AppOrchestration fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style DataCentric fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
+    style DAG_Pipelines fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style SovereignOpenSource fill:#fdf4ff,stroke:#a21caf,stroke-width:2px,color:#000000
+    style ManagedCloud fill:#f8fafc,stroke:#475569,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -101,13 +101,13 @@ flowchart TD
     
     PipelineCheck -->|"Fast, Linear Streaming & Broad Tool Composition"| LCELPath["🦜 LangChain (LCEL)<br/>• RunnableParallel & Passthrough<br/>• Resilient Fallback Providers<br/>• Low-Latency SSE Streaming"]
 
-    style PrivacyCheck fill:#fee2e2,stroke:#dc2626,stroke-width:2px
-    style LocalStack fill:#fdf4ff,stroke:#a21caf,stroke-width:2px
-    style OpenAITurnkey fill:#f8fafc,stroke:#475569,stroke-width:2px
-    style LlamaPath fill:#ecfdf5,stroke:#059669,stroke-width:2px
-    style HaystackPath fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style LangGraphPath fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style LCELPath fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
+    style PrivacyCheck fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#000000
+    style LocalStack fill:#fdf4ff,stroke:#a21caf,stroke-width:2px,color:#000000
+    style OpenAITurnkey fill:#f8fafc,stroke:#475569,stroke-width:2px,color:#000000
+    style LlamaPath fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
+    style HaystackPath fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style LangGraphPath fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style LCELPath fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -142,10 +142,10 @@ flowchart TD
     LG_Runtime --> OllamaLocal
     OllamaLocal -.->|"If VRAM Overload / Timeout"| CloudBackup
 
-    style Layer1 fill:#ecfdf5,stroke:#059669,stroke-width:2px
-    style Layer2 fill:#fdf4ff,stroke:#a21caf,stroke-width:2px
-    style Layer3 fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style Layer4 fill:#fef3c7,stroke:#d97706,stroke-width:2px
+    style Layer1 fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
+    style Layer2 fill:#fdf4ff,stroke:#a21caf,stroke-width:2px,color:#000000
+    style Layer3 fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style Layer4 fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
 ```
 
 ### Why this hybrid topology wins:

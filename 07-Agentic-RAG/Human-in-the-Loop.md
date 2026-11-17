@@ -51,11 +51,11 @@ flowchart TD
     PatchState --> FinalGrounded
     AbortAction --> FinalGrounded
 
-    style RiskGate fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style AutoRun fill:#dcfce7,stroke:#16a34a,stroke-width:1px
-    style PauseGraph fill:#fee2e2,stroke:#dc2626,stroke-width:2px
-    style HumanUI fill:#ede9fe,stroke:#7c3aed,stroke-width:2px
-    style FinalGrounded fill:#f0fdf4,stroke:#15803d,stroke-width:2px
+    style RiskGate fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style AutoRun fill:#dcfce7,stroke:#16a34a,stroke-width:1px,color:#000000
+    style PauseGraph fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#000000
+    style HumanUI fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#000000
+    style FinalGrounded fill:#f0fdf4,stroke:#15803d,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -118,9 +118,9 @@ graph LR
         A3["• Production DB updates<br/>• External wire transfers<br/>• IAM role escalations<br/>• Legal contract signing"]
     end
 
-    style T1 fill:#dcfce7,stroke:#16a34a,stroke-width:1px
-    style T2 fill:#fef3c7,stroke:#d97706,stroke-width:1px
-    style T3 fill:#fee2e2,stroke:#dc2626,stroke-width:2px
+    style T1 fill:#dcfce7,stroke:#16a34a,stroke-width:1px,color:#000000
+    style T2 fill:#fef3c7,stroke:#d97706,stroke-width:1px,color:#000000
+    style T3 fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#000000
 ```
 
 ### Autonomy Tier Governance Matrix
@@ -545,8 +545,8 @@ flowchart TD
     Decision -->|Modify| PatchExec[Resume Execution with Modified Payload]
     Decision -->|Reject| AbortExec[Inject Rejection Reason & Replan]
 
-    style AssessRisk fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style ExecAuto fill:#dcfce7,stroke:#16a34a,stroke-width:1px
-    style GatePause fill:#fee2e2,stroke:#dc2626,stroke-width:2px
-    style ResumeExec fill:#f0fdf4,stroke:#15803d,stroke-width:2px
+    style AssessRisk fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style ExecAuto fill:#dcfce7,stroke:#16a34a,stroke-width:1px,color:#000000
+    style GatePause fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#000000
+    style ResumeExec fill:#f0fdf4,stroke:#15803d,stroke-width:2px,color:#000000
 ```

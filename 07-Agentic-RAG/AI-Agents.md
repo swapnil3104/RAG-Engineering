@@ -43,10 +43,10 @@ flowchart TD
     SelfCritic -->|"Yes: Evidence Grounded"| Synthesizer[Grounded Response Synthesis]
     Synthesizer --> UserOut([Verified Output with Citations])
 
-    style AgentBrain fill:#f8fafc,stroke:#3b82f6,stroke-width:2px
-    style Deliberator fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style SelfCritic fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style Synthesizer fill:#dcfce7,stroke:#15803d,stroke-width:2px
+    style AgentBrain fill:#f8fafc,stroke:#3b82f6,stroke-width:2px,color:#000000
+    style Deliberator fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style SelfCritic fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style Synthesizer fill:#dcfce7,stroke:#15803d,stroke-width:2px,color:#000000
 ```
 
 ### The Three Pillars of Agentic Agency
@@ -185,10 +185,10 @@ flowchart TD
     ReplanCheck -->|"No: All steps satisfied"| Synthesizer["Final Answer Synthesizer"]
     Synthesizer --> UserOut([Comprehensive Report])
 
-    style PlanExec fill:#f8fafc,stroke:#64748b,stroke-width:1px
-    style Planner fill:#ede9fe,stroke:#7c3aed,stroke-width:2px
-    style Aggregator fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    style Synthesizer fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style PlanExec fill:#f8fafc,stroke:#64748b,stroke-width:1px,color:#000000
+    style Planner fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#000000
+    style Aggregator fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
+    style Synthesizer fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
 ```
 
 ### When to Choose Plan-and-Solve over ReAct:
@@ -225,9 +225,9 @@ graph TD
     SmallLLM --> OutputGate([Output])
     Critic --> OutputGate
 
-    style Sys1 fill:#ecfdf5,stroke:#059669,stroke-width:2px
-    style Sys2 fill:#fef2f2,stroke:#dc2626,stroke-width:2px
-    style Router fill:#fffbeb,stroke:#d97706,stroke-width:2px
+    style Sys1 fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
+    style Sys2 fill:#fef2f2,stroke:#dc2626,stroke-width:2px,color:#000000
+    style Router fill:#fffbeb,stroke:#d97706,stroke-width:2px,color:#000000
 ```
 
 ### System 1 vs. System 2 Architectural Mapping
@@ -271,11 +271,11 @@ graph TD
     BranchA2 --> Merge([Synthesized Tax Liability])
     BranchC2 --> Merge
 
-    style Root fill:#f8fafc,stroke:#475569
-    style B2_Eval fill:#fee2e2,stroke:#ef4444
-    style B1_Eval fill:#dcfce7,stroke:#22c55e
-    style B3_Eval fill:#dcfce7,stroke:#22c55e
-    style Pruned fill:#f1f5f9,stroke:#94a3b8
+    style Root fill:#f8fafc,stroke:#475569,color:#000000
+    style B2_Eval fill:#fee2e2,stroke:#ef4444,color:#000000
+    style B1_Eval fill:#dcfce7,stroke:#22c55e,color:#000000
+    style B3_Eval fill:#dcfce7,stroke:#22c55e,color:#000000
+    style Pruned fill:#f1f5f9,stroke:#94a3b8,color:#000000
 ```
 
 ---
@@ -646,8 +646,8 @@ flowchart TD
     Q2 -->|Yes: Code / Rigorous Validation| Refl[Reflexion / Self-Evolving Agent<br/>Iterative trials with verbal critique buffer]
     Q2 -->|No: Standard Data Systems| ReAct[Standard ReAct Agent<br/>Bounded depth with loop detection]
 
-    style PasP fill:#dcfce7,stroke:#16a34a,stroke-width:2px
-    style PasSeq fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    style Refl fill:#fef3c7,stroke:#d97706,stroke-width:1px
-    style ReAct fill:#f3e8ff,stroke:#7c3aed,stroke-width:2px
+    style PasP fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
+    style PasSeq fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
+    style Refl fill:#fef3c7,stroke:#d97706,stroke-width:1px,color:#000000
+    style ReAct fill:#f3e8ff,stroke:#7c3aed,stroke-width:2px,color:#000000
 ```

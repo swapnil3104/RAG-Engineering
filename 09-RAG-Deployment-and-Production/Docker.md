@@ -29,7 +29,7 @@ flowchart TD
         Compilers --> PyTorchFull["Full PyTorch + CUDA Toolkits (5.8 GB)"]
         PyTorchFull --> DevHeaders["Header files & pip cache (2.5 GB)"]
         DevHeaders --> AppMonolith["App Code & Local Model Weights (2.7 GB)"]
-        style NaiveBuild fill:#fee2e2,stroke:#ef4444
+        style NaiveBuild fill:#fee2e2,stroke:#ef4444,color:#000000
     end
 
     subgraph MultiStageBuild ["Production Multi-Stage Build (420 MB Lean Runner)"]
@@ -43,7 +43,7 @@ flowchart TD
             CopyWheels --> NoPipCache["pip install --no-cache-dir /wheels/*"]
             NoPipCache --> LeanApp["COPY App Code (Chowned to appuser)"]
         end
-        style Stage2 fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+        style Stage2 fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
     end
 ```
 
@@ -120,8 +120,8 @@ flowchart LR
     end
 
     BuilderStage -.->|"Copies Only Compiled Binaries"| FinalStage
-    style BuilderStage fill:#fee2e2,stroke:#ef4444
-    style FinalStage fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style BuilderStage fill:#fee2e2,stroke:#ef4444,color:#000000
+    style FinalStage fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -461,9 +461,9 @@ flowchart LR
     C --> D["Inject App Code<br/>• Copy src/<br/>• Health checks"]
     D --> E["Deploy Container<br/>• Sub-500MB size<br/>• Fast K8s cold start"]
 
-    style A fill:#fee2e2,stroke:#ef4444
-    style B fill:#fef3c7,stroke:#f59e0b
-    style C fill:#eff6ff,stroke:#3b82f6
-    style D fill:#fce7f3,stroke:#ec4899
-    style E fill:#dcfce7,stroke:#10b981,stroke-width:2px
+    style A fill:#fee2e2,stroke:#ef4444,color:#000000
+    style B fill:#fef3c7,stroke:#f59e0b,color:#000000
+    style C fill:#eff6ff,stroke:#3b82f6,color:#000000
+    style D fill:#fce7f3,stroke:#ec4899,color:#000000
+    style E fill:#dcfce7,stroke:#10b981,stroke-width:2px,color:#000000
 ```

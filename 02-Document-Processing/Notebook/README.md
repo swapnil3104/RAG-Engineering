@@ -216,7 +216,7 @@ flowchart TD
     E --> F
     F --> G["Proceed to Module 03: Embeddings & Vector DBs"]
 
-    style A fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
-    style F fill:#fff8e1,stroke:#f57f17,stroke-width:2px
-    style G fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style A fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#000000
+    style F fill:#fff8e1,stroke:#f57f17,stroke-width:2px,color:#000000
+    style G fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000000
 ```

@@ -47,9 +47,9 @@ flowchart TD
     OutA & OutB & InterleavedOut --> Telemetry["Telemetry Collector:<br/>• Clicks on Citations<br/>• Copy-to-Clipboard<br/>• Dwell Time<br/>• Thumbs Up/Down"]
     Telemetry --> StatsEngine["Statistical Significance Engine (Z-test / p-value)"]
 
-    style SplitAB fill:#f8fafc,stroke:#94a3b8
-    style Interleaving fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style StatsEngine fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style SplitAB fill:#f8fafc,stroke:#94a3b8,color:#000000
+    style Interleaving fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style StatsEngine fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -143,9 +143,9 @@ flowchart TD
 
     ExplicitSignals & ImplicitSignals --> ScoringEngine["Composite User Satisfaction Score (CSAT)"]
 
-    style ExplicitSignals fill:#fef3c7,stroke:#d97706
-    style ImplicitSignals fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style ScoringEngine fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style ExplicitSignals fill:#fef3c7,stroke:#d97706,color:#000000
+    style ImplicitSignals fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style ScoringEngine fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
 ```
 
 ### 📋 Telemetry Signals & Business Meaning
@@ -182,9 +182,9 @@ flowchart LR
     DataLake --> StatWorker["Automated Statistical Analysis Engine"]
     StatWorker --> Dashboard["Grafana / Experiment Dashboard:<br/>Z-Score, p-value, Guardrails"]
 
-    style ExperimentationPlatform fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style DataLake fill:#f8fafc,stroke:#64748b
-    style Dashboard fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style ExperimentationPlatform fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style DataLake fill:#f8fafc,stroke:#64748b,color:#000000
+    style Dashboard fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -526,9 +526,9 @@ flowchart TD
     EvalGate -->|"Yes"| FullRollout([Deploy 100% to Production 🎉])
     EvalGate -->|"No / Degraded"| Rollback([Roll Back & Refine Offline 🛡️])
 
-    style TargetCheck fill:#f1f5f9,stroke:#64748b
-    style Interleave fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
-    style SplitAB fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
-    style FullRollout fill:#dcfce7,stroke:#16a34a,stroke-width:2px
-    style Rollback fill:#fee2e2,stroke:#ef4444
+    style TargetCheck fill:#f1f5f9,stroke:#64748b,color:#000000
+    style Interleave fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#000000
+    style SplitAB fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#000000
+    style FullRollout fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
+    style Rollback fill:#fee2e2,stroke:#ef4444,color:#000000
 ```

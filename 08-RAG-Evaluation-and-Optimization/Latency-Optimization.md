@@ -44,8 +44,8 @@ flowchart TD
         A_FastRerank --> A_Stream["Stream SSE TTFT (< 450ms)"]
     end
 
-    style NaiveSync fill:#fee2e2,stroke:#ef4444
-    style AsyncOptimized fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style NaiveSync fill:#fee2e2,stroke:#ef4444,color:#000000
+    style AsyncOptimized fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -137,9 +137,9 @@ flowchart TD
         SSE --> StreamRest([Continuous Autoregressive Stream])
     end
 
-    style AsyncPipeline fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style CachedResponse fill:#dcfce7,stroke:#16a34a,stroke-width:2px
-    style Concurrency fill:#f8fafc,stroke:#64748b
+    style AsyncPipeline fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style CachedResponse fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
+    style Concurrency fill:#f8fafc,stroke:#64748b,color:#000000
 ```
 
 ---
@@ -441,11 +441,11 @@ flowchart TD
     Step4 --> Step5["Step 5: Server-Sent Events (SSE)<br/>(Stream tokens with TTFT < 450ms)"]
     Step5 --> Goal([Production Sub-500ms TTFT Achieved 🚀])
 
-    style Start fill:#fee2e2,stroke:#ef4444
-    style Step1 fill:#fef3c7,stroke:#d97706
-    style Step2 fill:#e0f2fe,stroke:#0284c7
-    style Step3 fill:#e0f2fe,stroke:#0284c7
-    style Step4 fill:#dcfce7,stroke:#16a34a
-    style Step5 fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style Start fill:#fee2e2,stroke:#ef4444,color:#000000
+    style Step1 fill:#fef3c7,stroke:#d97706,color:#000000
+    style Step2 fill:#e0f2fe,stroke:#0284c7,color:#000000
+    style Step3 fill:#e0f2fe,stroke:#0284c7,color:#000000
+    style Step4 fill:#dcfce7,stroke:#16a34a,color:#000000
+    style Step5 fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
     style Goal fill:#16a34a,color:#ffffff,stroke-width:2px
 ```

@@ -43,9 +43,9 @@ flowchart TD
 
     ConceptualPlane --> ArchitecturePlane --> StoragePlane
 
-    style ConceptualPlane fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style ArchitecturePlane fill:#ecfdf5,stroke:#059669,stroke-width:2px
-    style StoragePlane fill:#fef3c7,stroke:#d97706,stroke-width:2px
+    style ConceptualPlane fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style ArchitecturePlane fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
+    style StoragePlane fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -249,9 +249,9 @@ flowchart TD
         BEST_CHUNK -->|Format Output| OUT["Deep-Link URL:<br/>https://video.corp.com/watch?v=123&t=142s"]
     end
 
-    style Ingestion fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style Indexing fill:#ecfdf5,stroke:#059669,stroke-width:2px
-    style QueryExecution fill:#fef3c7,stroke:#d97706,stroke-width:2px
+    style Ingestion fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style Indexing fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
+    style QueryExecution fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
 ```
 
 **Key Engineering Tactics:**
@@ -422,8 +422,8 @@ flowchart TD
 
     W1 --> W2 --> W3 --> W4
 
-    style W1 fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style W2 fill:#ecfdf5,stroke:#059669,stroke-width:2px
-    style W3 fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style W4 fill:#fdf4ff,stroke:#a21caf,stroke-width:2px
+    style W1 fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style W2 fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
+    style W3 fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style W4 fill:#fdf4ff,stroke:#a21caf,stroke-width:2px,color:#000000
 ```

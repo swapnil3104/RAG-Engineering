@@ -56,10 +56,10 @@ flowchart TD
 
     DocDecomp --> VisualEnrichment --> UnifiedIndexing --> GroundedSynthesis
 
-    style DocDecomp fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px
-    style VisualEnrichment fill:#fefce8,stroke:#ca8a04,stroke-width:1.5px
-    style UnifiedIndexing fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px
-    style GroundedSynthesis fill:#faf5ff,stroke:#9333ea,stroke-width:1.5px
+    style DocDecomp fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px,color:#000000
+    style VisualEnrichment fill:#fefce8,stroke:#ca8a04,stroke-width:1.5px,color:#000000
+    style UnifiedIndexing fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px,color:#000000
+    style GroundedSynthesis fill:#faf5ff,stroke:#9333ea,stroke-width:1.5px,color:#000000
 ```
 
 ---
@@ -487,9 +487,9 @@ flowchart LR
     Query --> VLMReasoning["GPT-4o Vision Prompted with (Query + Image PNG)"]
     VLMReasoning --> GroundedAnswer["Factual Numerical Answer with Visual Highlight"]
 
-    style PDF fill:#fee2e2,stroke:#ef4444
-    style Render fill:#fef3c7,stroke:#d97706
-    style ChromaDB fill:#eff6ff,stroke:#2563eb
-    style VLMReasoning fill:#dcfce7,stroke:#16a34a
-    style GroundedAnswer fill:#faf5ff,stroke:#9333ea
+    style PDF fill:#fee2e2,stroke:#ef4444,color:#000000
+    style Render fill:#fef3c7,stroke:#d97706,color:#000000
+    style ChromaDB fill:#eff6ff,stroke:#2563eb,color:#000000
+    style VLMReasoning fill:#dcfce7,stroke:#16a34a,color:#000000
+    style GroundedAnswer fill:#faf5ff,stroke:#9333ea,color:#000000
 ```

@@ -42,9 +42,9 @@ flowchart TD
         TopK --> LLM([LLM Generator])
     end
 
-    style QueryExecution fill:#f8fafc,stroke:#94a3b8
-    style MetricsEngine fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style LLMContext fill:#f0fdf4,stroke:#16a34a
+    style QueryExecution fill:#f8fafc,stroke:#94a3b8,color:#000000
+    style MetricsEngine fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style LLMContext fill:#f0fdf4,stroke:#16a34a,color:#000000
 ```
 
 ---
@@ -158,10 +158,10 @@ flowchart LR
     end
 
     R1 --> R2 --> R3 --> R4 --> R5 --> R10
-    style R1 fill:#dcfce7,stroke:#16a34a,stroke-width:2px
-    style R2 fill:#f0fdf4,stroke:#22c55e
-    style R5 fill:#fef3c7,stroke:#d97706
-    style R10 fill:#fee2e2,stroke:#ef4444,stroke-width:2px
+    style R1 fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
+    style R2 fill:#f0fdf4,stroke:#22c55e,color:#000000
+    style R5 fill:#fef3c7,stroke:#d97706,color:#000000
+    style R10 fill:#fee2e2,stroke:#ef4444,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -482,9 +482,9 @@ flowchart TD
     Q2 -->|"Binary (Relevant vs. Irrelevant)"| MAP["Select MAP@K<br/>(Mean Average Precision)"]
     Q2 -->|"Graded (0=None, 1=Weak, 2=Good, 3=Gold)"| NDCG["Select NDCG@K<br/>(Normalized Discounted Cumulative Gain)"]
 
-    style Start fill:#f1f5f9,stroke:#64748b
-    style MRR fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
-    style Hit fill:#fef3c7,stroke:#d97706
-    style MAP fill:#f3e8ff,stroke:#9333ea
-    style NDCG fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style Start fill:#f1f5f9,stroke:#64748b,color:#000000
+    style MRR fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#000000
+    style Hit fill:#fef3c7,stroke:#d97706,color:#000000
+    style MAP fill:#f3e8ff,stroke:#9333ea,color:#000000
+    style NDCG fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
 ```

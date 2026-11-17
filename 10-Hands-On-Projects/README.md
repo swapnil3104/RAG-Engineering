@@ -54,10 +54,10 @@ flowchart TD
         P11 --> P12["12. Production-Ready RAG (FastAPI + Redis + CI)"]
     end
 
-    style Tier1 fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px
-    style Tier2 fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px
-    style Tier3 fill:#fefce8,stroke:#ca8a04,stroke-width:1.5px
-    style Tier4 fill:#faf5ff,stroke:#9333ea,stroke-width:1.5px
+    style Tier1 fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px,color:#000000
+    style Tier2 fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px,color:#000000
+    style Tier3 fill:#fefce8,stroke:#ca8a04,stroke-width:1.5px,color:#000000
+    style Tier4 fill:#faf5ff,stroke:#9333ea,stroke-width:1.5px,color:#000000
 ```
 
 ---

@@ -47,9 +47,9 @@ flowchart TD
         AppPods -.-> Guardrails["Llama-Guard / XML Delimiters<br/>(Zero-Trust Security)"]
     end
 
-    style ClientEdge fill:#f8fafc,stroke:#64748b
-    style ServiceMesh fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style Governance fill:#fef3c7,stroke:#f59e0b
+    style ClientEdge fill:#f8fafc,stroke:#64748b,color:#000000
+    style ServiceMesh fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style Governance fill:#fef3c7,stroke:#f59e0b,color:#000000
 ```
 
 ---
@@ -499,10 +499,10 @@ flowchart LR
     D --> E["5. Resilient LLM Pool<br/>• Primary API / Local vLLM<br/>• SSE streaming"]
     E --> F["6. Observability Fabric<br/>• OpenTelemetry traces<br/>• Prometheus metrics"]
 
-    style A fill:#f8fafc,stroke:#64748b
-    style B fill:#eff6ff,stroke:#3b82f6
-    style C fill:#fef3c7,stroke:#f59e0b
-    style D fill:#fee2e2,stroke:#ef4444
-    style E fill:#dcfce7,stroke:#10b981,stroke-width:2px
-    style F fill:#ede9fe,stroke:#8b5cf6
+    style A fill:#f8fafc,stroke:#64748b,color:#000000
+    style B fill:#eff6ff,stroke:#3b82f6,color:#000000
+    style C fill:#fef3c7,stroke:#f59e0b,color:#000000
+    style D fill:#fee2e2,stroke:#ef4444,color:#000000
+    style E fill:#dcfce7,stroke:#10b981,stroke-width:2px,color:#000000
+    style F fill:#ede9fe,stroke:#8b5cf6,color:#000000
 ```

@@ -107,9 +107,9 @@ flowchart LR
         Generator --> JSONPayload["JSON Schema:<br/>• type: object<br/>• properties: {query, category, top_k}<br/>• required: ['query', 'category']<br/>• additionalProperties: false"]
     end
 
-    style PydanticModel fill:#eff6ff,stroke:#2563eb,stroke-width:1px
-    style SchemaEngine fill:#f8fafc,stroke:#64748b,stroke-width:1px
-    style LLMManifest fill:#f0fdf4,stroke:#16a34a,stroke-width:2px
+    style PydanticModel fill:#eff6ff,stroke:#2563eb,stroke-width:1px,color:#000000
+    style SchemaEngine fill:#f8fafc,stroke:#64748b,stroke-width:1px,color:#000000
+    style LLMManifest fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#000000
 ```
 
 ### High-Performance Pydantic Schema Pattern
@@ -169,9 +169,9 @@ flowchart TD
     VDB --> ANN["Single-Stage Filtered HNSW Vector Scan"]
     ANN --> Chunks["Targeted Precision Chunks"]
 
-    style AgentLLM fill:#ede9fe,stroke:#7c3aed,stroke-width:2px
-    style Payload fill:#eff6ff,stroke:#0284c7,stroke-width:1px
-    style VDB fill:#f0fdf4,stroke:#16a34a,stroke-width:2px
+    style AgentLLM fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#000000
+    style Payload fill:#eff6ff,stroke:#0284c7,stroke-width:1px,color:#000000
+    style VDB fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#000000
 ```
 
 ### Code: The Self-Querying Vector Tool
@@ -220,9 +220,9 @@ flowchart TD
     TableResult --> Agent
     Block --> Fallback["Error message back to agent scratchpad"]
 
-    style GuardedSQL fill:#fffbeb,stroke:#d97706,stroke-width:2px
-    style Block fill:#fee2e2,stroke:#ef4444,stroke-width:2px
-    style ReadOnlyDB fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style GuardedSQL fill:#fffbeb,stroke:#d97706,stroke-width:2px,color:#000000
+    style Block fill:#fee2e2,stroke:#ef4444,stroke-width:2px,color:#000000
+    style ReadOnlyDB fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
 ```
 
 ### Safety Rules for SQL Tools:
@@ -583,8 +583,8 @@ flowchart TD
     
     Q1 -->|Live External / Operations| APITool[REST API Gateway Tool<br/>• OAuth2 token injection<br/>• Rate limiters & circuit breakers]
 
-    style VecTool fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
-    style SQLTool fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style CodeTool fill:#fee2e2,stroke:#dc2626,stroke-width:2px
-    style APITool fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style VecTool fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#000000
+    style SQLTool fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style CodeTool fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#000000
+    style APITool fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
 ```

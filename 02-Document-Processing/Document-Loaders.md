@@ -594,8 +594,8 @@ flowchart TD
     H --> I["Yield Canonical Document Object"]
     I --> J["Downstream: Chunking & Text Splitting"]
 
-    style A fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
-    style B fill:#ffebee,stroke:#c62828,stroke-width:2px
-    style E fill:#fff8e1,stroke:#f57f17,stroke-width:2px
-    style I fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style A fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#000000
+    style B fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#000000
+    style E fill:#fff8e1,stroke:#f57f17,stroke-width:2px,color:#000000
+    style I fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000000
 ```

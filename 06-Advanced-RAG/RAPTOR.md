@@ -45,8 +45,8 @@ flowchart TD
         Query([Thematic User Query]) --> MultiSearch["Unified Multi-Scale Search<br/>(Accesses Level 0, 1, 2, 3 concurrently!)"]
     end
 
-    style FlatChunkingTrap fill:#ffebee,stroke:#c62828,stroke-width:1px
-    style RAPTORHierarchy fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style FlatChunkingTrap fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
+    style RAPTORHierarchy fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 Introduced by Sarthi et al. (2024) at Stanford University, **RAPTOR** (*Recursive Abstractive Processing for Tree-Organized Retrieval*) resolves this crisis by building a **recursive, multi-layer semantic abstraction tree** over documents, allowing retrieval across both micro details and macro themes simultaneously.
@@ -66,9 +66,9 @@ flowchart LR
     Overlap --> Summarize["LLM Cluster Summarizer"]
     Summarize --> ParentNodes["Parent Summary Nodes<br/>(Level l + 1)"]
 
-    style Embed fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style GMM fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
-    style Summarize fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style Embed fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style GMM fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#000000
+    style Summarize fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 ### 📐 1. UMAP Manifold Projection
@@ -172,8 +172,8 @@ flowchart TD
         PoolAll --> CosineAll --> RerankAll --> FinalAssemble
     end
 
-    style TraversePath fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style CollapsePath fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style TraversePath fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style CollapsePath fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 ### Method A: Tree Traversal Search
@@ -469,9 +469,9 @@ flowchart TD
     Req -->|No: Specific Fact Lookup| R2["Standard Vector HNSW<br/>Surfaces Level 0 Leaf Facts"]
     Req -->|Structured Entity Relationships| R3["GraphRAG Knowledge Graph"]
 
-    style R1 fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
-    style R2 fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style R3 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
+    style R1 fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
+    style R2 fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style R3 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#000000
 ```
 
 * **Core Breakthrough:** Recursive bottom-up clustering and summarization creates an abstraction pyramid.

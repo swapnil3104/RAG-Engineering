@@ -57,9 +57,9 @@ flowchart TD
     GT_Ans -.->|Compare| M2
     GT_Docs -.->|Compare| M2
 
-    style GoldenCorpus fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style RAG_Pipeline fill:#ecfdf5,stroke:#059669,stroke-width:2px
-    style MetricsEngine fill:#fef3c7,stroke:#d97706,stroke-width:2px
+    style GoldenCorpus fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style RAG_Pipeline fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
+    style MetricsEngine fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -165,10 +165,10 @@ flowchart LR
     D1 -.->|Entity: Ringo Starr| D2
     D1 & D2 --> Ans
 
-    style MultiHop fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style Hop1 fill:#ecfdf5,stroke:#059669,stroke-width:1px
-    style Hop2 fill:#fef3c7,stroke:#d97706,stroke-width:1px
-    style Synthesis fill:#fdf4ff,stroke:#a21caf,stroke-width:2px
+    style MultiHop fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style Hop1 fill:#ecfdf5,stroke:#059669,stroke-width:1px,color:#000000
+    style Hop2 fill:#fef3c7,stroke:#d97706,stroke-width:1px,color:#000000
+    style Synthesis fill:#fdf4ff,stroke:#a21caf,stroke-width:2px,color:#000000
 ```
 
 ### 4.1 HotpotQA
@@ -477,10 +477,10 @@ flowchart TD
     Goal -->|"Safety, Noise & Hallucination Resistance"| Safety["Run RGB Benchmark & FreshQA"]
     Goal -->|"Software Repositories & Code"| Code["Run SWE-bench & CodeSearchNet"]
 
-    style Start fill:#f8fafc,stroke:#475569,stroke-width:2px
-    style IR fill:#eff6ff,stroke:#1d4ed8,stroke-width:1px
-    style MultiHop fill:#ecfdf5,stroke:#059669,stroke-width:1px
-    style Fin fill:#fef3c7,stroke:#d97706,stroke-width:1px
-    style Safety fill:#fdf4ff,stroke:#a21caf,stroke-width:1px
-    style Code fill:#f1f5f9,stroke:#0f172a,stroke-width:1px
+    style Start fill:#f8fafc,stroke:#475569,stroke-width:2px,color:#000000
+    style IR fill:#eff6ff,stroke:#1d4ed8,stroke-width:1px,color:#000000
+    style MultiHop fill:#ecfdf5,stroke:#059669,stroke-width:1px,color:#000000
+    style Fin fill:#fef3c7,stroke:#d97706,stroke-width:1px,color:#000000
+    style Safety fill:#fdf4ff,stroke:#a21caf,stroke-width:1px,color:#000000
+    style Code fill:#f1f5f9,stroke:#0f172a,stroke-width:1px,color:#000000
 ```

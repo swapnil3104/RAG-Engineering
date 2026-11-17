@@ -47,8 +47,8 @@ flowchart TD
     
     SSEChunk --> Client([Client Browser / Frontend UI])
 
-    style StreamProcessor fill:#e0f7fa,stroke:#00838f,stroke-width:1px
-    style PromptAssembler fill:#fff8e1,stroke:#f57f17,stroke-width:1px
+    style StreamProcessor fill:#e0f7fa,stroke:#00838f,stroke-width:1px,color:#000000
+    style PromptAssembler fill:#fff8e1,stroke:#f57f17,stroke-width:1px,color:#000000
 ```
 
 ---

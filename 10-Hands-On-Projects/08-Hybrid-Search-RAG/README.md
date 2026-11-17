@@ -52,10 +52,10 @@ flowchart TD
 
     QueryIngress --> DualRetrieval --> FusionStage --> NeuralRerank
 
-    style QueryIngress fill:#f8fafc,stroke:#64748b,stroke-width:1.5px
-    style DualRetrieval fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px
-    style FusionStage fill:#fefce8,stroke:#ca8a04,stroke-width:1.5px
-    style NeuralRerank fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px
+    style QueryIngress fill:#f8fafc,stroke:#64748b,stroke-width:1.5px,color:#000000
+    style DualRetrieval fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px,color:#000000
+    style FusionStage fill:#fefce8,stroke:#ca8a04,stroke-width:1.5px,color:#000000
+    style NeuralRerank fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px,color:#000000
 ```
 
 ---
@@ -507,9 +507,9 @@ flowchart LR
     TopCandidates --> Rerank["Cross-Encoder Neural Reranker"]
     Rerank --> GroundedLLM["Grounded LLM Answer Generation"]
 
-    style Query fill:#e0f2fe,stroke:#0284c7
-    style Fork fill:#f8fafc,stroke:#64748b
-    style RRF fill:#fef3c7,stroke:#d97706
-    style Rerank fill:#fee2e2,stroke:#ef4444
-    style GroundedLLM fill:#dcfce7,stroke:#16a34a
+    style Query fill:#e0f2fe,stroke:#0284c7,color:#000000
+    style Fork fill:#f8fafc,stroke:#64748b,color:#000000
+    style RRF fill:#fef3c7,stroke:#d97706,color:#000000
+    style Rerank fill:#fee2e2,stroke:#ef4444,color:#000000
+    style GroundedLLM fill:#dcfce7,stroke:#16a34a,color:#000000
 ```

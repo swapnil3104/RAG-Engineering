@@ -45,8 +45,8 @@ flowchart TD
 
     CP --> Score([Context Precision Score: 0.833])
 
-    style Evaluation fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style Score fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style Evaluation fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style Score fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -132,8 +132,8 @@ flowchart LR
         L_LLM --> L_Out([Hallucinated / Contaminated Output])
     end
 
-    style HighPrecision fill:#f0fdf4,stroke:#16a34a,stroke-width:2px
-    style LowPrecision fill:#fef2f2,stroke:#ef4444,stroke-width:2px
+    style HighPrecision fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#000000
+    style LowPrecision fill:#fef2f2,stroke:#ef4444,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -409,9 +409,9 @@ flowchart TD
     Step3 -->|"Static K too high (e.g. K=20)"| Fix3["Implement Dynamic Score Thresholding<br/>Discard chunks with score < tau"]
     Step3 -->|"K is tight (K=3-5)"| Fix4["Upgrade Embedding Model<br/>Tune Hybrid Search BM25 Weights"]
 
-    style Start fill:#fee2e2,stroke:#ef4444
-    style Fix1 fill:#dcfce7,stroke:#16a34a
-    style Fix2 fill:#dcfce7,stroke:#16a34a
-    style Fix3 fill:#dcfce7,stroke:#16a34a
-    style Fix4 fill:#dcfce7,stroke:#16a34a
+    style Start fill:#fee2e2,stroke:#ef4444,color:#000000
+    style Fix1 fill:#dcfce7,stroke:#16a34a,color:#000000
+    style Fix2 fill:#dcfce7,stroke:#16a34a,color:#000000
+    style Fix3 fill:#dcfce7,stroke:#16a34a,color:#000000
+    style Fix4 fill:#dcfce7,stroke:#16a34a,color:#000000
 ```

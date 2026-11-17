@@ -50,12 +50,12 @@ flowchart TD
     
     Synthesizer --> FinalReport([Authoritative Executive Comparative Report])
 
-    style ExecutionDAG fill:#f8fafc,stroke:#3b82f6,stroke-width:2px
-    style Planner fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style Node1 fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    style Node2 fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    style Node4 fill:#fef3c7,stroke:#d97706,stroke-width:1px
-    style Synthesizer fill:#dcfce7,stroke:#15803d,stroke-width:2px
+    style ExecutionDAG fill:#f8fafc,stroke:#3b82f6,stroke-width:2px,color:#000000
+    style Planner fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style Node1 fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
+    style Node2 fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
+    style Node4 fill:#fef3c7,stroke:#d97706,stroke-width:1px,color:#000000
+    style Synthesizer fill:#dcfce7,stroke:#15803d,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -128,9 +128,9 @@ flowchart TD
         H_B --> HB2[VPC Peering]
     end
 
-    style S1 fill:#eff6ff,stroke:#3b82f6,stroke-width:1px
-    style S2 fill:#f0fdf4,stroke:#16a34a,stroke-width:1px
-    style S3 fill:#fefce8,stroke:#ca8a04,stroke-width:1px
+    style S1 fill:#eff6ff,stroke:#3b82f6,stroke-width:1px,color:#000000
+    style S2 fill:#f0fdf4,stroke:#16a34a,stroke-width:1px,color:#000000
+    style S3 fill:#fefce8,stroke:#ca8a04,stroke-width:1px,color:#000000
 ```
 
 ### 1. Sequential Chaining (Dependent Multi-Hop)
@@ -164,9 +164,9 @@ graph TD
     Dim2 --> Matrix
     Dim3 --> Matrix
 
-    style RawQuery fill:#f1f5f9,stroke:#64748b,stroke-width:1px
-    style Pipeline fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
-    style Matrix fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style RawQuery fill:#f1f5f9,stroke:#64748b,stroke-width:1px,color:#000000
+    style Pipeline fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#000000
+    style Matrix fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
 ```
 
 ### The 4 Generated Sub-Queries:
@@ -194,9 +194,9 @@ flowchart TD
     Task1B --> Finish[Synthesize Dissolution Report]
     Task2 --> Finish
 
-    style Result1 fill:#fef3c7,stroke:#d97706,stroke-width:1px
-    style Replan fill:#fee2e2,stroke:#dc2626,stroke-width:2px
-    style Finish fill:#dcfce7,stroke:#16a34a,stroke-width:1px
+    style Result1 fill:#fef3c7,stroke:#d97706,stroke-width:1px,color:#000000
+    style Replan fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#000000
+    style Finish fill:#dcfce7,stroke:#16a34a,stroke-width:1px,color:#000000
 ```
 
 ### Principles of Dynamic Replanning:
@@ -540,7 +540,7 @@ flowchart TD
     
     Chk -->|No: Exploratory investigation| ReAct[Dynamic ReAct Loop<br/>Step-by-step discovery with replanning]
 
-    style Scatter fill:#dcfce7,stroke:#16a34a,stroke-width:2px
-    style DAG fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
-    style ReAct fill:#fef3c7,stroke:#d97706,stroke-width:2px
+    style Scatter fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
+    style DAG fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#000000
+    style ReAct fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
 ```

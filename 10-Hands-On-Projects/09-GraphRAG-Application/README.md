@@ -52,9 +52,9 @@ flowchart TD
 
     ExtractionPipeline --> CommunityGraph --> DualQueryPath
 
-    style ExtractionPipeline fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px
-    style CommunityGraph fill:#fefce8,stroke:#ca8a04,stroke-width:1.5px
-    style DualQueryPath fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px
+    style ExtractionPipeline fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px,color:#000000
+    style CommunityGraph fill:#fefce8,stroke:#ca8a04,stroke-width:1.5px,color:#000000
+    style DualQueryPath fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px,color:#000000
 ```
 
 ---
@@ -470,9 +470,9 @@ flowchart LR
     Reports --> GlobalQA["Global Dataset-Wide Answering"]
     Neo4j --> CypherPaths["Multi-Hop Relational Path Traversal"]
 
-    style Text fill:#fee2e2,stroke:#ef4444
-    style Extractor fill:#fef3c7,stroke:#d97706
-    style Neo4j fill:#eff6ff,stroke:#2563eb
-    style GlobalQA fill:#dcfce7,stroke:#16a34a
-    style CypherPaths fill:#faf5ff,stroke:#9333ea
+    style Text fill:#fee2e2,stroke:#ef4444,color:#000000
+    style Extractor fill:#fef3c7,stroke:#d97706,color:#000000
+    style Neo4j fill:#eff6ff,stroke:#2563eb,color:#000000
+    style GlobalQA fill:#dcfce7,stroke:#16a34a,color:#000000
+    style CypherPaths fill:#faf5ff,stroke:#9333ea,color:#000000
 ```

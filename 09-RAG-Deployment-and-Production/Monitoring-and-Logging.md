@@ -43,9 +43,9 @@ flowchart TD
     SpanRoot -.-> MetricsPipeline["Prometheus / Grafana Exporter<br/>• TTFT Histogram<br/>• Token Usage Counter<br/>• Vector Latency Gauge"]
     SpanRoot -.-> LogsPipeline["Log Aggregator (Loki / Elastic)<br/>• Chunk IDs & Document Hashes<br/>• Tenant ID & Anonymized Prompt"]
 
-    style TraceTree fill:#f8fafc,stroke:#64748b
-    style MetricsPipeline fill:#eff6ff,stroke:#3b82f6
-    style LogsPipeline fill:#fef3c7,stroke:#f59e0b
+    style TraceTree fill:#f8fafc,stroke:#64748b,color:#000000
+    style MetricsPipeline fill:#eff6ff,stroke:#3b82f6,color:#000000
+    style LogsPipeline fill:#fef3c7,stroke:#f59e0b,color:#000000
 ```
 
 ---
@@ -503,10 +503,10 @@ flowchart LR
     B --> E["Log Storage<br/>• Loki / ClickHouse<br/>• Chunk IDs & Citations"]
     C & D & E --> F["Unified Grafana Dashboard<br/>• Real-time alerting<br/>• SLA monitoring"]
 
-    style A fill:#f8fafc,stroke:#64748b
-    style B fill:#eff6ff,stroke:#3b82f6
-    style C fill:#fef3c7,stroke:#f59e0b
-    style D fill:#fce7f3,stroke:#ec4899
-    style E fill:#e0e7ff,stroke:#6366f1
-    style F fill:#dcfce7,stroke:#10b981,stroke-width:2px
+    style A fill:#f8fafc,stroke:#64748b,color:#000000
+    style B fill:#eff6ff,stroke:#3b82f6,color:#000000
+    style C fill:#fef3c7,stroke:#f59e0b,color:#000000
+    style D fill:#fce7f3,stroke:#ec4899,color:#000000
+    style E fill:#e0e7ff,stroke:#6366f1,color:#000000
+    style F fill:#dcfce7,stroke:#10b981,stroke-width:2px,color:#000000
 ```

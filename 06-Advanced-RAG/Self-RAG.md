@@ -39,10 +39,10 @@ flowchart TD
     NoRet --> BeamSelector
     BeamSelector --> FinalResponse([Final Verified Answer])
 
-    style Token1 fill:#fffde7,stroke:#fbc02d,stroke-width:1px
-    style FilterRel fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style FilterSup fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
-    style FilterUse fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style Token1 fill:#fffde7,stroke:#fbc02d,stroke-width:1px,color:#000000
+    style FilterRel fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style FilterSup fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#000000
+    style FilterUse fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 ### Key Architectural Capabilities of Self-RAG:
@@ -109,9 +109,9 @@ flowchart LR
         GeneratorTrain --> DeployedLLM["Single Self-RAG LLM Engine<br/>(Self-evaluates via standard forward pass; no external critic needed!)"]
     end
 
-    style OfflineTraining fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style GeneratorTraining fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
-    style OnlineInference fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style OfflineTraining fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style GeneratorTraining fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#000000
+    style OnlineInference fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 ### The Key Operational Advantage:
@@ -150,9 +150,9 @@ flowchart TD
     PruneBad --> TopB["Keep Top-B Beams (e.g. B=2)"]
     TopB --> NextSegment([Proceed to Next Sentence])
 
-    style GenRet fill:#fffde7,stroke:#fbc02d,stroke-width:1px
-    style ScoreAll fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style TopB fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style GenRet fill:#fffde7,stroke:#fbc02d,stroke-width:1px,color:#000000
+    style ScoreAll fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style TopB fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 ### Hard vs. Soft Constraint Thresholding:
@@ -388,10 +388,10 @@ flowchart LR
     T2 --> T3["[IsSup]<br/>Decides IF claim is grounded in passage"]
     T3 --> T4["[IsUse]<br/>Scores output utility from 1 to 5"]
 
-    style T1 fill:#fffde7,stroke:#fbc02d,stroke-width:1px
-    style T2 fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style T3 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
-    style T4 fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style T1 fill:#fffde7,stroke:#fbc02d,stroke-width:1px,color:#000000
+    style T2 fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style T3 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#000000
+    style T4 fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 * **Adaptive Retrieval:** Model generates `[Retrieve]=yes` only when internal parametric knowledge is insufficient.

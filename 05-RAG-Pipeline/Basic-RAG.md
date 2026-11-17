@@ -41,8 +41,8 @@ flowchart TD
         LLM --> Response([Final Synthesized Answer])
     end
 
-    style IngestionTime fill:#f4f6f8,stroke:#90a4ae,stroke-width:1px
-    style QueryTime fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px
+    style IngestionTime fill:#f4f6f8,stroke:#90a4ae,stroke-width:1px,color:#000000
+    style QueryTime fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px,color:#000000
 ```
 
 ### The Engineering Appeal of Naive RAG
@@ -163,13 +163,13 @@ flowchart TD
         F7["7. Zero Negative Constraints & Hallucinatory Refusal<br/>Refusing to Answer When Answer Exists OR Inventing When Absent"]
     end
 
-    style F1 fill:#ffebee,stroke:#c62828,stroke-width:1px
-    style F2 fill:#ffebee,stroke:#c62828,stroke-width:1px
-    style F3 fill:#ffebee,stroke:#c62828,stroke-width:1px
-    style F4 fill:#ffebee,stroke:#c62828,stroke-width:1px
-    style F5 fill:#ffebee,stroke:#c62828,stroke-width:1px
-    style F6 fill:#ffebee,stroke:#c62828,stroke-width:1px
-    style F7 fill:#ffebee,stroke:#c62828,stroke-width:1px
+    style F1 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
+    style F2 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
+    style F3 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
+    style F4 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
+    style F5 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
+    style F6 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
+    style F7 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
 ```
 
 ### 1. Mid-Sentence Chunk Truncation

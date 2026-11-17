@@ -453,7 +453,7 @@ flowchart TD
     Entropy -- "Valid (3.5 - 4.8)" --> Out["Clean Document Corpus"]
     Entropy -- "Anomaly (>5.5 or <1.5)" --> DLQ["Triage / Discard Queue"]
 
-    style In fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
-    style NFKC fill:#fff8e1,stroke:#f57f17,stroke-width:2px
-    style Out fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style In fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#000000
+    style NFKC fill:#fff8e1,stroke:#f57f17,stroke-width:2px,color:#000000
+    style Out fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000000
 ```

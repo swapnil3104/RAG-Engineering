@@ -42,9 +42,9 @@ flowchart TD
     CacheMiss --> AsyncStore["Asynchronously Upsert:<br/>[eq, UserQuery, Answer, Chunks]<br/>with TTL into Cache"]
     CacheMiss --> StreamDelivery([Stream Response to User])
 
-    style CacheHit fill:#dcfce7,stroke:#16a34a,stroke-width:2px
-    style CacheMiss fill:#fee2e2,stroke:#ef4444
-    style InstantDelivery fill:#eff6ff,stroke:#2563eb
+    style CacheHit fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
+    style CacheMiss fill:#fee2e2,stroke:#ef4444,color:#000000
+    style InstantDelivery fill:#eff6ff,stroke:#2563eb,color:#000000
 ```
 
 ---
@@ -497,11 +497,11 @@ flowchart LR
     E --> F["Async Upsert<br/>• Store Vector + Answer + TTL"]
     F --> G["Deliver Response to User"]
 
-    style A fill:#f8fafc,stroke:#64748b
-    style B fill:#eff6ff,stroke:#3b82f6
-    style Z fill:#dcfce7,stroke:#10b981,stroke-width:2px
-    style C fill:#fef3c7,stroke:#f59e0b
-    style D fill:#fce7f3,stroke:#ec4899
-    style E fill:#fee2e2,stroke:#ef4444
-    style G fill:#ede9fe,stroke:#8b5cf6
+    style A fill:#f8fafc,stroke:#64748b,color:#000000
+    style B fill:#eff6ff,stroke:#3b82f6,color:#000000
+    style Z fill:#dcfce7,stroke:#10b981,stroke-width:2px,color:#000000
+    style C fill:#fef3c7,stroke:#f59e0b,color:#000000
+    style D fill:#fce7f3,stroke:#ec4899,color:#000000
+    style E fill:#fee2e2,stroke:#ef4444,color:#000000
+    style G fill:#ede9fe,stroke:#8b5cf6,color:#000000
 ```

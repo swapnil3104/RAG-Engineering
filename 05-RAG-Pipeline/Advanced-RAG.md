@@ -60,9 +60,9 @@ flowchart TD
 
     PostStage --> GenerationEngine([Grounded LLM Generation Engine])
 
-    style PreStage fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style MidStage fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
-    style PostStage fill:#ede7f6,stroke:#512da8,stroke-width:1px
+    style PreStage fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style MidStage fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
+    style PostStage fill:#ede7f6,stroke:#512da8,stroke-width:1px,color:#000000
 ```
 
 ---

@@ -53,10 +53,10 @@ flowchart TD
     Synthesizer --> FinalAnswer([Verified Grounded Response])
     FallbackSynth --> FinalAnswer
 
-    style Loop fill:#f8fafc,stroke:#0284c7,stroke-width:2px
-    style DocumentGrader fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style StopCheck fill:#fee2e2,stroke:#dc2626,stroke-width:2px
-    style Synthesizer fill:#dcfce7,stroke:#15803d,stroke-width:2px
+    style Loop fill:#f8fafc,stroke:#0284c7,stroke-width:2px,color:#000000
+    style DocumentGrader fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style StopCheck fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#000000
+    style Synthesizer fill:#dcfce7,stroke:#15803d,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -165,11 +165,11 @@ graph TD
     
     Diagnostic -->|"Vocabulary mismatch<br/>(Synonym gap)"| Shift["3. Lexical / Vocabulary Shift<br/>• Replace colloquial terms with official jargon<br/>• E.g., 'getting money back' -> 'reimbursement disbursement'"]
 
-    style Fail fill:#fee2e2,stroke:#ef4444,stroke-width:1px
-    style Diagnostic fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style Gen fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    style Spec fill:#ede9fe,stroke:#7c3aed,stroke-width:1px
-    style Shift fill:#dcfce7,stroke:#16a34a,stroke-width:1px
+    style Fail fill:#fee2e2,stroke:#ef4444,stroke-width:1px,color:#000000
+    style Diagnostic fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style Gen fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
+    style Spec fill:#ede9fe,stroke:#7c3aed,stroke-width:1px,color:#000000
+    style Shift fill:#dcfce7,stroke:#16a34a,stroke-width:1px,color:#000000
 ```
 
 ### Reformulation Tactics in Production
@@ -200,11 +200,11 @@ flowchart TD
     Check3 -->|Yes (2 consecutive cycles)| HaltDiminishing["HALT: KNOWLEDGE EXHAUSTION<br/>Admit knowledge absence gracefully"]
     Check3 -->|No: New facts found| ContinueLoop["CONTINUE SEARCH<br/>Generate targeted next reformulation"]
 
-    style EvalStart fill:#f1f5f9,stroke:#64748b,stroke-width:1px
-    style HaltSuccess fill:#dcfce7,stroke:#16a34a,stroke-width:2px
-    style HaltBudget fill:#fee2e2,stroke:#ef4444,stroke-width:2px
-    style HaltDiminishing fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style ContinueLoop fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
+    style EvalStart fill:#f1f5f9,stroke:#64748b,stroke-width:1px,color:#000000
+    style HaltSuccess fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
+    style HaltBudget fill:#fee2e2,stroke:#ef4444,stroke-width:2px,color:#000000
+    style HaltDiminishing fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style ContinueLoop fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
 ```
 
 ### The Three Termination Verdicts:
@@ -555,9 +555,9 @@ flowchart TD
     
     Reform --> Retrieve
 
-    style Start fill:#f1f5f9,stroke:#64748b,stroke-width:1px
-    style Grade fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style StopEval fill:#fee2e2,stroke:#dc2626,stroke-width:2px
-    style Synth fill:#dcfce7,stroke:#16a34a,stroke-width:2px
-    style PartialSynth fill:#fffbeb,stroke:#b45309,stroke-width:1px
+    style Start fill:#f1f5f9,stroke:#64748b,stroke-width:1px,color:#000000
+    style Grade fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style StopEval fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#000000
+    style Synth fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
+    style PartialSynth fill:#fffbeb,stroke:#b45309,stroke-width:1px,color:#000000
 ```

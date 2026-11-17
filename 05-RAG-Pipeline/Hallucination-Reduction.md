@@ -28,10 +28,10 @@ flowchart TD
     Hallucinations --> Cat3["3. Context Confusion & Distractor Blending<br/>(LLM combines facts from two unrelated retrieved passages)"]
     Hallucinations --> Cat4["4. Refusal Failure<br/>(LLM invents answers for unanswerable queries rather than admitting ignorance)"]
 
-    style Cat1 fill:#ffebee,stroke:#c62828,stroke-width:1px
-    style Cat2 fill:#ffebee,stroke:#c62828,stroke-width:1px
-    style Cat3 fill:#ffebee,stroke:#c62828,stroke-width:1px
-    style Cat4 fill:#ffebee,stroke:#c62828,stroke-width:1px
+    style Cat1 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
+    style Cat2 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
+    style Cat3 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
+    style Cat4 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
 ```
 
 ### The Enterprise Cost of Hallucinations
@@ -141,8 +141,8 @@ flowchart TD
     
     RetryCounter -->|No| SafeFallback([Safe Refusal Fallback])
 
-    style VerifiedPass fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
-    style SafeFallback fill:#ffebee,stroke:#c62828,stroke-width:1px
+    style VerifiedPass fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
+    style SafeFallback fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
 ```
 
 ---

@@ -50,12 +50,12 @@ flowchart TD
     HallucinationCheck -->|"No (Grounded)"| EndNode([Final Answer])
     HallucinationCheck -->|"Yes (Ungrounded)"| GenNode
 
-    style AgentNode fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style ToolNode fill:#f0fdf4,stroke:#16a34a
-    style RewriteNode fill:#fef2f2,stroke:#dc2626
-    style GenNode fill:#e0f2fe,stroke:#0284c7
-    style GraderNode fill:#fef3c7,stroke:#d97706
-    style EndNode fill:#dcfce7,stroke:#15803d,stroke-width:2px
+    style AgentNode fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style ToolNode fill:#f0fdf4,stroke:#16a34a,color:#000000
+    style RewriteNode fill:#fef2f2,stroke:#dc2626,color:#000000
+    style GenNode fill:#e0f2fe,stroke:#0284c7,color:#000000
+    style GraderNode fill:#fef3c7,stroke:#d97706,color:#000000
+    style EndNode fill:#dcfce7,stroke:#15803d,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -180,8 +180,8 @@ flowchart LR
 
     DB -.->|"Time Travel / Resume"| Replay["Resume from Checkpoint"]
 
-    style ExecutionSuperstep fill:#eff6ff,stroke:#1d4ed8
-    style CheckpointEngine fill:#fef3c7,stroke:#d97706,stroke-width:2px
+    style ExecutionSuperstep fill:#eff6ff,stroke:#1d4ed8,color:#000000
+    style CheckpointEngine fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
 ```
 
 ### Enterprise Checkpoint Features:

@@ -43,16 +43,16 @@ flowchart TD
     
     M9 --> M10["10. RAG vs Agentic RAG Strategy<br/>(Dual-Engine Router, Latency SLAs & Token Economics)"]
 
-    style M1 fill:#e0f2fe,stroke:#0369a1,stroke-width:2px
-    style M2 fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style M3 fill:#f0fdf4,stroke:#16a34a,stroke-width:2px
-    style M4 fill:#f8fafc,stroke:#475569,stroke-width:2px
-    style M5 fill:#fffbeb,stroke:#d97706,stroke-width:2px
-    style M6 fill:#fef3c7,stroke:#b45309,stroke-width:2px
-    style M7 fill:#ede9fe,stroke:#7c3aed,stroke-width:2px
-    style M8 fill:#f3e8ff,stroke:#6b21a8,stroke-width:2px
-    style M9 fill:#fee2e2,stroke:#dc2626,stroke-width:2px
-    style M10 fill:#ecfdf5,stroke:#059669,stroke-width:2px
+    style M1 fill:#e0f2fe,stroke:#0369a1,stroke-width:2px,color:#000000
+    style M2 fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style M3 fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#000000
+    style M4 fill:#f8fafc,stroke:#475569,stroke-width:2px,color:#000000
+    style M5 fill:#fffbeb,stroke:#d97706,stroke-width:2px,color:#000000
+    style M6 fill:#fef3c7,stroke:#b45309,stroke-width:2px,color:#000000
+    style M7 fill:#ede9fe,stroke:#7c3aed,stroke-width:2px,color:#000000
+    style M8 fill:#f3e8ff,stroke:#6b21a8,stroke-width:2px,color:#000000
+    style M9 fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#000000
+    style M10 fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -127,10 +127,10 @@ flowchart TD
     LG_State --> ResponseAggregator
     ResponseAggregator --> UserApp
 
-    style FastEngine fill:#f0fdf4,stroke:#16a34a,stroke-width:1px
-    style AgenticEngine fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style IntentRouter fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style Checkpointer fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    style HITLGate fill:#fee2e2,stroke:#dc2626,stroke-width:2px
-    style ResponseAggregator fill:#dcfce7,stroke:#15803d,stroke-width:2px
+    style FastEngine fill:#f0fdf4,stroke:#16a34a,stroke-width:1px,color:#000000
+    style AgenticEngine fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style IntentRouter fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style Checkpointer fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
+    style HITLGate fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#000000
+    style ResponseAggregator fill:#dcfce7,stroke:#15803d,stroke-width:2px,color:#000000
 ```

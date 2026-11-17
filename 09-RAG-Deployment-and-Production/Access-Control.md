@@ -49,9 +49,9 @@ flowchart TD
     LLMContext --> LLM["LLM Generation Engine"]
     LLM --> VerifiedAnswer([Authorized Answer Delivered to User])
 
-    style RetrievalLayer fill:#f8fafc,stroke:#64748b
-    style Doc3 fill:#fee2e2,stroke:#ef4444
-    style VerifiedAnswer fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style RetrievalLayer fill:#f8fafc,stroke:#64748b,color:#000000
+    style Doc3 fill:#fee2e2,stroke:#ef4444,color:#000000
+    style VerifiedAnswer fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -460,7 +460,7 @@ if __name__ == "__main__":
 
 | Formula Name | Formulation | Operational Purpose |
 | :--- | :--- | :--- |
-| **Filter Selectivity Ratio** | $$\sigma = \frac{|\mathcal{D}_{\text{permitted}}|}{|\mathcal{D}_{\text{total}}|}$$ | Determines whether the database can use graph search or must pivot to flat scan. |
+| **Filter Selectivity Ratio** | $\sigma = \frac{\vert\mathcal{D}_{\text{permitted}}\vert}{\vert\mathcal{D}_{\text{total}}\vert}$ | Determines whether the database can use graph search or must pivot to flat scan. |
 | **HNSW Disconnection Risk** | $$P(\text{Stall}) \approx 1 - (1 - (1 - \sigma)^M)^{\text{efSearch}}$$ | Quantifies the probability of graph search degradation under extreme low selectivity. |
 
 ### 🗺️ Enterprise RBAC Retrieval Lifecycle Roadmap
@@ -473,10 +473,10 @@ flowchart LR
     D --> E["Context Assembly<br/>• 100% authorized tokens<br/>• Pass to LLM"]
     E --> F["Safe Generation<br/>• Verified Output<br/>• Full Access Audit Log"]
 
-    style A fill:#f8fafc,stroke:#64748b
-    style B fill:#eff6ff,stroke:#3b82f6
-    style C fill:#fef3c7,stroke:#f59e0b
-    style D fill:#dcfce7,stroke:#10b981,stroke-width:2px
-    style E fill:#e0e7ff,stroke:#6366f1
-    style F fill:#ede9fe,stroke:#8b5cf6
+    style A fill:#f8fafc,stroke:#64748b,color:#000000
+    style B fill:#eff6ff,stroke:#3b82f6,color:#000000
+    style C fill:#fef3c7,stroke:#f59e0b,color:#000000
+    style D fill:#dcfce7,stroke:#10b981,stroke-width:2px,color:#000000
+    style E fill:#e0e7ff,stroke:#6366f1,color:#000000
+    style F fill:#ede9fe,stroke:#8b5cf6,color:#000000
 ```

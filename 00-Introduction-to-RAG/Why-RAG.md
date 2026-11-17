@@ -41,8 +41,8 @@ flowchart TD
         F --> K[Unsustainable Multi-Million Dollar GPU Bills]
     end
 
-    style LLM_Reality fill:#ffebee,stroke:#c62828,stroke-width:2px
-    style Business_Impact fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
+    style LLM_Reality fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#000000
+    style Business_Impact fill:#fff3e0,stroke:#ef6c00,stroke-width:2px,color:#000000
 ```
 
 > 💡 **Core Analogy:** Deploying a standalone LLM for internal company support is like hiring a genius consultant with photographic memory who graduated 3 years ago, locked themselves in a room without internet or company access, and answers questions about your internal 2026 systems based on guesswork. **RAG** gives that consultant direct real-time access to your company's live internal wiki, contracts, and codebases before they say a single word.
@@ -94,8 +94,8 @@ flowchart LR
         LLM2 --> A2[Faithful Response + Citations]
     end
 
-    style Standalone fill:#fbe9e7,stroke:#d84315
-    style RAG_Pattern fill:#e8f5e9,stroke:#2e7d32
+    style Standalone fill:#fbe9e7,stroke:#d84315,color:#000000
+    style RAG_Pattern fill:#e8f5e9,stroke:#2e7d32,color:#000000
 ```
 
 ### Strategic Capabilities Provided by RAG:
@@ -285,8 +285,8 @@ flowchart TD
         MR2 --> MR3[Answers with exact milligram/m2 formula and protocol ID]
     end
 
-    style Failures fill:#ffebee,stroke:#c62828
-    style Triumphs fill:#e8f5e9,stroke:#2e7d32
+    style Failures fill:#ffebee,stroke:#c62828,color:#000000
+    style Triumphs fill:#e8f5e9,stroke:#2e7d32,color:#000000
 ```
 
 ### Detailed Case Analyses:

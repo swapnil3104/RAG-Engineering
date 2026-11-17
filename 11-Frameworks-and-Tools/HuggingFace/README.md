@@ -51,10 +51,10 @@ flowchart TD
         QuantRuntime --> FinalAnswer(["Private Sovereign Response"])
     end
 
-    style HF_Hub fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style RetrievalServing fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style RerankTier fill:#f8fafc,stroke:#475569,stroke-width:2px
-    style GenerationTier fill:#ecfdf5,stroke:#059669,stroke-width:2px
+    style HF_Hub fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style RetrievalServing fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style RerankTier fill:#f8fafc,stroke:#475569,stroke-width:2px,color:#000000
+    style GenerationTier fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -99,8 +99,8 @@ flowchart LR
         JointBERT --> LinearHead["Classification Head<br/>Relevance Score: [0.0, 1.0]"]
     end
 
-    style BiEncoder_Arch fill:#eff6ff,stroke:#2563eb
-    style CrossEncoder_Arch fill:#fef3c7,stroke:#d97706
+    style BiEncoder_Arch fill:#eff6ff,stroke:#2563eb,color:#000000
+    style CrossEncoder_Arch fill:#fef3c7,stroke:#d97706,color:#000000
 ```
 
 ### Architectural Comparison Matrix:

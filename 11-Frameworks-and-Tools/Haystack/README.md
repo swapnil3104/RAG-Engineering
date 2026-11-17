@@ -59,10 +59,10 @@ flowchart TD
     Q --> PromptBld
     Gen --> Ans
 
-    style DAG_Engine fill:#f8fafc,stroke:#2563eb,stroke-width:2px
-    style Joiner fill:#fef3c7,stroke:#d97706,stroke-width:1px
-    style PromptBld fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    style Gen fill:#ecfdf5,stroke:#059669,stroke-width:2px
+    style DAG_Engine fill:#f8fafc,stroke:#2563eb,stroke-width:2px,color:#000000
+    style Joiner fill:#fef3c7,stroke:#d97706,stroke-width:1px,color:#000000
+    style PromptBld fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
+    style Gen fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
 ```
 
 ---

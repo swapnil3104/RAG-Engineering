@@ -183,7 +183,7 @@ Evaluating every document that contains at least one query term is computational
 
 | Metric / Dimension | BM25 (Classical Lexical) | SPLADE (Learned Sparse) | Dense Bi-Encoder (BGE / OpenAI) |
 | :--- | :--- | :--- | :--- |
-| **Vector Space Dimensionality** | $|\mathcal{V}| \approx 30,000$ | $|\mathcal{V}| \approx 30,522$ | $d \approx 768 - 1536$ |
+| **Vector Space Dimensionality** | $\vert\mathcal{V}\vert \approx 30,000$ | $\vert\mathcal{V}\vert \approx 30,522$ | $d \approx 768 - 1536$ |
 | **Sparsity Ratio** | $> 99.8\%$ | $> 99.6\%$ | $0.0\%$ (Dense continuous) |
 | **Indexing Data Structure** | Inverted Index (Lucene) | Inverted Index / Sparse Vector DB | HNSW Graph / IVF / DiskANN |
 | **Storage per Million Docs** | $\approx 400 \text{ MB} - 1 \text{ GB}$ | $\approx 1.5 - 3.5 \text{ GB}$ | $\approx 3.0 - 6.5 \text{ GB}$ |

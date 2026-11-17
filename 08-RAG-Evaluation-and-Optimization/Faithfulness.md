@@ -45,9 +45,9 @@ flowchart TD
     
     S1 & S2 & S3 --> Metric["Faithfulness Score = 1 / 3 = 0.333 (FAIL)"]
 
-    style Deconstruction fill:#f8fafc,stroke:#64748b
-    style GroundingJudgement fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style Metric fill:#fee2e2,stroke:#ef4444,stroke-width:2px
+    style Deconstruction fill:#f8fafc,stroke:#64748b,color:#000000
+    style GroundingJudgement fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style Metric fill:#fee2e2,stroke:#ef4444,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -132,9 +132,9 @@ flowchart TD
     Decision -->|"No"| Fallback["Trigger Safe Fallback Response:<br/>'I cannot confirm this from official documents'"]
     Fallback --> EndUser([Safe Fallback Output 🛡️])
 
-    style Gatekeeper fill:#f0fdf4,stroke:#16a34a,stroke-width:2px
-    style Approved fill:#dcfce7,stroke:#15803d,stroke-width:2px
-    style Fallback fill:#fee2e2,stroke:#dc2626
+    style Gatekeeper fill:#f0fdf4,stroke:#16a34a,stroke-width:2px,color:#000000
+    style Approved fill:#dcfce7,stroke:#15803d,stroke-width:2px,color:#000000
+    style Fallback fill:#fee2e2,stroke:#dc2626,color:#000000
 ```
 
 ---
@@ -416,9 +416,9 @@ flowchart TD
     Fix3 --> Gate
     Gate --> Verified([Production Grounded System ✅])
 
-    style Detect fill:#fee2e2,stroke:#ef4444
-    style Fix1 fill:#dcfce7,stroke:#16a34a
-    style Fix2 fill:#dcfce7,stroke:#16a34a
-    style Fix3 fill:#dcfce7,stroke:#16a34a
+    style Detect fill:#fee2e2,stroke:#ef4444,color:#000000
+    style Fix1 fill:#dcfce7,stroke:#16a34a,color:#000000
+    style Fix2 fill:#dcfce7,stroke:#16a34a,color:#000000
+    style Fix3 fill:#dcfce7,stroke:#16a34a,color:#000000
     style Verified fill:#16a34a,color:#ffffff,stroke-width:2px
 ```

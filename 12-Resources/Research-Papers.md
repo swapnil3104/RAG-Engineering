@@ -36,11 +36,11 @@ flowchart TD
 
     G1 --> G2 --> G3 --> G4 --> G5
 
-    style G1 fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style G2 fill:#ecfdf5,stroke:#059669,stroke-width:2px
-    style G3 fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style G4 fill:#fdf4ff,stroke:#a21caf,stroke-width:2px
-    style G5 fill:#f8fafc,stroke:#475569,stroke-width:2px
+    style G1 fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style G2 fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
+    style G3 fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style G4 fill:#fdf4ff,stroke:#a21caf,stroke-width:2px,color:#000000
+    style G5 fill:#f8fafc,stroke:#475569,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -181,9 +181,9 @@ flowchart LR
     QueryEncoding --> Aggregation
     DocEncoding --> Aggregation
 
-    style QueryEncoding fill:#eff6ff,stroke:#1d4ed8,stroke-width:1px
-    style DocEncoding fill:#ecfdf5,stroke:#059669,stroke-width:1px
-    style Aggregation fill:#fef3c7,stroke:#d97706,stroke-width:2px
+    style QueryEncoding fill:#eff6ff,stroke:#1d4ed8,stroke-width:1px,color:#000000
+    style DocEncoding fill:#ecfdf5,stroke:#059669,stroke-width:1px,color:#000000
+    style Aggregation fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -301,9 +301,9 @@ flowchart TD
     S1 & S2 --> R1
     S3 & S4 --> R2
 
-    style Layer2 fill:#fdf4ff,stroke:#a21caf,stroke-width:2px
-    style Layer1 fill:#eff6ff,stroke:#1d4ed8,stroke-width:1px
-    style Layer0 fill:#ecfdf5,stroke:#059669,stroke-width:1px
+    style Layer2 fill:#fdf4ff,stroke:#a21caf,stroke-width:2px,color:#000000
+    style Layer1 fill:#eff6ff,stroke:#1d4ed8,stroke-width:1px,color:#000000
+    style Layer0 fill:#ecfdf5,stroke:#059669,stroke-width:1px,color:#000000
 ```
 
 ---
@@ -592,10 +592,10 @@ flowchart TD
     Active --> Structural["4. High-Level Synthesis & Graphs<br/>• Sarthi (RAPTOR 2024)<br/>• Edge (Microsoft GraphRAG 2024)"]
     Structural --> ModernContext["5. Context Engineering (2025-2026)<br/>• Anthropic (Contextual Retrieval)<br/>• Speculative RAG"]
 
-    style Start fill:#f8fafc,stroke:#475569,stroke-width:2px
-    style Core fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style FineGrained fill:#ecfdf5,stroke:#059669,stroke-width:2px
-    style Active fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style Structural fill:#fdf4ff,stroke:#a21caf,stroke-width:2px
-    style ModernContext fill:#f1f5f9,stroke:#0f172a,stroke-width:2px
+    style Start fill:#f8fafc,stroke:#475569,stroke-width:2px,color:#000000
+    style Core fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style FineGrained fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
+    style Active fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style Structural fill:#fdf4ff,stroke:#a21caf,stroke-width:2px,color:#000000
+    style ModernContext fill:#f1f5f9,stroke:#0f172a,stroke-width:2px,color:#000000
 ```

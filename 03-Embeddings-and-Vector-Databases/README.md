@@ -12,7 +12,7 @@ Downstream neural rerankers and generative LLMs cannot synthesize answers from k
 | :--- | :--- | :--- |
 | [**Embedding Models Landscape**](Embedding-Models.md) | **Model Evaluation & Selection** | MTEB retrieval benchmarks ($\text{NDCG}@10$), commercial vs. open-weight models (OpenAI, Voyage, Cohere, BGE, E5), Matryoshka Representation Learning (MRL), asymmetric task prefixes, and attention dilution. |
 | [**Dense Vector Embeddings**](Dense-Embeddings.md) | **Latent Space Topology** | Bi-encoder architecture, masked mean pooling, unit hypersphere normalization, contrastive learning (InfoNCE loss), negative mining, representation degeneration (the Anisotropy problem), and vector quantization. |
-| [**Sparse Embeddings & SPLADE**](Sparse-Embeddings.md) | **Learned Lexical Sparsity** | High-dimensional vocabulary spaces ($\mathbb{R}^{|\mathcal{V}|}$), BM25 term weighting, neural term expansion via SPLADE MLM heads, log-saturation activation, FLOPs sparsity loss, and WAND dynamic pruning. |
+| [**Sparse Embeddings & SPLADE**](Sparse-Embeddings.md) | **Learned Lexical Sparsity** | High-dimensional vocabulary spaces ($\mathbb{R}^{\vert\mathcal{V}\vert}$), BM25 term weighting, neural term expansion via SPLADE MLM heads, log-saturation activation, FLOPs sparsity loss, and WAND dynamic pruning. |
 | [**Hybrid Embeddings & Fusion**](Hybrid-Embeddings.md) | **Dual-Channel Retrieval** | Complementary duality principle, BGE-M3 multi-task architecture, linear convex combination, Reciprocal Rank Fusion (RRF), native in-engine hybrid architectures, and two-stage cross-encoder reranking. |
 | [**Similarity Metrics Deep Dive**](Similarity-Metrics.md) | **Metric Space Geometry** | Formal metric axioms, Cosine Similarity, Inner Product (MIPS), Euclidean ($L_2$) distance, unit hypersphere rank invariance identity, and 1-bit Hamming distance via CPU `POPCNT` instructions. |
 | [**Vector Database Concepts**](Vector-Database-Concepts.md) | **Internal Engine Anatomy** | Curse of dimensionality, Write-Ahead Log (WAL) durability, LSM-inspired immutable segment compaction, HNSW RAM vs. disk storage engines, distributed sharding, and Raft consensus replication. |
@@ -38,14 +38,14 @@ flowchart TD
     M6 --> M7["7. Single-Stage Metadata Filtering<br/>(Recall Collapse Prevention, Roaring Bitmaps, RBAC)"]
     M7 --> M8["8. Enterprise Engine Implementations<br/>(ChromaDB, FAISS, Pinecone, Qdrant, Weaviate)"]
 
-    style M1 fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
-    style M2 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
-    style M3 fill:#ede7f6,stroke:#512da8,stroke-width:2px
-    style M4 fill:#fff8e1,stroke:#f57f17,stroke-width:2px
-    style M5 fill:#ffebee,stroke:#c62828,stroke-width:2px
-    style M6 fill:#fce4ec,stroke:#c2185b,stroke-width:2px
-    style M7 fill:#fff3e0,stroke:#e65100,stroke-width:2px
-    style M8 fill:#e0f7fa,stroke:#00838f,stroke-width:2px
+    style M1 fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#000000
+    style M2 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000000
+    style M3 fill:#ede7f6,stroke:#512da8,stroke-width:2px,color:#000000
+    style M4 fill:#fff8e1,stroke:#f57f17,stroke-width:2px,color:#000000
+    style M5 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#000000
+    style M6 fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#000000
+    style M7 fill:#fff3e0,stroke:#e65100,stroke-width:2px,color:#000000
+    style M8 fill:#e0f7fa,stroke:#00838f,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -54,7 +54,7 @@ flowchart TD
 
 1. **Embedding Model Selection & MTEB Metrics:** Evaluate models using $\text{NDCG}@10$ across the BEIR benchmark suite rather than marketing claims, and deploy Matryoshka Representation Learning (MRL) to cut storage and memory costs by up to $66\%$ with minimal recall loss.
 2. **Latent Space Topology & Contrastive Dynamics:** Understand how InfoNCE loss acts as a geometric repulsive force to eliminate the Anisotropy Problem (representation collapse), and implement attention-masked mean pooling.
-3. **Learned Lexical Sparsity with SPLADE:** Master high-dimensional sparse representations ($\mathbb{R}^{|\mathcal{V}|}$) that eliminate dense retrieval failures on exact alphanumeric serial numbers, SKU codes, and rare medical/legal entities while leveraging WAND dynamic pruning.
+3. **Learned Lexical Sparsity with SPLADE:** Master high-dimensional sparse representations ($\mathbb{R}^{\vert\mathcal{V}\vert}$) that eliminate dense retrieval failures on exact alphanumeric serial numbers, SKU codes, and rare medical/legal entities while leveraging WAND dynamic pruning.
 4. **Production Hybrid Fusion:** Architect dual-channel retrieval engines combining dense semantics and sparse keyword precision, utilizing parameter-free **Reciprocal Rank Fusion (RRF)** to prevent score scale distortions.
 5. **Metric Space Hardware Optimization:** Exploit the unit hypersphere equivalence identity to replace expensive Cosine Similarity calculations with fast CPU AVX-512 Fused Multiply-Add (FMA) Dot Products, tripling query throughput.
 6. **LSM Vector Storage Engines & WAL Durability:** Architect crash-resilient vector database systems using append-only Write-Ahead Logs (WAL) and immutable segment compaction.

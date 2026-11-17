@@ -36,8 +36,8 @@ flowchart TD
     
     PostParser -.->|Hallucinated Citation| AlertFlag["Citation Quarantine / Rectification"]
 
-    style PostParser fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style VerifiedCitations fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style PostParser fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style VerifiedCitations fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 ---

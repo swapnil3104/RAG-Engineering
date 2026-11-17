@@ -42,8 +42,8 @@ flowchart TD
     UserQuery --> VanillaApproach
     UserQuery --> HyDEApproach
 
-    style VanillaApproach fill:#ffebee,stroke:#c62828,stroke-width:1px
-    style HyDEApproach fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style VanillaApproach fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
+    style HyDEApproach fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 Introduced by Gao et al. (2022), **HyDE** (*Hypothetical Document Embeddings*) bridges this gap through an ingenious zero-shot paradigm:
@@ -176,8 +176,8 @@ flowchart TD
     TrapPath --> Miss["Retrieves completely wrong documents<br/>matching the hallucinated ID!"]
     SafePath --> Hit["Retrieves accurate conceptual passages"]
 
-    style SafePath fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
-    style TrapPath fill:#ffebee,stroke:#c62828,stroke-width:1px
+    style SafePath fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
+    style TrapPath fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
 ```
 
 ### The Three Critical Failure Modes:
@@ -465,9 +465,9 @@ flowchart TD
     DualSearch --> Fusion["Reciprocal Rank Fusion (RRF k=60)"]
     Fusion --> CrossEncoder["Cross-Encoder Reranker Filter"]
 
-    style DirectSearch fill:#ffebee,stroke:#c62828,stroke-width:1px
-    style RunHyDE fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style CrossEncoder fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style DirectSearch fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
+    style RunHyDE fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style CrossEncoder fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 * **Core Insight:** Projects queries from the interrogative manifold to the declarative document manifold.

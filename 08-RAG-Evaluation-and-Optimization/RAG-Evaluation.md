@@ -51,9 +51,9 @@ flowchart LR
     Gen -.-> E3
     Gen -.-> E4
 
-    style Ingestion fill:#f8fafc,stroke:#94a3b8
-    style Runtime fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style FailureModes fill:#fef2f2,stroke:#ef4444,stroke-width:1px
+    style Ingestion fill:#f8fafc,stroke:#94a3b8,color:#000000
+    style Runtime fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style FailureModes fill:#fef2f2,stroke:#ef4444,stroke-width:1px,color:#000000
 ```
 
 ### Why Naive Evaluation Fails
@@ -109,9 +109,9 @@ flowchart TD
     C <-->|"Pillar 2: Groundedness / Faithfulness<br/>(Is the answer 100% derived from context?)"| A
     Q <-->|"Pillar 3: Answer Relevance<br/>(Does the answer directly satisfy the query?)"| A
 
-    style Q fill:#e0f2fe,stroke:#0284c7,stroke-width:2px
-    style C fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style A fill:#dcfce7,stroke:#15803d,stroke-width:2px
+    style Q fill:#e0f2fe,stroke:#0284c7,stroke-width:2px,color:#000000
+    style C fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style A fill:#dcfce7,stroke:#15803d,stroke-width:2px,color:#000000
 ```
 
 ### The Three Pillars Detailed
@@ -157,9 +157,9 @@ flowchart TD
     Filter -->|"Passed"| GoldenSet[("Golden Evaluation Dataset<br/>(q, Context_IDs, Ground_Truth)")]
     Filter -->|"Failed / Hallucinated"| Drop([Discarded Candidate])
     
-    style Chunk fill:#f1f5f9,stroke:#64748b
-    style GoldenSet fill:#dcfce7,stroke:#16a34a,stroke-width:2px
-    style Drop fill:#fee2e2,stroke:#dc2626
+    style Chunk fill:#f1f5f9,stroke:#64748b,color:#000000
+    style GoldenSet fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
+    style Drop fill:#fee2e2,stroke:#dc2626,color:#000000
 ```
 
 ### Query Types in Synthetic Test Distributions
@@ -536,8 +536,8 @@ if __name__ == "__main__":
 
 | Metric Name | Mathematical Concept | Objective Target |
 | :--- | :--- | :--- |
-| **Context Relevance** | $\frac{\| \text{Relevant Information in } C \|}{\| C \|}$ | $\ge 0.80$ |
-| **Faithfulness** | $\frac{\| \text{Claims Entailed by } C \|}{\| \text{Total Claims in Answer } a \|}$ | $\ge 0.95$ (Regulated: $1.00$) |
+| **Context Relevance** | $\frac{\vert \text{Relevant Information in } C \vert}{\vert C \vert}$ | $\ge 0.80$ |
+| **Faithfulness** | $\frac{\vert \text{Claims Entailed by } C \vert}{\vert \text{Total Claims in Answer } a \vert}$ | $\ge 0.95$ (Regulated: $1.00$) |
 | **Answer Relevance** | $\cos(\mathbf{e}_q, \mathbf{e}_{q_{\text{inferred}}})$ | $\ge 0.85$ |
 | **Harmonic Quality** | $\frac{3}{\frac{1}{\text{CtxRel}} + \frac{1}{\text{Faith}} + \frac{1}{\text{AnsRel}}}$ | $\ge 0.85$ |
 
@@ -567,8 +567,8 @@ flowchart TD
         Alerting -->|"No"| Steady[Log Telemetry to Dashboard]
     end
 
-    style CI_CD fill:#f8fafc,stroke:#64748b
-    style Production fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style Block fill:#fee2e2,stroke:#ef4444
-    style Deploy fill:#dcfce7,stroke:#16a34a
+    style CI_CD fill:#f8fafc,stroke:#64748b,color:#000000
+    style Production fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style Block fill:#fee2e2,stroke:#ef4444,color:#000000
+    style Deploy fill:#dcfce7,stroke:#16a34a,color:#000000
 ```

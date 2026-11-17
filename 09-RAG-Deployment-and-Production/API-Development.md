@@ -46,8 +46,8 @@ flowchart TD
         IngressRoute --> RAGService["RAG Orchestrator Pods (gRPC / FastAPI)"]
     end
 
-    style APIGatewayTier fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style InternalRAGService fill:#dcfce7,stroke:#16a34a
+    style APIGatewayTier fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style InternalRAGService fill:#dcfce7,stroke:#16a34a,color:#000000
 ```
 
 ---
@@ -434,10 +434,10 @@ flowchart LR
     C -->|"Authorized"| E["Internal gRPC Router<br/>• High-speed IPC<br/>• Zero JSON Overhead"]
     E --> F["RAG Orchestrator<br/>• Async Execution<br/>• Stream to Client"]
 
-    style A fill:#f8fafc,stroke:#64748b
-    style B fill:#eff6ff,stroke:#3b82f6
-    style C fill:#fef3c7,stroke:#f59e0b
-    style D fill:#fee2e2,stroke:#ef4444
-    style E fill:#dcfce7,stroke:#10b981,stroke-width:2px
-    style F fill:#ede9fe,stroke:#8b5cf6
+    style A fill:#f8fafc,stroke:#64748b,color:#000000
+    style B fill:#eff6ff,stroke:#3b82f6,color:#000000
+    style C fill:#fef3c7,stroke:#f59e0b,color:#000000
+    style D fill:#fee2e2,stroke:#ef4444,color:#000000
+    style E fill:#dcfce7,stroke:#10b981,stroke-width:2px,color:#000000
+    style F fill:#ede9fe,stroke:#8b5cf6,color:#000000
 ```

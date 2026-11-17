@@ -40,10 +40,10 @@ flowchart TD
     WebFallback --> Gen
     Blend --> Gen
 
-    style Eval fill:#fffde7,stroke:#fbc02d,stroke-width:2px
-    style Refine fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
-    style WebFallback fill:#ffebee,stroke:#c62828,stroke-width:1px
-    style Blend fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
+    style Eval fill:#fffde7,stroke:#fbc02d,stroke-width:2px,color:#000000
+    style Refine fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
+    style WebFallback fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
+    style Blend fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
 ```
 
 ### The Three Core Pillars of CRAG:
@@ -164,8 +164,8 @@ flowchart TD
     S3 --> PurifiedContext["Purified Knowledge Strip:<br/>'To configure logical replication with pglogical, set wal_level=logical.'"]
     PurifiedContext --> Prompt([Compact, High-Density LLM Prompt])
 
-    style Chunk fill:#ffebee,stroke:#c62828,stroke-width:1px
-    style PurifiedContext fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style Chunk fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
+    style PurifiedContext fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 1. **Decomposition:** Split retrieved passages into individual sentences or fine-grained strips ($20\text{--}40$ words).
@@ -465,9 +465,9 @@ flowchart LR
     Score -->|"0.35 to 0.70"| Act2["AMBIGUOUS<br/>1. Refine Internal Strips<br/>2. Run External Web Search<br/>3. Blend Contexts"]
     Score -->|"<= 0.35"| Act3["INCORRECT<br/>1. PURGE Internal Chunks!<br/>2. Reformulate Web Query<br/>3. Search Public Web Engine"]
 
-    style Act1 fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
-    style Act2 fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style Act3 fill:#ffebee,stroke:#c62828,stroke-width:1px
+    style Act1 fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
+    style Act2 fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style Act3 fill:#ffebee,stroke:#c62828,stroke-width:1px,color:#000000
 ```
 
 * **Core Innovation:** Evaluates retrieved documents *before* generation; routes between internal and external search.

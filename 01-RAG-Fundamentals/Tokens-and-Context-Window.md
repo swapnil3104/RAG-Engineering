@@ -31,7 +31,7 @@ flowchart LR
 
 ### ❓ Why Not Character-Level or Word-Level Processing?
 
-| Approach | Vocabulary Size $|\mathcal{V}|$ | Sequence Length | Out-of-Vocabulary (OOV) Risk | Semantic Density |
+| Approach | Vocabulary Size $\vert\mathcal{V}\vert$ | Sequence Length | Out-of-Vocabulary (OOV) Risk | Semantic Density |
 | :--- | :---: | :---: | :---: | :---: |
 | **Character-Level** | Tiny ($\sim 256$ bytes) | Extremely Long ($4\times - 8\times$ longer) | Zero (any byte represented) | Very low (letters carry no standalone meaning) |
 | **Word-Level** | Massive ($>1{,}000{,}000$) | Compact | Extreme (misspellings, slang, URLs fail) | High, but memory footprint explodes |
@@ -166,7 +166,7 @@ Let us serialize a sample employee record containing 5 fields:
 | Format | Raw String Representation | Token Count (`cl100k_base`) | Overhead vs. Flat Text |
 | :--- | :--- | :---: | :---: |
 | **Raw Tab-Separated** | `101\tAlice Chen\tDevOps\tLead\tSan Francisco` | **15 tokens** | Baseline ($0\%$) |
-| **Markdown Table** | `\| ID \| Name \| Dept \| Title \| City \| ...` | **22 tokens** | $+46\%$ |
+| **Markdown Table** | <code>&#124; ID &#124; Name &#124; Dept &#124; Title &#124; City &#124; ...</code> | **22 tokens** | $+46\%$ |
 | **JSON** | `{"id": 101, "name": "Alice Chen", ...}` | **36 tokens** | $+140\%$ |
 | **YAML** | `id: 101\nname: Alice Chen\ndept: DevOps ...` | **28 tokens** | $+86\%$ |
 | **XML** | `<record><id>101</id><name>Alice Chen</name>...</record>` | **48 tokens** | $+220\%$ |

@@ -54,8 +54,8 @@ flowchart LR
 
 | Representation Paradigm | Dimensionality | Sparsity | Semantic Awareness | Handles Synonymy? | Example Technologies |
 | :--- | :---: | :---: | :---: | :---: | :--- |
-| **One-Hot Encoding** | $|\mathcal{V}| \approx 10^5$ | $99.99\%$ Sparse | None ($v_i \cdot v_j = 0$) | ❌ No | Categorical encoders |
-| **TF-IDF / BM25** | $|\mathcal{V}| \approx 10^5$ | $>99\%$ Sparse | Lexical frequency only | ❌ No | Lucene, Elasticsearch |
+| **One-Hot Encoding** | $\vert\mathcal{V}\vert \approx 10^5$ | $99.99\%$ Sparse | None ($v_i \cdot v_j = 0$) | ❌ No | Categorical encoders |
+| **TF-IDF / BM25** | $\vert\mathcal{V}\vert \approx 10^5$ | $>99\%$ Sparse | Lexical frequency only | ❌ No | Lucene, Elasticsearch |
 | **Static Embeddings** | $d \approx 300$ | Dense | Context-free semantics | ⚠️ Weak | Word2Vec, GloVe, FastText |
 | **Contextual Transformer Embeddings** | $d \approx 384 - 3072$| Dense | Deep contextual syntax & semantics | ✅ Yes | BGE, Voyage, OpenAI, E5 |
 

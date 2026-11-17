@@ -43,11 +43,11 @@ flowchart TD
         Critic --> Out2([Verified Grounded Answer])
     end
 
-    style StdRAG fill:#f8fafc,stroke:#64748b,stroke-width:1px
-    style AgtRAG fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style AgentCore fill:#dbeafe,stroke:#1d4ed8,stroke-width:2px
-    style Critic fill:#fef3c7,stroke:#d97706,stroke-width:1px
-    style Out2 fill:#dcfce7,stroke:#15803d,stroke-width:2px
+    style StdRAG fill:#f8fafc,stroke:#64748b,stroke-width:1px,color:#000000
+    style AgtRAG fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style AgentCore fill:#dbeafe,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style Critic fill:#fef3c7,stroke:#d97706,stroke-width:1px,color:#000000
+    style Out2 fill:#dcfce7,stroke:#15803d,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -178,9 +178,9 @@ pie title Monthly Token Spend: 1 Million Queries
 | :--- | :--- | :--- | :--- |
 | **Input Tokens per Query** | 1,200 tokens | 6,800 tokens (accumulated scratchpad) | **$5.6\times$** |
 | **Output Tokens per Query**| 250 tokens | 850 tokens (thoughts + tool calls + answer)| **$3.4\times$** |
-| **Cost per 1,000 Queries** | **$4.25** | **$31.50** | **$7.4\times$** |
-| **Cost per 1,000,000 Queries**| **$4,250** | **$31,500** | **$7.4\times$** |
-| **Downstream Tool Fees** | $0 (Internal Vector DB) | ~$1,500 (Web search / External APIs) | **+$1,500** |
+| **Cost per 1,000 Queries** | **\$4.25** | **\$31.50** | **$7.4\times$** |
+| **Cost per 1,000,000 Queries**| **\$4,250** | **\$31,500** | **$7.4\times$** |
+| **Downstream Tool Fees** | \$0 (Internal Vector DB) | ~\$1,500 (Web search / External APIs) | **+\$1,500** |
 
 ---
 
@@ -218,11 +218,11 @@ flowchart TD
     StandardRAG --> FastOut([Sub-Second Grounded Output])
     AgenticRAG --> VerifiedOut([Comprehensive Audited Deliverable])
 
-    style Classifier fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style StandardRAG fill:#dcfce7,stroke:#16a34a,stroke-width:2px
-    style AgenticRAG fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style FastOut fill:#f0fdf4,stroke:#15803d,stroke-width:1px
-    style VerifiedOut fill:#ede9fe,stroke:#7c3aed,stroke-width:1px
+    style Classifier fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style StandardRAG fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
+    style AgenticRAG fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style FastOut fill:#f0fdf4,stroke:#15803d,stroke-width:1px,color:#000000
+    style VerifiedOut fill:#ede9fe,stroke:#7c3aed,stroke-width:1px,color:#000000
 ```
 
 ### Decision Heuristic Table
@@ -519,8 +519,8 @@ flowchart TD
     
     Q3 -->|Yes: DB update / wire transfer| HITLAgent[Deploy Agentic RAG with HITL Gate<br/>• LangGraph Interrupts<br/>• Mandatory Human Authorization]
 
-    style FastRAG fill:#dcfce7,stroke:#16a34a,stroke-width:2px
-    style PAS fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    style AutoAgent fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style HITLAgent fill:#fee2e2,stroke:#dc2626,stroke-width:2px
+    style FastRAG fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
+    style PAS fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
+    style AutoAgent fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style HITLAgent fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#000000
 ```

@@ -41,10 +41,10 @@ flowchart TD
     Tier1 --> Response
     Tier2 --> Response
 
-    style Router fill:#fffde7,stroke:#fbc02d,stroke-width:2px
-    style Tier0 fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
-    style Tier1 fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style Tier2 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
+    style Router fill:#fffde7,stroke:#fbc02d,stroke-width:2px,color:#000000
+    style Tier0 fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
+    style Tier1 fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style Tier2 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#000000
 ```
 
 ---
@@ -179,8 +179,8 @@ flowchart TD
     Answer1 & Answer2 --> Synthesizer["Multi-Hop Synthesizer"]
     Synthesizer --> FinalAns["Final Answer: 'No. Startup B released Product C in Nov 2023, four months BEFORE the acquisition in March 2024.'"]
 
-    style ComplexQ fill:#fffde7,stroke:#fbc02d,stroke-width:1px
-    style Synthesizer fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style ComplexQ fill:#fffde7,stroke:#fbc02d,stroke-width:1px,color:#000000
+    style Synthesizer fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 ---
@@ -446,10 +446,10 @@ flowchart TD
     FastClass -->|Single Fact Lookup| T1["Tier 1: Single-Hop Hybrid RAG (HNSW + BM25)"]
     FastClass -->|Multi-Entity Comparative| T2["Tier 2: Multi-Hop Decomposition Engine"]
 
-    style FastClass fill:#fffde7,stroke:#fbc02d,stroke-width:2px
-    style T0 fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
-    style T1 fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style T2 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
+    style FastClass fill:#fffde7,stroke:#fbc02d,stroke-width:2px,color:#000000
+    style T0 fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
+    style T1 fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style T2 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#000000
 ```
 
 * **Core Insight:** Stop treating every query identically. Match query complexity to retrieval depth.

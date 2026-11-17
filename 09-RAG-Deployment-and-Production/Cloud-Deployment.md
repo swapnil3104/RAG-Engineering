@@ -48,10 +48,10 @@ flowchart TD
         K8sGateway --> StatefulVDB
     end
 
-    style VPC fill:#f8fafc,stroke:#64748b
-    style GPUNodes fill:#fef3c7,stroke:#f59e0b
-    style StatefulVDB fill:#eff6ff,stroke:#3b82f6
-    style K8sGateway fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style VPC fill:#f8fafc,stroke:#64748b,color:#000000
+    style GPUNodes fill:#fef3c7,stroke:#f59e0b,color:#000000
+    style StatefulVDB fill:#eff6ff,stroke:#3b82f6,color:#000000
+    style K8sGateway fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -491,9 +491,9 @@ flowchart LR
     C --> D["Topology-Aware Mesh<br/>• Zero cross-AZ fees<br/>• Intra-zone vector reads"]
     D --> E["Distributed Vector Cluster<br/>• StatefulSets<br/>• High Availability"]
 
-    style A fill:#f8fafc,stroke:#64748b
-    style B fill:#eff6ff,stroke:#3b82f6
-    style C fill:#fef3c7,stroke:#f59e0b
-    style D fill:#dcfce7,stroke:#10b981,stroke-width:2px
-    style E fill:#ede9fe,stroke:#8b5cf6
+    style A fill:#f8fafc,stroke:#64748b,color:#000000
+    style B fill:#eff6ff,stroke:#3b82f6,color:#000000
+    style C fill:#fef3c7,stroke:#f59e0b,color:#000000
+    style D fill:#dcfce7,stroke:#10b981,stroke-width:2px,color:#000000
+    style E fill:#ede9fe,stroke:#8b5cf6,color:#000000
 ```

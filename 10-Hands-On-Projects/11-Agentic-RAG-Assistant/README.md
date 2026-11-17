@@ -116,13 +116,13 @@ flowchart TD
     NodeVerify -- Fail & Retries < 2 --> NodeGenerate
     NodeVerify -- Fail & Retries >= 2 --> NodeFallbackRefusal([Admit Information Gap])
 
-    style Start fill:#e0f2fe,stroke:#0284c7
-    style NodeRetrieve fill:#f8fafc,stroke:#64748b
-    style NodeGrade fill:#fefce8,stroke:#ca8a04
-    style NodeGenerate fill:#dcfce7,stroke:#16a34a
-    style NodeRewrite fill:#fee2e2,stroke:#ef4444
-    style NodeWebSearch fill:#eff6ff,stroke:#2563eb
-    style End fill:#faf5ff,stroke:#9333ea
+    style Start fill:#e0f2fe,stroke:#0284c7,color:#000000
+    style NodeRetrieve fill:#f8fafc,stroke:#64748b,color:#000000
+    style NodeGrade fill:#fefce8,stroke:#ca8a04,color:#000000
+    style NodeGenerate fill:#dcfce7,stroke:#16a34a,color:#000000
+    style NodeRewrite fill:#fee2e2,stroke:#ef4444,color:#000000
+    style NodeWebSearch fill:#eff6ff,stroke:#2563eb,color:#000000
+    style End fill:#faf5ff,stroke:#9333ea,color:#000000
 ```
 
 ---
@@ -472,9 +472,9 @@ flowchart LR
     Critic -- Grounded --> Output["Final Verified Answer"]
     Critic -- Hallucination --> Generate
 
-    style Query fill:#e0f2fe,stroke:#0284c7
-    style Grade fill:#fef3c7,stroke:#d97706
-    style Rewrite fill:#fee2e2,stroke:#ef4444
-    style Generate fill:#eff6ff,stroke:#2563eb
-    style Output fill:#dcfce7,stroke:#16a34a
+    style Query fill:#e0f2fe,stroke:#0284c7,color:#000000
+    style Grade fill:#fef3c7,stroke:#d97706,color:#000000
+    style Rewrite fill:#fee2e2,stroke:#ef4444,color:#000000
+    style Generate fill:#eff6ff,stroke:#2563eb,color:#000000
+    style Output fill:#dcfce7,stroke:#16a34a,color:#000000
 ```

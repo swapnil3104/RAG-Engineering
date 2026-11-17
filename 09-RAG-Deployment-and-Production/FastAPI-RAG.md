@@ -44,8 +44,8 @@ flowchart TD
         Loop --> Task3["Task 3: Vector ANN Query"]
     end
 
-    style SynchronousWSGI fill:#fee2e2,stroke:#ef4444
-    style AsyncASGI fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style SynchronousWSGI fill:#fee2e2,stroke:#ef4444,color:#000000
+    style AsyncASGI fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -591,10 +591,10 @@ flowchart LR
     D --> E["Stream LLM Tokens<br/>(SSE Chunk Pipeline)"]
     E --> F["Yield Done Event<br/>(Close & Telemetry Log)"]
 
-    style A fill:#f8fafc,stroke:#64748b
-    style B fill:#eff6ff,stroke:#3b82f6
-    style C fill:#fef3c7,stroke:#f59e0b
-    style D fill:#fce7f3,stroke:#ec4899
-    style E fill:#dcfce7,stroke:#10b981,stroke-width:2px
-    style F fill:#ede9fe,stroke:#8b5cf6
+    style A fill:#f8fafc,stroke:#64748b,color:#000000
+    style B fill:#eff6ff,stroke:#3b82f6,color:#000000
+    style C fill:#fef3c7,stroke:#f59e0b,color:#000000
+    style D fill:#fce7f3,stroke:#ec4899,color:#000000
+    style E fill:#dcfce7,stroke:#10b981,stroke-width:2px,color:#000000
+    style F fill:#ede9fe,stroke:#8b5cf6,color:#000000
 ```

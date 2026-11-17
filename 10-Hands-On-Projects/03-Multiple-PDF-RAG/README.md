@@ -57,10 +57,10 @@ flowchart TD
     QueryAnalysis --> BalancedRetrieval
     BalancedRetrieval --> Synthesis
 
-    style Ingestion fill:#f8fafc,stroke:#64748b,stroke-width:1.5px
-    style QueryAnalysis fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px
-    style BalancedRetrieval fill:#fefce8,stroke:#ca8a04,stroke-width:1.5px
-    style Synthesis fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px
+    style Ingestion fill:#f8fafc,stroke:#64748b,stroke-width:1.5px,color:#000000
+    style QueryAnalysis fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px,color:#000000
+    style BalancedRetrieval fill:#fefce8,stroke:#ca8a04,stroke-width:1.5px,color:#000000
+    style Synthesis fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px,color:#000000
 ```
 
 ---
@@ -495,8 +495,8 @@ flowchart LR
     BalancedContext --> ComparativeLLM["LLM Comparative Synthesis Engine"]
     ComparativeLLM --> MarkdownTable["Side-by-Side Comparison Matrix"]
 
-    style UserQuery fill:#e0f2fe,stroke:#0284c7
-    style IntentParser fill:#fef3c7,stroke:#d97706
-    style PartitionedSearch fill:#dcfce7,stroke:#16a34a
-    style MarkdownTable fill:#f3e8ff,stroke:#9333ea
+    style UserQuery fill:#e0f2fe,stroke:#0284c7,color:#000000
+    style IntentParser fill:#fef3c7,stroke:#d97706,color:#000000
+    style PartitionedSearch fill:#dcfce7,stroke:#16a34a,color:#000000
+    style MarkdownTable fill:#f3e8ff,stroke:#9333ea,color:#000000
 ```

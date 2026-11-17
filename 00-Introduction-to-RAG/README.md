@@ -8,7 +8,7 @@ Welcome to **Module 00: Introduction to RAG** of the enterprise RAG Engineering 
 
 | Document | Focus Area | Key Concepts Covered |
 | :--- | :--- | :--- |
-| [**What is RAG?**](What-is-RAG.md) *(or [what_is_rag.md](what_is_rag.md))* | **Core Foundations** | Pillars of RAG, vector similarity math, Naive vs. Advanced RAG, starter Python pipeline, hands-on ChromaDB lab. |
+| [**What is RAG?**](What-is-RAG.md) | **Core Foundations** | Pillars of RAG, vector similarity math, Naive vs. Advanced RAG, starter Python pipeline, hands-on ChromaDB lab. |
 | [**Why RAG?**](Why-RAG.md) | **Problem & Strategic Value** | Failure modes of standalone LLMs, hallucination suppression, GDPR compliance, TCO/ROI analysis, Faithfulness metrics. |
 | [**RAG Architecture**](RAG-Architecture.md) | **System Design & Components** | 3-Tier decomposition (ETL, Retrieval, Generation), HNSW vs IVF indexing, latency budgets, hybrid search, RBAC security. |
 | [**RAG Workflow**](RAG-Workflow.md) | **Execution Lifecycles** | Offline Ingestion vs. Online Inference, 10-step sequence, CDC streaming pipelines, Reciprocal Rank Fusion math, telemetry tracing. |
@@ -27,12 +27,12 @@ flowchart TD
     M4 --> M5["5. RAG Workflow<br/>(Ingestion ETL & Sub-Second Query Path)"]
     M5 --> M6["6. RAG Use Cases<br/>(Domain Blueprints & Enterprise RBAC)"]
 
-    style M1 fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
-    style M2 fill:#ffebee,stroke:#c62828,stroke-width:2px
-    style M3 fill:#fce4ec,stroke:#c2185b,stroke-width:2px
-    style M4 fill:#fff8e1,stroke:#f57f17,stroke-width:2px
-    style M5 fill:#ede7f6,stroke:#512da8,stroke-width:2px
-    style M6 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style M1 fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#000000
+    style M2 fill:#ffebee,stroke:#c62828,stroke-width:2px,color:#000000
+    style M3 fill:#fce4ec,stroke:#c2185b,stroke-width:2px,color:#000000
+    style M4 fill:#fff8e1,stroke:#f57f17,stroke-width:2px,color:#000000
+    style M5 fill:#ede7f6,stroke:#512da8,stroke-width:2px,color:#000000
+    style M6 fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000000
 ```
 
 ---

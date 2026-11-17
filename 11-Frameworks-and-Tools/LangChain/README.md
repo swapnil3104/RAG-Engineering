@@ -57,9 +57,9 @@ flowchart LR
     Q --> FanOut
     Parser --> SSE
 
-    style LCEL_Runtime fill:#f8fafc,stroke:#2563eb,stroke-width:2px
-    style FanOut fill:#eff6ff,stroke:#1d4ed8
-    style ModelExec fill:#ecfdf5,stroke:#059669
+    style LCEL_Runtime fill:#f8fafc,stroke:#2563eb,stroke-width:2px,color:#000000
+    style FanOut fill:#eff6ff,stroke:#1d4ed8,color:#000000
+    style ModelExec fill:#ecfdf5,stroke:#059669,color:#000000
 ```
 
 ---
@@ -231,9 +231,9 @@ flowchart TD
     RawDocs --> Compressor["ContextualCompressionRetriever<br/>(Cross-Encoder Reranker)"]
     Compressor --> FinalDocs["Top-3 High-Scoring Relevant Chunks"]
 
-    style MultiQuery fill:#eff6ff,stroke:#2563eb
-    style Compressor fill:#fef3c7,stroke:#d97706
-    style FinalDocs fill:#ecfdf5,stroke:#059669
+    style MultiQuery fill:#eff6ff,stroke:#2563eb,color:#000000
+    style Compressor fill:#fef3c7,stroke:#d97706,color:#000000
+    style FinalDocs fill:#ecfdf5,stroke:#059669,color:#000000
 ```
 
 ### Advanced LangChain Retrievers:
@@ -538,7 +538,7 @@ if __name__ == "__main__":
 
 | Feature / Primitive | Syntax / Method | Key Operational Purpose |
 | :--- | :--- | :--- |
-| **Pipeline Operator** | `A \| B` | Functional composition where output of `A` feeds directly to input of `B`. |
+| **Pipeline Operator** | <code>A &#124; B</code> | Functional composition where output of `A` feeds directly to input of `B`. |
 | **Parallel Fan-Out** | `RunnableParallel(k1=R1, k2=R2)` | Concurrent execution of heterogeneous branches on async loop. |
 | **Pass Data Unaltered** | `RunnablePassthrough()` | Retains query string or context intact across pipeline steps. |
 | **Dictionary Assignment** | `RunnablePassthrough.assign(key=fn)` | Appends or updates specific dictionary keys while keeping prior state. |

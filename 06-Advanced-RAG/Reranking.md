@@ -61,9 +61,9 @@ flowchart TD
     Stage3 --> FinalContext([Final Prompt Context: K3 = 5 Chunks])
     FinalContext --> LLM([LLM Generation Engine])
 
-    style Stage1 fill:#e3f2fd,stroke:#1565c0,stroke-width:1px
-    style Stage2 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
-    style Stage3 fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style Stage1 fill:#e3f2fd,stroke:#1565c0,stroke-width:1px,color:#000000
+    style Stage2 fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#000000
+    style Stage3 fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 ### The Architectural Contract of Multi-Stage IR
@@ -170,11 +170,11 @@ graph TD
     J --> K[Stage 4: Context Deduplication & Primacy-Recency Sorter]
     K --> L[Final Context Injection: K4 = 5 Chunks]
 
-    style A fill:#fffde7,stroke:#fbc02d,stroke-width:1px
-    style E fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style G fill:#f3e5f5,stroke:#8e24aa,stroke-width:1px
-    style I fill:#fce4ec,stroke:#d81b60,stroke-width:1px
-    style L fill:#e8f5e9,stroke:#388e3c,stroke-width:1px
+    style A fill:#fffde7,stroke:#fbc02d,stroke-width:1px,color:#000000
+    style E fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style G fill:#f3e5f5,stroke:#8e24aa,stroke-width:1px,color:#000000
+    style I fill:#fce4ec,stroke:#d81b60,stroke-width:1px,color:#000000
+    style L fill:#e8f5e9,stroke:#388e3c,stroke-width:1px,color:#000000
 ```
 
 ### Stage Breakdown:
@@ -664,10 +664,10 @@ flowchart TD
     AccuracyPath -->|"< 1M Chunks"| OptionC["Hybrid Retrieval (K1=100)<br/>+ bge-reranker-large (GPU Batch)"]
     AccuracyPath -->|"> 10M Chunks"| OptionD["3-Stage Cascade:<br/>1. HNSW + BM25 (K1=200)<br/>2. Distilled Reranker (K2=40)<br/>3. Heavy Cross-Encoder (K3=5)"]
 
-    style OptionA fill:#e1f5fe,stroke:#0288d1,stroke-width:1px
-    style OptionB fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
-    style OptionC fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
-    style OptionD fill:#fffde7,stroke:#fbc02d,stroke-width:1px
+    style OptionA fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000000
+    style OptionB fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
+    style OptionC fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px,color:#000000
+    style OptionD fill:#fffde7,stroke:#fbc02d,stroke-width:1px,color:#000000
 ```
 
 * **The Golden Equation:** $\text{Cascade Recall} \le \text{Stage 1 Recall}$. Never bottleneck Stage 1 with an overly aggressive $K_1$ cutoff.

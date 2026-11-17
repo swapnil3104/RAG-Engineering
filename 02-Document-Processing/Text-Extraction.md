@@ -166,7 +166,7 @@ When $S_M > 0.85$, the extractor switches from standard table matrix serializati
 
 | Serialization Strategy | Token Consumption | Structural Clarity | LLM Retrieval Accuracy | Best Fit |
 | :--- | :---: | :---: | :---: | :--- |
-| **Markdown Table** (`| Col1 | Col2 |`) | Low to Medium | High | High ($95\%$) | Standard tables ($\le 15$ columns) |
+| **Markdown Table** (<code>&#124; Col1 &#124; Col2 &#124;</code>) | Low to Medium | High | High ($95\%$) | Standard tables ($\le 15$ columns) |
 | **JSON Records** (`[{"Col1": "Val"}]`) | High ($+60\%$) | Very High | High ($92\%$) | Wide datasets with nested attributes |
 | **CSV / TSV String** | Very Low | Moderate | Moderate ($78\%$) | High-volume tabular ingestion |
 | **Narrative Sentences** ("In 2024...") | High | Low | Variable ($70\%$) | Small summary KPI blocks |
@@ -528,7 +528,7 @@ flowchart TD
     H --> I
     I --> J["Downstream: Cleaning, Splitting & Chunking"]
 
-    style A fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
-    style C fill:#fff8e1,stroke:#f57f17,stroke-width:2px
-    style I fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style A fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#000000
+    style C fill:#fff8e1,stroke:#f57f17,stroke-width:2px,color:#000000
+    style I fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000000
 ```

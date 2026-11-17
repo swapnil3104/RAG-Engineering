@@ -405,7 +405,7 @@ flowchart LR
 
 | Architectural Attribute | Dense Embeddings (Single-Vector Bi-Encoder) | Sparse Embeddings (BM25 / SPLADE) | Multi-Vector Embeddings (ColBERT / Late Interaction) |
 | :--- | :--- | :--- | :--- |
-| **Representation Format** | Single continuous float vector $\mathbf{v} \in \mathbb{R}^d$ ($d \approx 768 - 1536$). | High-dimensional sparse vector $\mathbf{s} \in \mathbb{R}^{|\mathcal{V}|}$ ($|\mathcal{V}| \approx 30,000$). | Matrix of token vectors $\mathbf{M} \in \mathbb{R}^{L \times d}$ ($d \approx 128$). |
+| **Representation Format** | Single continuous float vector $\mathbf{v} \in \mathbb{R}^d$ ($d \approx 768 - 1536$). | High-dimensional sparse vector $\mathbf{s} \in \mathbb{R}^{\vert\mathcal{V}\vert}$ ($\vert\mathcal{V}\vert \approx 30,000$). | Matrix of token vectors $\mathbf{M} \in \mathbb{R}^{L \times d}$ ($d \approx 128$). |
 | **Index Storage Structure** | Vector DB Graph (HNSW) or Inverted File (IVF). | Inverted Index (Postings lists). | Multi-vector token index with residual compression. |
 | **Storage per Passage** | Low ($1.5 - 6 \text{ KB}$). | Very Low ($0.2 - 1 \text{ KB}$). | High ($30 - 80 \text{ KB}$). |
 | **Semantic Generalization**| **Exceptional:** Understands synonyms, context, and intent. | **Weak:** Dependent on shared lexical vocabulary. | **Maximum:** Deep token-to-token semantic interaction. |

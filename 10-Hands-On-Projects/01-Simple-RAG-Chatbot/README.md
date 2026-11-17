@@ -40,8 +40,8 @@ flowchart LR
 
     Ingestion -.-> Inference
 
-    style Ingestion fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px
-    style Inference fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px
+    style Ingestion fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px,color:#000000
+    style Inference fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px,color:#000000
 ```
 
 ### Core Engineering Objectives
@@ -570,8 +570,8 @@ flowchart TD
     Step5 --> Step6["6. XML Grounded Prompting<br/>(Strict Anti-Hallucination Guardrails)"]
     Step6 --> Step7["7. SSE Token Streaming<br/>(Streamlit Interactive Chatbot)"]
 
-    style Step1 fill:#e0f2fe,stroke:#0284c7
-    style Step3 fill:#fef3c7,stroke:#d97706
-    style Step5 fill:#dcfce7,stroke:#16a34a
-    style Step7 fill:#f3e8ff,stroke:#9333ea
+    style Step1 fill:#e0f2fe,stroke:#0284c7,color:#000000
+    style Step3 fill:#fef3c7,stroke:#d97706,color:#000000
+    style Step5 fill:#dcfce7,stroke:#16a34a,color:#000000
+    style Step7 fill:#f3e8ff,stroke:#9333ea,color:#000000
 ```

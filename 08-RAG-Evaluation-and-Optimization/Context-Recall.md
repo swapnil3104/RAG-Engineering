@@ -48,10 +48,10 @@ flowchart TD
 
     S1 & S2 & S3 --> Score["Context Recall Score = 2 / 3 = 0.667"]
 
-    style GroundTruthSpace fill:#f8fafc,stroke:#64748b
-    style RetrievedChunks fill:#eff6ff,stroke:#2563eb
-    style VerificationEngine fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style Score fill:#fef2f2,stroke:#ef4444,stroke-width:2px
+    style GroundTruthSpace fill:#f8fafc,stroke:#64748b,color:#000000
+    style RetrievedChunks fill:#eff6ff,stroke:#2563eb,color:#000000
+    style VerificationEngine fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style Score fill:#fef2f2,stroke:#ef4444,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -123,12 +123,12 @@ flowchart TD
     C4 --> S4["Deploy Multi-Query / Sub-Question Decomposition"]
     C5 --> S5["Expand K to 15 + Add Cross-Encoder Reranker"]
 
-    style RecallFailure fill:#fee2e2,stroke:#ef4444,stroke-width:2px
-    style S1 fill:#dcfce7,stroke:#16a34a
-    style S2 fill:#dcfce7,stroke:#16a34a
-    style S3 fill:#dcfce7,stroke:#16a34a
-    style S4 fill:#dcfce7,stroke:#16a34a
-    style S5 fill:#dcfce7,stroke:#16a34a
+    style RecallFailure fill:#fee2e2,stroke:#ef4444,stroke-width:2px,color:#000000
+    style S1 fill:#dcfce7,stroke:#16a34a,color:#000000
+    style S2 fill:#dcfce7,stroke:#16a34a,color:#000000
+    style S3 fill:#dcfce7,stroke:#16a34a,color:#000000
+    style S4 fill:#dcfce7,stroke:#16a34a,color:#000000
+    style S5 fill:#dcfce7,stroke:#16a34a,color:#000000
 ```
 
 ---
@@ -401,9 +401,9 @@ flowchart TD
     CheckTopK -->|"Yes (K <= 5)"| Fix3["Expand Retrieval Pool to K=20<br/>Add Cross-Encoder Reranker to Filter"]
     CheckTopK -->|"No (K >= 20)"| Fix4["Inspect Chunk Boundaries<br/>Switch to Parent-Document / Hierarchical Indexing"]
 
-    style Start fill:#fee2e2,stroke:#ef4444
-    style Fix1 fill:#dcfce7,stroke:#16a34a
-    style Fix2 fill:#dcfce7,stroke:#16a34a
-    style Fix3 fill:#dcfce7,stroke:#16a34a
-    style Fix4 fill:#dcfce7,stroke:#16a34a
+    style Start fill:#fee2e2,stroke:#ef4444,color:#000000
+    style Fix1 fill:#dcfce7,stroke:#16a34a,color:#000000
+    style Fix2 fill:#dcfce7,stroke:#16a34a,color:#000000
+    style Fix3 fill:#dcfce7,stroke:#16a34a,color:#000000
+    style Fix4 fill:#dcfce7,stroke:#16a34a,color:#000000
 ```

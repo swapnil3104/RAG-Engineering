@@ -45,11 +45,11 @@ flowchart TD
     ReasoningCore -.->|Write Reflection / Post-Mortem| Tier4
     ReasoningCore -.->|Persist Session State| Tier2
 
-    style MultiTier fill:#f8fafc,stroke:#3b82f6,stroke-width:2px
-    style Tier1 fill:#eff6ff,stroke:#1d4ed8,stroke-width:1px
-    style Tier2 fill:#fef3c7,stroke:#d97706,stroke-width:1px
-    style Tier3 fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    style Tier4 fill:#f3e8ff,stroke:#7c3aed,stroke-width:1px
+    style MultiTier fill:#f8fafc,stroke:#3b82f6,stroke-width:2px,color:#000000
+    style Tier1 fill:#eff6ff,stroke:#1d4ed8,stroke-width:1px,color:#000000
+    style Tier2 fill:#fef3c7,stroke:#d97706,stroke-width:1px,color:#000000
+    style Tier3 fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
+    style Tier4 fill:#f3e8ff,stroke:#7c3aed,stroke-width:1px,color:#000000
 ```
 
 ---
@@ -127,9 +127,9 @@ flowchart TD
     Compactor --> CompactedState
     CompactedState --> LLMNext["LLM Generates Next Step / Output"]
 
-    style RawState fill:#fee2e2,stroke:#ef4444,stroke-width:1px
-    style Compactor fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style CompactedState fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+    style RawState fill:#fee2e2,stroke:#ef4444,stroke-width:1px,color:#000000
+    style Compactor fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style CompactedState fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
 ```
 
 ### Compaction Techniques in Production:
@@ -168,9 +168,9 @@ graph LR
     Agent[Agent Deliberation Engine] <--> EpisodicStore
     Agent <--> SemanticGraph
 
-    style EpisodicStore fill:#fef3c7,stroke:#d97706,stroke-width:1px
-    style SemanticGraph fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    style Agent fill:#eff6ff,stroke:#2563eb,stroke-width:2px
+    style EpisodicStore fill:#fef3c7,stroke:#d97706,stroke-width:1px,color:#000000
+    style SemanticGraph fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
+    style Agent fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -569,10 +569,10 @@ flowchart TD
     ExecLoop -.->|Log Error Post-Mortem| SaveRef[Save to Reflection Store]
     FinalAnswer -.->|Log Session Facts| SaveEp[Save to Episodic Store]
 
-    style In fill:#f1f5f9,stroke:#64748b,stroke-width:1px
-    style Assemble fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    style ExecLoop fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style FinalAnswer fill:#dcfce7,stroke:#16a34a,stroke-width:2px
-    style SaveRef fill:#f3e8ff,stroke:#7c3aed,stroke-width:1px
-    style SaveEp fill:#ede9fe,stroke:#6366f1,stroke-width:1px
+    style In fill:#f1f5f9,stroke:#64748b,stroke-width:1px,color:#000000
+    style Assemble fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
+    style ExecLoop fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style FinalAnswer fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
+    style SaveRef fill:#f3e8ff,stroke:#7c3aed,stroke-width:1px,color:#000000
+    style SaveEp fill:#ede9fe,stroke:#6366f1,stroke-width:1px,color:#000000
 ```

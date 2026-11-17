@@ -55,10 +55,10 @@ flowchart TD
     Reflection -->|"Yes: Confident & Complete"| Synthesizer["Final Answer Generation<br/>Attributed Citations & Synthesis"]
     Synthesizer --> UserOut([Verified Grounded Output])
     
-    style CognitiveLoop fill:#f0f7ff,stroke:#0284c7,stroke-width:2px
-    style AgentCore fill:#e0f2fe,stroke:#0369a1,stroke-width:2px
-    style Reflection fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style Synthesizer fill:#dcfce7,stroke:#15803d,stroke-width:2px
+    style CognitiveLoop fill:#f0f7ff,stroke:#0284c7,stroke-width:2px,color:#000000
+    style AgentCore fill:#e0f2fe,stroke:#0369a1,stroke-width:2px,color:#000000
+    style Reflection fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style Synthesizer fill:#dcfce7,stroke:#15803d,stroke-width:2px,color:#000000
 ```
 
 ### Core Characteristics of Agentic RAG
@@ -138,10 +138,10 @@ flowchart LR
         Reflect --> G4O[Grounded Answer]
     end
 
-    style G1 fill:#f8fafc,stroke:#94a3b8
-    style G2 fill:#f1f5f9,stroke:#64748b
-    style G3 fill:#e2e8f0,stroke:#475569
-    style G4 fill:#eff6ff,stroke:#2563eb,stroke-width:2px
+    style G1 fill:#f8fafc,stroke:#94a3b8,color:#000000
+    style G2 fill:#f1f5f9,stroke:#64748b,color:#000000
+    style G3 fill:#e2e8f0,stroke:#475569,color:#000000
+    style G4 fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
 ```
 
 ### 📊 Generational Comparison Matrix
@@ -180,11 +180,11 @@ graph TD
     Eval -->|Needs more info| Plan
     Eval -->|Complete| Exec
 
-    style Plan fill:#ede9fe,stroke:#7c3aed,stroke-width:1px
-    style Memory fill:#fef3c7,stroke:#d97706,stroke-width:1px
-    style Router fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    style Eval fill:#fee2e2,stroke:#dc2626,stroke-width:1px
-    style Exec fill:#dcfce7,stroke:#16a34a,stroke-width:1px
+    style Plan fill:#ede9fe,stroke:#7c3aed,stroke-width:1px,color:#000000
+    style Memory fill:#fef3c7,stroke:#d97706,stroke-width:1px,color:#000000
+    style Router fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
+    style Eval fill:#fee2e2,stroke:#dc2626,stroke-width:1px,color:#000000
+    style Exec fill:#dcfce7,stroke:#16a34a,stroke-width:1px,color:#000000
 ```
 
 ### 1. Planning & Decomposition Core
@@ -663,8 +663,8 @@ flowchart TD
     Q3 -->|No: Static sequence known| PlanSolve[Deploy Plan-and-Solve DAG<br/>LangChain / LlamaIndex Workflow]
     Q3 -->|Yes: Unknown search path| Agentic[Deploy Fully Agentic RAG<br/>LangGraph Stateful State Machine + Reflection]
     
-    style Naive fill:#dcfce7,stroke:#16a34a,stroke-width:1px
-    style Router fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    style PlanSolve fill:#fef3c7,stroke:#d97706,stroke-width:1px
-    style Agentic fill:#fee2e2,stroke:#dc2626,stroke-width:2px
+    style Naive fill:#dcfce7,stroke:#16a34a,stroke-width:1px,color:#000000
+    style Router fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
+    style PlanSolve fill:#fef3c7,stroke:#d97706,stroke-width:1px,color:#000000
+    style Agentic fill:#fee2e2,stroke:#dc2626,stroke-width:2px,color:#000000
 ```

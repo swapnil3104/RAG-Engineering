@@ -38,9 +38,9 @@ flowchart TD
 
     AcademicLayer --> OperationalLayer --> ContinuousLayer
 
-    style AcademicLayer fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style OperationalLayer fill:#ecfdf5,stroke:#059669,stroke-width:2px
-    style ContinuousLayer fill:#fef3c7,stroke:#d97706,stroke-width:2px
+    style AcademicLayer fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style OperationalLayer fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
+    style ContinuousLayer fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -74,12 +74,12 @@ The files in this directory are structured to cover distinct aspects of the RAG 
 
 | File Name | Canonical Topic Title | Primary Architectural Purpose |
 | :--- | :--- | :--- |
-| [Research-Papers.md](file:///e:/RAG-Engineering/12-Resources/Research-Papers.md) | **Foundational & Milestone RAG Research Papers** | Annotated reading list from 2020 to 2026 covering DPR, ColBERT, Self-RAG, RAPTOR, and GraphRAG. |
-| [Glossary.md](file:///e:/RAG-Engineering/12-Resources/Glossary.md) | **The Comprehensive Enterprise RAG Glossary** | 100+ rigorous definitions spanning IR, vector geometry, indexing, query optimization, and evaluation metrics. |
-| [Datasets.md](file:///e:/RAG-Engineering/12-Resources/Datasets.md) | **Curated Evaluation Datasets & Golden Benchmarks** | Benchmark corpora (MS MARCO, BEIR, HotpotQA, FinQA, RGB) for zero-shot testing, multi-hop QA, and noise rejection. |
-| [Blogs.md](file:///e:/RAG-Engineering/12-Resources/Blogs.md) | **Authoritative Industry Engineering Blogs** | Curated index of frontier AI labs (Anthropic, OpenAI), vector DB internals (Qdrant), and staff engineer essays. |
-| [YouTube-Resources.md](file:///e:/RAG-Engineering/12-Resources/YouTube-Resources.md) | **Curated Video Courses & Conference Keynotes** | Stanford CS224N lectures, Karpathy's transformer walkthroughs, Umar Jamil paper deep dives, and framework masterclasses. |
-| [Documentation.md](file:///e:/RAG-Engineering/12-Resources/Documentation.md) | **Official Documentation Index** | Direct links and quick references for LangChain, LlamaIndex, Qdrant, Pinecone, pgvector, and cloud foundation model APIs. |
+| [Research-Papers.md](Research-Papers.md) | **Foundational & Milestone RAG Research Papers** | Annotated reading list from 2020 to 2026 covering DPR, ColBERT, Self-RAG, RAPTOR, and GraphRAG. |
+| [Glossary.md](Glossary.md) | **The Comprehensive Enterprise RAG Glossary** | 100+ rigorous definitions spanning IR, vector geometry, indexing, query optimization, and evaluation metrics. |
+| [Datasets.md](Datasets.md) | **Curated Evaluation Datasets & Golden Benchmarks** | Benchmark corpora (MS MARCO, BEIR, HotpotQA, FinQA, RGB) for zero-shot testing, multi-hop QA, and noise rejection. |
+| [Blogs.md](Blogs.md) | **Authoritative Industry Engineering Blogs** | Curated index of frontier AI labs (Anthropic, OpenAI), vector DB internals (Qdrant), and staff engineer essays. |
+| [YouTube-Resources.md](YouTube-Resources.md) | **Curated Video Courses & Conference Keynotes** | Stanford CS224N lectures, Karpathy's transformer walkthroughs, Umar Jamil paper deep dives, and framework masterclasses. |
+| [Documentation.md](Documentation.md) | **Official Documentation Index** | Direct links and quick references for LangChain, LlamaIndex, Qdrant, Pinecone, pgvector, and cloud foundation model APIs. |
 
 ---
 
@@ -97,10 +97,10 @@ flowchart TD
 
     PathA -->|"3. Full-Stack Agentic Application Development"| A_Path["Application / AI Engineer<br/>1. Documentation.md (LangChain, LlamaIndex)<br/>2. YouTube-Resources.md (LangGraph Masterclass)<br/>3. Glossary.md (RAG Triad, Guardrails)"]
 
-    style Role fill:#f8fafc,stroke:#475569,stroke-width:2px
-    style R_Path fill:#eff6ff,stroke:#1d4ed8,stroke-width:1px
-    style S_Path fill:#ecfdf5,stroke:#059669,stroke-width:1px
-    style A_Path fill:#fef3c7,stroke:#d97706,stroke-width:1px
+    style Role fill:#f8fafc,stroke:#475569,stroke-width:2px,color:#000000
+    style R_Path fill:#eff6ff,stroke:#1d4ed8,stroke-width:1px,color:#000000
+    style S_Path fill:#ecfdf5,stroke:#059669,stroke-width:1px,color:#000000
+    style A_Path fill:#fef3c7,stroke:#d97706,stroke-width:1px,color:#000000
 ```
 
 ---
@@ -280,11 +280,11 @@ flowchart LR
     M10 --> M11["11<br/>Frameworks & Tools"]
     M11 --> M12["12<br/>Resources & References"]
 
-    style M00 fill:#eff6ff,stroke:#1d4ed8,stroke-width:1px
-    style M02 fill:#ecfdf5,stroke:#059669,stroke-width:1px
-    style M05 fill:#fef3c7,stroke:#d97706,stroke-width:1px
-    style M08 fill:#fdf4ff,stroke:#a21caf,stroke-width:1px
-    style M10 fill:#f1f5f9,stroke:#0f172a,stroke-width:1px
-    style M11 fill:#e0f2fe,stroke:#0284c7,stroke-width:1px
-    style M12 fill:#dbeafe,stroke:#1e40af,stroke-width:3px
+    style M00 fill:#eff6ff,stroke:#1d4ed8,stroke-width:1px,color:#000000
+    style M02 fill:#ecfdf5,stroke:#059669,stroke-width:1px,color:#000000
+    style M05 fill:#fef3c7,stroke:#d97706,stroke-width:1px,color:#000000
+    style M08 fill:#fdf4ff,stroke:#a21caf,stroke-width:1px,color:#000000
+    style M10 fill:#f1f5f9,stroke:#0f172a,stroke-width:1px,color:#000000
+    style M11 fill:#e0f2fe,stroke:#0284c7,stroke-width:1px,color:#000000
+    style M12 fill:#dbeafe,stroke:#1e40af,stroke-width:3px,color:#000000
 ```

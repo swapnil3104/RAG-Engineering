@@ -52,10 +52,10 @@ flowchart TD
     DataPlane --> QueryPlane --> ReasoningPlane
     ReasoningPlane -.-> GovernancePlane
 
-    style DataPlane fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style QueryPlane fill:#ecfdf5,stroke:#059669,stroke-width:2px
-    style ReasoningPlane fill:#fef3c7,stroke:#d97706,stroke-width:2px
-    style GovernancePlane fill:#fdf4ff,stroke:#a21caf,stroke-width:2px
+    style DataPlane fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style QueryPlane fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
+    style ReasoningPlane fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
+    style GovernancePlane fill:#fdf4ff,stroke:#a21caf,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -457,7 +457,7 @@ flowchart LR
 
     HNSW & INV --> HYB --> RRF --> CE --> LLM --> EVAL
 
-    style Storage fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style Retrieval fill:#ecfdf5,stroke:#059669,stroke-width:2px
-    style Generation fill:#fef3c7,stroke:#d97706,stroke-width:2px
+    style Storage fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style Retrieval fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
+    style Generation fill:#fef3c7,stroke:#d97706,stroke-width:2px,color:#000000
 ```

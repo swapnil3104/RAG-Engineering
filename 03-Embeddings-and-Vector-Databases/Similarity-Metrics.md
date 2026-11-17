@@ -56,7 +56,7 @@ Cosine similarity measures the **cosine of the angle $\theta$** between two non-
 
 ### # Cosine Similarity Formula
 $$
-S_{\text{Cosine}}(\mathbf{u}, \mathbf{v}) = \cos(\theta) = \frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\|_2 \|\mathbf{v}\|_2} = \frac{\sum_{i=1}^d u_i v_i}{\sqrt{\sum_{i=1}^d u_i^2} \sqrt{\sum_{i=1}^d v_i^2}}
+S_{\text{Cosine}}(\mathbf{u}, \mathbf{v}) = \cos(\theta) = \frac{\mathbf{u} \cdot \mathbf{v}}{\Vert\mathbf{u}\Vert_2 \Vert\mathbf{v}\Vert_2} = \frac{\sum_{i=1}^d u_i v_i}{\sqrt{\sum_{i=1}^d u_i^2} \sqrt{\sum_{i=1}^d v_i^2}}
 $$
 
 ```mermaid
@@ -87,7 +87,7 @@ The **Inner Product** (or Dot Product) computes the sum of the element-wise prod
 
 ### # Inner Product (Dot Product) Formula
 $$
-S_{\text{IP}}(\mathbf{u}, \mathbf{v}) = \langle \mathbf{u}, \mathbf{v} \rangle = \sum_{i=1}^d u_i v_i = \|\mathbf{u}\|_2 \|\mathbf{v}\|_2 \cos(\theta)
+S_{\text{IP}}(\mathbf{u}, \mathbf{v}) = \langle \mathbf{u}, \mathbf{v} \rangle = \sum_{i=1}^d u_i v_i = \Vert\mathbf{u}\Vert_2 \Vert\mathbf{v}\Vert_2 \cos(\theta)
 $$
 
 ```mermaid
@@ -170,10 +170,10 @@ Hamming distance does not use the floating-point unit (FPU). Instead, it runs on
 
 | Metric / Space | Mathematical Formula | Output Range | Satisfies Metric Axioms? | Scale Invariant? | Hardware Acceleration | Primary Enterprise Use Case |
 | :--- | :--- | :---: | :---: | :---: | :--- | :--- |
-| **Cosine Similarity** | $\frac{\mathbf{u} \cdot \mathbf{v}}{\|\mathbf{u}\|_2 \|\mathbf{v}\|_2}$ | $[-1.0, 1.0]$ | ❌ No (Triangle Ineq. fails) | ✅ Yes | Moderate (sqrt + div) | Natural language text & semantic document retrieval |
+| **Cosine Similarity** | $\frac{\mathbf{u} \cdot \mathbf{v}}{\Vert\mathbf{u}\Vert_2 \Vert\mathbf{v}\Vert_2}$ | $[-1.0, 1.0]$ | ❌ No (Triangle Ineq. fails) | ✅ Yes | Moderate (sqrt + div) | Natural language text & semantic document retrieval |
 | **Inner Product (IP)**| $\sum_{i=1}^d u_i v_i$ | $(-\infty, +\infty)$ | ❌ No (Identity fails) | ❌ No | **Fastest (AVX-512 FMA)** | Normalized text embeddings & recommender MIPS |
 | **Euclidean ($L_2$)** | $\sqrt{\sum_{i=1}^d (u_i - v_i)^2}$ | $[0.0, +\infty)$ | ✅ Yes (Full Metric) | ❌ No | Fast (SIMD vector sub + mul) | Computer vision, audio, clustering, & k-means |
-| **Manhattan ($L_1$)** | $\sum_{i=1}^d \|u_i - v_i\|$ | $[0.0, +\infty)$ | ✅ Yes (Full Metric) | ❌ No | Fast (SIMD abs diff) | High-dimensional sparse spaces & anomaly detection |
+| **Manhattan ($L_1$)** | $\sum_{i=1}^d \vert u_i - v_i \vert$ | $[0.0, +\infty)$ | ✅ Yes (Full Metric) | ❌ No | Fast (SIMD abs diff) | High-dimensional sparse spaces & anomaly detection |
 | **Hamming ($L_0$)** | $\text{POPCNT}(\mathbf{a} \oplus \mathbf{b})$ | $[0, d]$ (integer) | ✅ Yes (Discrete Metric) | ❌ No | **Ultra-Fast (Hardware ALU)** | 1-bit binary quantized embeddings & fast pre-ranking |
 
 ---

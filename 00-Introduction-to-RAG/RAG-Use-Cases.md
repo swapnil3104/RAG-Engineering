@@ -34,7 +34,7 @@ flowchart TD
     EnterpriseCore --> DevOps["5. Software Engineering & Codebase Q&A"]
     EnterpriseCore --> HR["6. HR, Compliance & Corporate Policies"]
 
-    style EnterpriseCore fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
+    style EnterpriseCore fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -51,8 +51,8 @@ flowchart LR
     CE --> LLM["Financial LLM"]
     LLM --> VerifiedInsight["Earnings Breakdown with Exact Row/Col Citations"]
 
-    style TableParser fill:#fff3e0,stroke:#e65100
-    style VerifiedInsight fill:#e8f5e9,stroke:#2e7d32
+    style TableParser fill:#fff3e0,stroke:#e65100,color:#000000
+    style VerifiedInsight fill:#e8f5e9,stroke:#2e7d32,color:#000000
 ```
 
 ### Key Technical Challenges & Solutions:

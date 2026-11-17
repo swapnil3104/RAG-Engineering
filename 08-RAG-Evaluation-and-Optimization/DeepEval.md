@@ -58,9 +58,9 @@ flowchart TD
         Gate -->|"No"| Fail([Pytest FAIL: Detailed Reason Trace ❌])
     end
 
-    style DevWorkflow fill:#f8fafc,stroke:#94a3b8
-    style DeepEvalCore fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style AssertionGate fill:#f0fdf4,stroke:#16a34a
+    style DevWorkflow fill:#f8fafc,stroke:#94a3b8,color:#000000
+    style DeepEvalCore fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style AssertionGate fill:#f0fdf4,stroke:#16a34a,color:#000000
 ```
 
 ---
@@ -138,7 +138,7 @@ flowchart LR
     TC --> Assert
     M --> Assert
 
-    style Primitives fill:#eff6ff,stroke:#2563eb,stroke-width:2px
+    style Primitives fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
 ```
 
 ### The Three Primitives Detailed
@@ -449,7 +449,7 @@ flowchart TD
     AssertAll -->|"Yes"| Green["CI Green ✅<br/>Allow Merge to Main"]
     AssertAll -->|"No"| Red["CI Red ❌<br/>Print Error Trace & Halt Deployment"]
 
-    style TestSuite fill:#eff6ff,stroke:#2563eb,stroke-width:2px
-    style Green fill:#dcfce7,stroke:#16a34a,stroke-width:2px
-    style Red fill:#fee2e2,stroke:#ef4444,stroke-width:2px
+    style TestSuite fill:#eff6ff,stroke:#2563eb,stroke-width:2px,color:#000000
+    style Green fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
+    style Red fill:#fee2e2,stroke:#ef4444,stroke-width:2px,color:#000000
 ```

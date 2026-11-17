@@ -48,9 +48,9 @@ flowchart TD
         ResponseSynth --> FinalOut(["Verified Response + Source Citations"])
     end
 
-    style DataIngestion fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px
-    style IndexingTier fill:#f8fafc,stroke:#475569,stroke-width:2px
-    style QueryTier fill:#ecfdf5,stroke:#059669,stroke-width:2px
+    style DataIngestion fill:#eff6ff,stroke:#1d4ed8,stroke-width:2px,color:#000000
+    style IndexingTier fill:#f8fafc,stroke:#475569,stroke-width:2px,color:#000000
+    style QueryTier fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
 ```
 
 ---
@@ -126,13 +126,13 @@ graph TD
     L1_2 --> Leaf3
     L1_2 --> Leaf4
 
-    style Root fill:#fef3c7,stroke:#d97706
-    style L1_1 fill:#e0f2fe,stroke:#0284c7
-    style L1_2 fill:#e0f2fe,stroke:#0284c7
-    style Leaf1 fill:#f0fdf4,stroke:#16a34a
-    style Leaf2 fill:#f0fdf4,stroke:#16a34a
-    style Leaf3 fill:#f0fdf4,stroke:#16a34a
-    style Leaf4 fill:#f0fdf4,stroke:#16a34a
+    style Root fill:#fef3c7,stroke:#d97706,color:#000000
+    style L1_1 fill:#e0f2fe,stroke:#0284c7,color:#000000
+    style L1_2 fill:#e0f2fe,stroke:#0284c7,color:#000000
+    style Leaf1 fill:#f0fdf4,stroke:#16a34a,color:#000000
+    style Leaf2 fill:#f0fdf4,stroke:#16a34a,color:#000000
+    style Leaf3 fill:#f0fdf4,stroke:#16a34a,color:#000000
+    style Leaf4 fill:#f0fdf4,stroke:#16a34a,color:#000000
 ```
 
 When querying a `TreeIndex` using top-down retrieval:
@@ -186,9 +186,9 @@ flowchart TD
     Eval2 -->|"Retain Leaf"| C5_Keep
     C6 --> C6_Keep
 
-    style VectorSearch fill:#f8fafc,stroke:#64748b
-    style MergeLogic fill:#fffbeb,stroke:#d97706,stroke-width:2px
-    style ContextAssembly fill:#ecfdf5,stroke:#059669,stroke-width:2px
+    style VectorSearch fill:#f8fafc,stroke:#64748b,color:#000000
+    style MergeLogic fill:#fffbeb,stroke:#d97706,stroke-width:2px,color:#000000
+    style ContextAssembly fill:#ecfdf5,stroke:#059669,stroke-width:2px,color:#000000
 ```
 
 ---

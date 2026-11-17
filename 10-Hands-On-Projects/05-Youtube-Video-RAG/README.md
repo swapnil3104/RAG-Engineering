@@ -47,9 +47,9 @@ flowchart LR
 
     Ingestion --> Storage --> Inference
 
-    style Ingestion fill:#fee2e2,stroke:#ef4444,stroke-width:1.5px
-    style Storage fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px
-    style Inference fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px
+    style Ingestion fill:#fee2e2,stroke:#ef4444,stroke-width:1.5px,color:#000000
+    style Storage fill:#eff6ff,stroke:#2563eb,stroke-width:1.5px,color:#000000
+    style Inference fill:#f0fdf4,stroke:#16a34a,stroke-width:1.5px,color:#000000
 ```
 
 ---
@@ -474,8 +474,8 @@ flowchart LR
     ChromaDB --> Query["User Inquiries About Concepts"]
     Query --> FormattedLLM["LLM Synthesis with [MM:SS](Jump_URL) Anchor Links"]
 
-    style VideoURL fill:#fee2e2,stroke:#ef4444
-    style CaptionAPI fill:#fef3c7,stroke:#d97706
-    style ChromaDB fill:#eff6ff,stroke:#2563eb
-    style FormattedLLM fill:#dcfce7,stroke:#16a34a
+    style VideoURL fill:#fee2e2,stroke:#ef4444,color:#000000
+    style CaptionAPI fill:#fef3c7,stroke:#d97706,color:#000000
+    style ChromaDB fill:#eff6ff,stroke:#2563eb,color:#000000
+    style FormattedLLM fill:#dcfce7,stroke:#16a34a,color:#000000
 ```

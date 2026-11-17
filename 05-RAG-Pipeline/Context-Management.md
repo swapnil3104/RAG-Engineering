@@ -37,8 +37,8 @@ flowchart TD
     
     OptimizedContext --> LLM["Autoregressive LLM"]
 
-    style TokenBudget fill:#fff3e0,stroke:#e65100,stroke-width:1px
-    style Step3 fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px
+    style TokenBudget fill:#fff3e0,stroke:#e65100,stroke-width:1px,color:#000000
+    style Step3 fill:#e8f5e9,stroke:#2e7d32,stroke-width:1px,color:#000000
 ```
 
 ---

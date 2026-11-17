@@ -31,7 +31,7 @@ flowchart TD
         Client([User Request]) --> AppServer["Monolithic Python Process<br/>• Web Server (FastAPI)<br/>• Embedding Model<br/>• Vector DB Client<br/>• Cross-Encoder Reranker<br/>• LLM Wrapper"]
         AppServer --> ChromaLocal[("Local Chroma/FAISS (File Lock)")]
         AppServer --> ExternalLLM["Remote LLM Provider"]
-        style AppServer fill:#fee2e2,stroke:#ef4444
+        style AppServer fill:#fee2e2,stroke:#ef4444,color:#000000
     end
 
     subgraph ProductionDecoupled ["Enterprise Distributed RAG Architecture"]
@@ -42,7 +42,7 @@ flowchart TD
         Orchestrator --> VecCluster[("Vector Cluster (Distributed Qdrant / Milvus)<br/>Read Replicas + Write Master")]
         Orchestrator --> RerankSvc["Rerank Microservice<br/>(Batched Cross-Encoder)"]
         Orchestrator --> LLMGW["LLM Router & Failover Pool<br/>(Primary, Secondary, Fallback Models)"]
-        style Orchestrator fill:#dcfce7,stroke:#16a34a,stroke-width:2px
+        style Orchestrator fill:#dcfce7,stroke:#16a34a,stroke-width:2px,color:#000000
     end
 ```
 
@@ -522,9 +522,9 @@ flowchart LR
     M3 --> M4["4. Neural Reranking<br/>• Triton Inference GPU<br/>• Dynamic Batching<br/>• FlashRank"]
     M4 --> M5["5. Resilient LLM Pool<br/>• Primary Frontier API<br/>• Local vLLM Fallback<br/>• SSE Stream Response"]
 
-    style M1 fill:#f8fafc,stroke:#64748b
-    style M2 fill:#eff6ff,stroke:#3b82f6
-    style M3 fill:#fef3c7,stroke:#f59e0b
-    style M4 fill:#fce7f3,stroke:#ec4899
-    style M5 fill:#dcfce7,stroke:#10b981,stroke-width:2px
+    style M1 fill:#f8fafc,stroke:#64748b,color:#000000
+    style M2 fill:#eff6ff,stroke:#3b82f6,color:#000000
+    style M3 fill:#fef3c7,stroke:#f59e0b,color:#000000
+    style M4 fill:#fce7f3,stroke:#ec4899,color:#000000
+    style M5 fill:#dcfce7,stroke:#10b981,stroke-width:2px,color:#000000
 ```

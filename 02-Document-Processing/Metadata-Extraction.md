@@ -461,7 +461,7 @@ flowchart TD
     Bitset --> HNSW["Constrained Single-Stage HNSW Search"]
     HNSW --> FinalMatches["Precise, Grounded, Authorized Chunks"]
 
-    style Raw fill:#e1f5fe,stroke:#0288d1,stroke-width:2px
-    style Schema fill:#fff8e1,stroke:#f57f17,stroke-width:2px
-    style FinalMatches fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px
+    style Raw fill:#e1f5fe,stroke:#0288d1,stroke-width:2px,color:#000000
+    style Schema fill:#fff8e1,stroke:#f57f17,stroke-width:2px,color:#000000
+    style FinalMatches fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px,color:#000000
 ```
