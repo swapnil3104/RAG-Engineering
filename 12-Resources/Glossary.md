@@ -293,7 +293,7 @@ A production hybrid retrieval system executes two searches concurrently:
 
 **The RRF Solution:** Reciprocal Rank Fusion discards arbitrary raw scores entirely and operates purely on **ordinal ranking positions**:
 $$
-\text{RRF\_Score}(d) = \frac{1}{k + r_{\text{dense}}(d)} + \frac{1}{k + r_{\text{sparse}}(d)}
+\text{RRF-Score}(d) = \frac{1}{k + r_{\text{dense}}(d)} + \frac{1}{k + r_{\text{sparse}}(d)}
 $$
 Setting $k=60$ dampens the influence of top outliers. RRF is scale-invariant, robust to score distribution shifts, requires zero hyperparameter retraining, and consistently outperforms linear weighting in real-world benchmark evaluations.
 

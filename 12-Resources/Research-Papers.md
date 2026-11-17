@@ -91,7 +91,7 @@ This allows pre-computing token embeddings offline while retaining $O(|Q| \cdot 
 ### # Reciprocal Rank Fusion (RRF) Score
 Cormack, Clarke, and Büttcher (2009) formulated rank aggregation to fuse heterogeneous ranking lists (e.g., BM25 and Dense ANN):
 $$
-\text{RRF\_Score}(d \in \mathcal{D}) = \sum_{m \in \mathcal{M}} \frac{1}{k + r_m(d)}
+\text{RRF-Score}(d \in \mathcal{D}) = \sum_{m \in \mathcal{M}} \frac{1}{k + r_m(d)}
 $$
 Where $\mathcal{M}$ is the set of retrievers, $r_m(d)$ is the rank of document $d$ in retriever $m$, and $k$ is a smoothing constant (typically $k=60$).
 
@@ -348,7 +348,7 @@ xychart-beta
 - **Authors & Affiliation:** Anthropic AI Research.
 - **Core Thesis:** Naive chunking destroys context. A chunk reading *"Its quarterly revenue fell by 5%"* lacks the identity of the company and year.
 - **Key Mechanism:** Prior to embedding and indexing, a fast model (Claude 3.5 Haiku) prepends 50–100 tokens of explanatory document-level context to every individual chunk:
-  $$\text{Chunk}_{\text{contextual}} = \text{Contextual\_Explanation} \oplus \text{Raw\_Chunk}$$
+  $$\text{Chunk}_{\text{contextual}} = \text{Contextual-Explanation} \oplus \text{Raw-Chunk}$$
 - **Impact:** Combined with BM25 + Embeddings + Reranking, reduced retrieval failure rates by up to $67\%$.
 
 ---

@@ -121,7 +121,7 @@ Extends standard RRF across all $P$ perspective candidate lists:
 
 ### # Multi-Perspective RRF Formula
 $$
-\text{RRF\_Score}(d \in \mathcal{U}) = \sum_{p=1}^P \frac{1}{k_{\text{rrf}} + r_p(d)}
+\text{RRF-Score}(d \in \mathcal{U}) = \sum_{p=1}^P \frac{1}{k_{\text{rrf}} + r_p(d)}
 $$
 Where:
 * $\mathcal{U} = \bigcup_{p=1}^P \mathcal{S}_p$: The union of all unique candidate documents.
@@ -277,7 +277,7 @@ if __name__ == "__main__":
   * Perspective 1: *"EPA regulatory violations and pending consent decrees Target Corp."*
   * Perspective 2: *"Superfund CERCLA hazardous waste site clean-up liabilities."*
   * Perspective 3: *"Class action water contamination toxic tort settlements."*
-* **Outcome:** Single query retrieval returned only generic litigation overviews. Multi-query retrieval uncovered an obscure $45M pending toxic tort settlement buried in an SEC exhibit note.
+* **Outcome:** Single query retrieval returned only generic litigation overviews. Multi-query retrieval uncovered an obscure \$45M pending toxic tort settlement buried in an SEC exhibit note.
 
 ### Scenario B: Medical Diagnostic Differential Assistant
 * **User Query:** *"45-year-old presenting with acute chest pain, elevated troponin, but normal coronary angiogram."*

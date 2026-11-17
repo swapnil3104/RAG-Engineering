@@ -156,8 +156,8 @@ flowchart TD
 ```
 
 ### Hard vs. Soft Constraint Thresholding:
-* **Strict Factuality Mode (Medical / Compliance):** Hard prune any candidate beam where $P(\text{[IsSup]}=\text{fully\_supported}) < 0.80$. If no retrieved passage supports the claim, the model drops the sentence or states *"Information not available"*.
-* **Creative / Flexible Mode:** Soft penalty via $-\lambda \log P(\text{[IsSup]}=\text{no\_support})$, allowing the model to bridge gaps using general linguistic knowledge.
+* **Strict Factuality Mode (Medical / Compliance):** Hard prune any candidate beam where $P(\text{[IsSup]}=\text{fully-supported}) < 0.80$. If no retrieved passage supports the claim, the model drops the sentence or states *"Information not available"*.
+* **Creative / Flexible Mode:** Soft penalty via $-\lambda \log P(\text{[IsSup]}=\text{no-support})$, allowing the model to bridge gaps using general linguistic knowledge.
 
 ---
 
@@ -304,7 +304,7 @@ if __name__ == "__main__":
 
 ### 🏥 1. Clinical Diagnostic Question Answering (Hippocratic AI / Epic)
 * **Challenge:** In medical diagnosis, ungrounded parametric hallucinations can lead to patient harm. Traditional RAG systems generated confident answers even when retrieved clinical trials were inconclusive.
-* **Architecture:** Deployed Self-RAG with a strict threshold: if $P(\text{[IsSup]}=\text{fully\_supported}) < 0.90$, candidate beams were hard-pruned. If all candidates failed, the model emitted `[IsUse]=1` and fell back to *"Insufficient clinical evidence to provide diagnosis"*.
+* **Architecture:** Deployed Self-RAG with a strict threshold: if $P(\text{[IsSup]}=\text{fully-supported}) < 0.90$, candidate beams were hard-pruned. If all candidates failed, the model emitted `[IsUse]=1` and fell back to *"Insufficient clinical evidence to provide diagnosis"*.
 * **Outcome:** Factual accuracy reached **$96.8\%$**, with a $0\%$ hallucination rate on drug dosage queries.
 
 ### 💻 2. Automated Code Migration & Refactoring (Bloomberg Software Tooling)

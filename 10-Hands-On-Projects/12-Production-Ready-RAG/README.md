@@ -82,7 +82,7 @@ At a conservative $\eta = 0.45$ (45% cache hit rate) across 1,000,000 queries pe
 For a non-cached query path with an SLA target of $T_{\text{SLA}} \le 1200\text{ms}$ at the 99th percentile:
 
 $$
-T_{p99}(\text{Total}) = T_{\text{ingress}} + T_{\text{cache\_check}} + T_{\text{embed}} + T_{\text{vector\_ann}} + T_{\text{rerank}} + T_{\text{TTFT\_llm}} \le 1200\text{ms}
+T_{p99}(\text{Total}) = T_{\text{ingress}} + T_{\text{cache-check}} + T_{\text{embed}} + T_{\text{vector-ann}} + T_{\text{rerank}} + T_{\text{TTFT-llm}} \le 1200\text{ms}
 $$
 
 | Pipeline Stage | Allocated Budget ($p_{99}$) | Optimization Strategy |

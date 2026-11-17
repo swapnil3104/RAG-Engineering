@@ -57,10 +57,10 @@ $$
 A generated response $R = \{c_1, c_2, \dots, c_M\}$ composed of $M$ atomic propositional claims is strictly faithful if and only if every claim satisfies the entailment threshold $\tau_{\text{entail}}$:
 
 $$
-\text{Global\_Faithfulness}(R, \mathcal{X}) = \frac{1}{M} \sum_{i=1}^M \mathbb{I}\left( P_{\text{NLI}}(\text{Entailment} \mid \mathcal{X}, c_i) \ge \tau_{\text{entail}} \right)
+\text{Global-Faithfulness}(R, \mathcal{X}) = \frac{1}{M} \sum_{i=1}^M \mathbb{I}\left( P_{\text{NLI}}(\text{Entailment} \mid \mathcal{X}, c_i) \ge \tau_{\text{entail}} \right)
 $$
 
-If $\text{Global\_Faithfulness} < 1.0$, the response contains at least one ungrounded or contradictory assertion.
+If $\text{Global-Faithfulness} < 1.0$, the response contains at least one ungrounded or contradictory assertion.
 
 ---
 

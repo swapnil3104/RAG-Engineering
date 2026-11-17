@@ -344,12 +344,12 @@ if __name__ == "__main__":
 
 ### Case Study 1: Global Customer Support Helpdesk (Zendesk / Jira Integration)
 - **Scale:** 3,500,000 queries per month across internal IT and HR support.
-- **Initial Baseline:** Every query retrieved 8 chunks (3,600 prompt tokens) routed directly to GPT-4. Monthly invoice: **$34,200**.
+- **Initial Baseline:** Every query retrieved 8 chunks (3,600 prompt tokens) routed directly to GPT-4. Monthly invoice: **\$34,200**.
 - **Optimization Interventions:**
   1. Deployed an in-memory **Redis Semantic Cache** ($\ge 0.96$ cosine similarity). Captured **34% of repeated queries**, dropping cost immediately by \$11,600/month.
   2. Implemented **Context Compaction via Extractive Pruning**, reducing prompt size from 3,600 to 1,400 tokens without degrading Faithfulness.
   3. Deployed a **Cascading Classifier**: 72% of remaining queries routed to GPT-4o-mini; only 28% escalated to GPT-4o.
-- **Financial Outcome:** Total monthly spend collapsed from **$34,200 to $4,680 (an 86.3% net savings)**, saving over **$354,000 annually**.
+- **Financial Outcome:** Total monthly spend collapsed from **\$34,200 to \$4,680 (an 86.3% net savings)**, saving over **\$354,000 annually**.
 
 ### Case Study 2: Legal Discovery Firm Litigation Assistant
 - **Domain:** Paralegal contract search over tens of thousands of deposition filings.

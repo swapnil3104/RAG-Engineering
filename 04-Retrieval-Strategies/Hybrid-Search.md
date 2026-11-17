@@ -88,7 +88,7 @@ RRF completely ignores raw score magnitudes and operates strictly on the **ordin
 
 ### # Reciprocal Rank Fusion (RRF) Formula
 $$
-\text{RRF\_Score}(d \in \mathcal{D}) = \sum_{m \in \mathcal{M}} \frac{1}{k_{\text{rrf}} + r_m(d)}
+\text{RRF-Score}(d \in \mathcal{D}) = \sum_{m \in \mathcal{M}} \frac{1}{k_{\text{rrf}} + r_m(d)}
 $$
 Where:
 * $\mathcal{M}$: The set of retrieval models (e.g., $\{\text{Dense}, \text{Sparse}\}$).

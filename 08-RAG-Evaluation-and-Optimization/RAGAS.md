@@ -358,13 +358,13 @@ if __name__ == "__main__":
 >    - **Size:** 50 curated high-risk edge cases (regression test set).
 >    - **Evaluator:** Lightweight fast model (e.g., GPT-4o-mini or fine-tuned Llama-3-8B).
 >    - **Metrics:** Evaluates only **Faithfulness** and **Context Precision**.
->    - **Runtime & Cost:** < 2 minutes, < $0.50 per PR.
+>    - **Runtime & Cost:** < 2 minutes, < \$0.50 per PR.
 >    - **Action:** Blocks pull request merge if Faithfulness $< 0.95$.
 > 2. **Nightly Comprehensive Suite (Golden Benchmark):**
 >    - **Size:** 1,000+ stratified synthetic queries generated via `ragas.testset` spanning simple, multi-hop, and negative constraints.
 >    - **Evaluator:** Frontier model (GPT-4o or Claude 3.5 Sonnet) with G-Eval rubrics.
 >    - **Metrics:** Complete suite (Context Precision, Context Recall, Faithfulness, Answer Relevancy, Context Entities Recall).
->    - **Runtime & Cost:** ~30 minutes, ~$15 per night.
+>    - **Runtime & Cost:** ~30 minutes, ~\$15 per night.
 >    - **Action:** Logs trends to Datadog/Grafana, alerts engineering team of gradual embedding drift or prompt degradation.
 
 ### Q2: How does RAGAS mathematically compute Answer Relevancy, and why is this formulation superior to computing direct embedding similarity between the query and generated answer?

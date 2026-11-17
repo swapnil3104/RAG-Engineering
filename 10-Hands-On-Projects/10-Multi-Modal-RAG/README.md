@@ -107,9 +107,9 @@ For every query token vector $\mathbf{q}_i$, MaxSim finds the single visual imag
 
 | Vision Model | Context Window | Visual Token Efficiency | Chart/Table Extraction Quality | API Cost per 1k Pages |
 | :--- | :--- | :--- | :--- | :--- |
-| **OpenAI `gpt-4o`** | 128,000 tokens | 765 tokens per high-res tile | ⭐⭐⭐⭐⭐ State-of-the-Art | ~$10.00 |
-| **Anthropic `claude-3-5-sonnet`**| 200,000 tokens | ~1,600 tokens per image | ⭐⭐⭐⭐⭐ Top reasoning on schematics | ~$12.00 |
-| **Google `gemini-1.5-pro`** | 2,000,000 tokens | 258 tokens per image | ⭐⭐⭐⭐⭐ Native 1,000-page video/PDF pass | ~$2.50 |
+| **OpenAI `gpt-4o`** | 128,000 tokens | 765 tokens per high-res tile | ⭐⭐⭐⭐⭐ State-of-the-Art | ~\$10.00 |
+| **Anthropic `claude-3-5-sonnet`**| 200,000 tokens | ~1,600 tokens per image | ⭐⭐⭐⭐⭐ Top reasoning on schematics | ~\$12.00 |
+| **Google `gemini-1.5-pro`** | 2,000,000 tokens | 258 tokens per image | ⭐⭐⭐⭐⭐ Native 1,000-page video/PDF pass | ~\$2.50 |
 | **Local `LLaVA-NeXT-34B`** | 4,096 tokens | Local GPU | ⭐⭐⭐⭐ Good for offline enterprise | Hardware compute only |
 
 ---

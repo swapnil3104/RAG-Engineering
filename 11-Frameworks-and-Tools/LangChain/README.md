@@ -91,7 +91,7 @@ Where $\delta_{\text{merge}}$ is the Python event-loop scheduling and dictionary
 ### # Streaming Backpressure & Token Arrival Velocity
 For an LLM emitting tokens at variable rate $r(t)$ tokens/second, the Time-To-First-Token ($\text{TTFT}$) and Total Completion Time ($\text{TCT}$) are governed by:
 
-$$\text{TTFT} = t_{\text{ingress}} + t_{\text{retrieval}} + t_{\text{prompt\_prep}} + t_{\text{prefill\_eval}}$$
+$$\text{TTFT} = t_{\text{ingress}} + t_{\text{retrieval}} + t_{\text{prompt-prep}} + t_{\text{prefill-eval}}$$
 
 $$\text{TCT} = \text{TTFT} + \sum_{i=1}^{N_{\text{tokens}}} \frac{1}{r(t_i)}$$
 

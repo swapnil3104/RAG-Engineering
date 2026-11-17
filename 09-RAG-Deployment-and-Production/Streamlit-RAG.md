@@ -62,15 +62,15 @@ Operating multi-user Streamlit apps within containerized environments (e.g., Kub
 Total RAM consumption $M_{\text{app}}$ across $S$ active browser sessions is modeled as:
 
 $$
-M_{\text{app}} = M_{\text{base\_runtime}} + M_{\text{cached\_models}} + \sum_{s=1}^{S} \left( M_{\text{history}}(s) + M_{\text{uploads}}(s) + M_{\text{session\_ctx}}(s) \right)
+M_{\text{app}} = M_{\text{base-runtime}} + M_{\text{cached-models}} + \sum_{s=1}^{S} \left( M_{\text{history}}(s) + M_{\text{uploads}}(s) + M_{\text{session-ctx}}(s) \right)
 $$
 
 Where:
-- $M_{\text{base\_runtime}} \approx 120\text{ MB}$ (Python runtime + Streamlit server core).
-- $M_{\text{cached\_models}}$ is the memory allocated by `@st.cache_resource` (e.g., $450\text{ MB}$ for a local embedding model).
+- $M_{\text{base-runtime}} \approx 120\text{ MB}$ (Python runtime + Streamlit server core).
+- $M_{\text{cached-models}}$ is the memory allocated by `@st.cache_resource` (e.g., $450\text{ MB}$ for a local embedding model).
 - $M_{\text{history}}(s)$ is the token buffer for conversation history in session $s$.
 - $M_{\text{uploads}}(s)$ is raw in-memory bytes of active user-uploaded documents (e.g., PDFs).
-- $M_{\text{session\_ctx}}(s)$ is per-session metadata and vector indices.
+- $M_{\text{session-ctx}}(s)$ is per-session metadata and vector indices.
 
 If 40 concurrent users each upload $25\text{ MB}$ of PDFs and maintain $5\text{ MB}$ of chat state, the application memory surges by $40 \times 30\text{ MB} = 1.2\text{ GB}$. If files are not offloaded to disk or object storage, the pod risks an Out-Of-Memory (OOM) termination.
 

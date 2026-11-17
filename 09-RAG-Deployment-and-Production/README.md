@@ -75,12 +75,12 @@ If a serial stage has zero redundancy ($M_i = 1$) and an availability of $99.5\%
 With a semantic cache hit ratio $H \in [0, 1]$, average end-to-end user latency $T_{\text{effective}}$ is:
 
 $$
-T_{\text{effective}} = H \cdot T_{\text{cache}} + (1 - H) \cdot \left( T_{\text{cache}} + T_{\text{RAG\_pipeline}} \right)
+T_{\text{effective}} = H \cdot T_{\text{cache}} + (1 - H) \cdot \left( T_{\text{cache}} + T_{\text{RAG-pipeline}} \right)
 $$
 
 Where:
 - $T_{\text{cache}} \approx 12\text{ms}$ (Redis vector search).
-- $T_{\text{RAG\_pipeline}} \approx 1,250\text{ms}$ (Full retrieval, reranking, and generation).
+- $T_{\text{RAG-pipeline}} \approx 1,250\text{ms}$ (Full retrieval, reranking, and generation).
 - At $H = 0.50$ (50% cache hit rate), user-perceived average latency drops from $1,250\text{ms}$ to **$637\text{ms}$**.
 
 ---

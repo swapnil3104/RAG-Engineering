@@ -100,7 +100,7 @@ Where $S$ is the total count of sentences in `actual_output`. In DeepEval, `asse
 Evaluates whether each chunk in `retrieval_context` contains pertinent information directly needed to resolve the user query:
 
 $$
-\text{Score}_{\text{Contextual Relevancy}} = \frac{|\{ c \in \text{retrieval\_context} \mid c \text{ is Relevant to Query} \}|}{|\text{retrieval\_context}|}
+\text{Score}_{\text{Contextual Relevancy}} = \frac{|\{ c \in \text{retrieval-context} \mid c \text{ is Relevant to Query} \}|}{|\text{retrieval-context}|}
 $$
 
 ---
@@ -319,7 +319,7 @@ if __name__ == "__main__":
 - **Domain:** Automated claims assessment chatbot querying complex underwriting policies.
 - **Problem:** When developers adjusted the chunking size from 256 to 512 tokens, customer claims for water damage were mistakenly rejected by the bot because exclusion clauses were concatenated with general coverage paragraphs.
 - **DeepEval Integration:** Implemented a suite of 250 `LLMTestCase` unit tests in Pytest asserting `FaithfulnessMetric(threshold=0.98)` and `ContextualRecallMetric(threshold=0.90)`.
-- **Outcome:** The pre-commit CI/CD gate immediately failed 38 test cases, pinpointing the exact chunk boundary where water damage exceptions contaminated base coverage, preventing an estimated $1.2M in wrongful claim rejections.
+- **Outcome:** The pre-commit CI/CD gate immediately failed 38 test cases, pinpointing the exact chunk boundary where water damage exceptions contaminated base coverage, preventing an estimated \$1.2M in wrongful claim rejections.
 
 ### Case Study 2: Legal Contract Redlining Engine
 - **Domain:** SaaS procurement contract review platform.

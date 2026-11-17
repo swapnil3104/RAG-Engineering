@@ -65,7 +65,7 @@ $$
 B(t) = \min\left( B_{\text{max}}, \; B(t_{\text{last}}) + r \cdot (t - t_{\text{last}}) \right)
 $$
 
-For an incoming request requiring $k$ tokens (e.g., $k=1$ for basic query, or $k = N_{\text{prompt\_tokens}}$ for token-aware throttling):
+For an incoming request requiring $k$ tokens (e.g., $k=1$ for basic query, or $k = N_{\text{prompt-tokens}}$ for token-aware throttling):
 
 $$
 \text{Admitted} = \begin{cases}

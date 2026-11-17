@@ -81,7 +81,7 @@ $$
 In Agentic RAG, context accumulates monotonically in working memory across $N$ steps:
 
 $$
-\mathbb{E}[\text{Cost}_{\text{Agentic}}] = \sum_{i=1}^{\mathbb{E}[N]} \left( c_{\text{in}} \cdot L_{\text{ctx}, i} + c_{\text{out}} \cdot L_{\text{action}, i} \right) + c_{\text{in}} \cdot L_{\text{synth\_ctx}} + c_{\text{out}} \cdot L_{\text{final}}
+\mathbb{E}[\text{Cost}_{\text{Agentic}}] = \sum_{i=1}^{\mathbb{E}[N]} \left( c_{\text{in}} \cdot L_{\text{ctx}, i} + c_{\text{out}} \cdot L_{\text{action}, i} \right) + c_{\text{in}} \cdot L_{\text{synth-ctx}} + c_{\text{out}} \cdot L_{\text{final}}
 $$
 
 Where $L_{\text{ctx}, i} = L_{\text{sys}} + L_{\text{tools}} + \sum_{j=1}^{i-1} (L_{\text{action}, j} + L_{\text{obs}, j})$. Because context grows quadratically with steps if uncompacted, token costs scale by **$4\times - 12\times$**.
@@ -376,7 +376,7 @@ if __name__ == "__main__":
     - 88% of queries (order tracking, return windows, product specifications) routed to **Standard RAG**.
     - 12% of queries (disputed charges, complex multi-item warranty claims) routed to **Agentic RAG**.
 - **Results:**
-  - Monthly API cost dropped by **76%** (to $92,000).
+  - Monthly API cost dropped by **76%** (to \$92,000).
   - CSAT rebounded to all-time highs with p95 latency under 1.2 seconds.
 
 ### Case Study 2: Tier-1 Pharmaceutical Regulatory Filing Engine
@@ -400,7 +400,7 @@ if __name__ == "__main__":
 
 ### ❌ Common Migration Pitfalls & Anti-Patterns
 1. **The "Agentic Everything" Trap:**
-   - *Failure:* Replacing a functioning, 200ms vector search FAQ with a 5-step ReAct agent that burns $0.05 per query to look up an office address.
+   - *Failure:* Replacing a functioning, 200ms vector search FAQ with a 5-step ReAct agent that burns \$0.05 per query to look up an office address.
    - *Mitigation:* Require a formal business justification (multi-hop dependency or external tool requirement) before routing any query to an agent.
 2. **Uncalibrated Routing Classifiers:**
    - *Failure:* A poorly tuned router sends 50% of simple factoid queries to Agentic RAG because the user used polite conversational phrasing.

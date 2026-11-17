@@ -404,7 +404,7 @@ if __name__ == "__main__":
 ### Q2: How would you architect an LLM-as-a-Judge pipeline to evaluate 500,000 production queries daily without incurring unsustainable API costs?
 > **Answer:**
 > Evaluating 500,000 inferences daily with frontier models (e.g., GPT-4o) would cost millions annually and introduce significant latency. The solution is a **Tiered Cascading Evaluation Architecture**:
-> 1. **Tier 1: Deterministic & Rule-Based Filters (100% of traffic, Cost: $0):** Regex checks for regex safety, empty responses, fallback trigger strings, and character/token bounds.
+> 1. **Tier 1: Deterministic & Rule-Based Filters (100% of traffic, Cost: \$0):** Regex checks for regex safety, empty responses, fallback trigger strings, and character/token bounds.
 > 2. **Tier 2: Distilled Small Language Model (SLM) Judge (100% of traffic, Cost: Minimal):** Deploy a fine-tuned, quantized 8B model (e.g., Llama-3-8B-Instruct or Mistral-7B fine-tuned specifically on NLI entailment pairs). It evaluates binary faithfulness in <100ms.
 > 3. **Tier 3: Frontier LLM Judge Sampling (1–5% Statistical Sample + High-Uncertainty Outliers):** Route traffic to a frontier judge (e.g., GPT-4o, Claude 3.5 Sonnet) only when:
 >    - The Tier 2 SLM judge confidence is borderline ($0.45 < p < 0.65$).

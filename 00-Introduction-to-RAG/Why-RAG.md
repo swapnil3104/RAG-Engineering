@@ -315,18 +315,18 @@ xychart-beta
 ```
 
 1. **Continuous Fine-Tuning Stack:**
-   * GPU Compute: 8x H100 instances for periodic retraining cycles (~$180,000/yr).
-   * Data Engineering: Specialized dataset curation and alignment teams (~$140,000/yr).
-   * *Total:* **~$320,000 / year**.
+   * GPU Compute: 8x H100 instances for periodic retraining cycles (~\$180,000/yr).
+   * Data Engineering: Specialized dataset curation and alignment teams (~\$140,000/yr).
+   * *Total:* **~\$320,000 / year**.
 2. **Pure Long-Context Prompt Stuffing (Passing 200k tokens per prompt):**
-   * Input token costs ($2.50 per 1M tokens) at 5,000 queries/day: $2.50 * 0.2M * 5,000 * 365 = **~$912,500 / year**.
+   * Input token costs (\$2.50 per 1M tokens) at 5,000 queries/day: \$2.50 * 0.2M * 5,000 * 365 = **~\$912,500 / year**.
    * Extreme latency (10–25 seconds per query).
 3. **Optimized Modular RAG Architecture:**
-   * Embedding Generation (one-time + incremental): ~$150.
-   * Managed Vector DB (Pinecone / Qdrant Serverless): ~$2,400/yr.
-   * Compact Grounded LLM Prompt (2,000 tokens per query): ~$3,650/yr.
-   * Infrastructure & Maintenance: ~$32,000/yr.
-   * *Total:* **~$38,200 / year** (Over **88% cost reduction** with sub-second response times).
+   * Embedding Generation (one-time + incremental): ~\$150.
+   * Managed Vector DB (Pinecone / Qdrant Serverless): ~\$2,400/yr.
+   * Compact Grounded LLM Prompt (2,000 tokens per query): ~\$3,650/yr.
+   * Infrastructure & Maintenance: ~\$32,000/yr.
+   * *Total:* **~\$38,200 / year** (Over **88% cost reduction** with sub-second response times).
 
 ---
 

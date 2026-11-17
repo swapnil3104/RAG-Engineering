@@ -150,7 +150,7 @@ Stores episodic traces of user interactions across days, weeks, or months:
 Represents structured and unstructured domain knowledge:
 - Combines dense vector collections with **Knowledge Graphs (GraphRAG)**.
 - While vector embeddings capture conceptual similarity, knowledge graphs preserve rigid relational invariants:
-  $$\text{(Alice)} \xrightarrow{\text{works\_in}} \text{(Engineering)} \xrightarrow{\text{located\_in}} \text{(Frankfurt)}$$
+  $$\text{(Alice)} \xrightarrow{\text{works-in}} \text{(Engineering)} \xrightarrow{\text{located-in}} \text{(Frankfurt)}$$
 
 ```mermaid
 graph LR
@@ -417,7 +417,7 @@ if __name__ == "__main__":
 ## 8. 🌍 Real-World Enterprise Production Case Studies
 
 ### Case Study 1: Enterprise Wealth Management Advisory Copilot
-- **Organization:** Private Swiss Wealth Management Firm ($120B AUM).
+- **Organization:** Private Swiss Wealth Management Firm (\$120B AUM).
 - **Problem:** Wealth advisors manage portfolios for high-net-worth families with complex cross-generational mandates. Standard RAG forgotten client tax residency preferences and unique philanthropic mandates across meetings.
 - **Architecture Implemented:**
   - Deployed an **Episodic Memory Store** backed by Qdrant and Neo4j.

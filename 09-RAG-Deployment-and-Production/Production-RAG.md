@@ -380,7 +380,7 @@ if __name__ == "__main__":
   1. Implemented **Redis Sentinel Semantic Caching**, capturing 43% of repetitive market-opening compliance queries in $< 18\text{ms}$.
   2. Transitioned vector retrieval from a single flat index to a sharded **HNSW collection with read-replicas** behind an Envoy reverse proxy with least-request load balancing.
   3. Deployed a local **vLLM backup cluster** running Llama-3-70B on premises to handle queries when commercial LLM API latencies breached the $1,500\text{ms}$ SLA threshold.
-- **Outcome:** System achieved **99.98% operational uptime**, lowered monthly token expenses by $34,000, and slashed $P_{99}$ latency from $6.4\text{s}$ to $780\text{ms}$.
+- **Outcome:** System achieved **99.98% operational uptime**, lowered monthly token expenses by \$34,000, and slashed $P_{99}$ latency from $6.4\text{s}$ to $780\text{ms}$.
 
 ---
 

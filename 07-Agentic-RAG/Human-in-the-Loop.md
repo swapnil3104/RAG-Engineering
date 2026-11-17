@@ -414,7 +414,7 @@ if __name__ == "__main__":
 1. **Context-Rich Approval Cards:** Never present an approver with raw JSON. Provide a clear, human-readable **Diff Visualization**, the agent's confidence score, and clickable citations directly to the source documents.
 2. **Strict Escalation & Expiration Timers:** Attach an SLA timer to every approval checkpoint (e.g., 30 minutes). If unreviewed, escalate to a secondary manager or fail gracefully with a safe default.
 3. **Immutable Audit Ledgers:** Write every human approval decision, timestamp, and signature to an append-only, tamper-evident log (e.g., AWS CloudTrail or blockchain/QLDB).
-4. **Role-Based Access Control (RBAC):** Ensure that the identity approving the action has explicit enterprise authorization to execute that action (e.g., an intern cannot approve a $100k wire).
+4. **Role-Based Access Control (RBAC):** Ensure that the identity approving the action has explicit enterprise authorization to execute that action (e.g., an intern cannot approve a \$100k wire).
 
 ### ❌ Common HITL Pitfalls & Anti-Patterns
 1. **Approver Fatigue & Rubber-Stamping:**

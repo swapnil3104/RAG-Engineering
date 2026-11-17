@@ -407,7 +407,7 @@ flowchart TD
 * **Post-Filtering (Anti-Pattern):** Retrieves top-100 vectors across the entire database, then discards chunks the user does not have permission to view.
   * *Failure Mode:* If 95 of the top-100 belong to unauthorized tenants, the user is left with only 5 chunks (or none), destroying retrieval recall.
 * **Pre-Filtering (Production Standard):** Uses single-stage filtered vector search (supported by Pinecone, Qdrant, Milvus, Weaviate):
-  $$\text{Query} = \text{VectorSearch}(\mathbf{q}) \quad \text{WHERE} \quad \text{tenant\_id} = 'corp\_a' \quad \text{AND} \quad \text{clearance} \ge 3$$
+  $$\text{Query} = \text{VectorSearch}(\mathbf{q}) \quad \text{WHERE} \quad \text{tenant-id} = \text{'corp-a'} \quad \text{AND} \quad \text{clearance} \ge 3$$
 
 ---
 

@@ -104,7 +104,7 @@ $$
 State durability is guaranteed by indexing state snapshots as an immutable DAG:
 
 $$
-\mathcal{C}_k = \left\langle \text{thread\_id}, \text{checkpoint\_id}, S_k, \delta_k, t_{\text{timestamp}} \right\rangle
+\mathcal{C}_k = \left\langle \text{thread-id}, \text{checkpoint-id}, S_k, \delta_k, t_{\text{timestamp}} \right\rangle
 $$
 
 Enabling deterministic rollbacks: any past checkpoint $\mathcal{C}_i$ ($i < k$) can be rehydrated and branched without re-executing preceding steps.
@@ -509,7 +509,7 @@ if __name__ == "__main__":
   - Configured state checkpointers enabling support agents to resume investigations across shift handovers without losing context.
 - **Results:**
   - Escalation triage duration plummeted by **58%**.
-  - SLA breach penalty payouts fell by **$1.8M annually**.
+  - SLA breach penalty payouts fell by **\$1.8M annually**.
 
 ---
 

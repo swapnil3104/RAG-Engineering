@@ -84,13 +84,13 @@ Let $N$ denote the total corpus size, $L_q$ denote the query token length, and $
 Documents are pre-computed offline into embeddings $\mathbf{v}_d = \mathbf{E}_{\text{doc}}(d) \in \mathbb{R}^D$. At inference time, only the query embedding $\mathbf{v}_q = \mathbf{E}_{\text{query}}(q)$ is computed:
 
 $$
-T_{\text{query\_embed}} = O(L_q^2) \quad \text{(Transformer self-attention)}
+T_{\text{query-embed}} = O(L_q^2) \quad \text{(Transformer self-attention)}
 $$
 
 Search across $N$ indexed vectors using HNSW or ScaNN graphs achieves sub-linear complexity:
 
 $$
-T_{\text{ANN\_search}} = O(K_1 \log N \cdot D)
+T_{\text{ANN-search}} = O(K_1 \log N \cdot D)
 $$
 
 Total first-stage inference latency scales as:
@@ -103,7 +103,7 @@ $$
 A cross-encoder concatenates the query and candidate passage into a single sequence $[\text{CLS}] \circ q \circ [\text{SEP}] \circ d_i \circ [\text{SEP}]$ of length $L_q + L_d$:
 
 $$
-T_{\text{cross\_enc}} = O\left(K_1 \cdot (L_q + L_d)^2 \cdot H\right)
+T_{\text{cross-enc}} = O\left(K_1 \cdot (L_q + L_d)^2 \cdot H\right)
 $$
 
 where $H$ is the number of transformer attention heads and layers. 

@@ -80,10 +80,10 @@ $$
 ---
 
 ### # Cloud Cross-AZ Data Transfer Cost Formula
-In multi-Availability Zone (AZ) deployments, network traffic between nodes in different zones incurs egress charges ($P_{\text{cross\_az}} \approx \$0.01\text{ to }\$0.02\text{ per GB}$). For a high-throughput RAG cluster processing $Q$ daily queries, each retrieving $k$ context passages:
+In multi-Availability Zone (AZ) deployments, network traffic between nodes in different zones incurs egress charges ($P_{\text{cross-az}} \approx \$0.01\text{ to }\$0.02\text{ per GB}$). For a high-throughput RAG cluster processing $Q$ daily queries, each retrieving $k$ context passages:
 
 $$
-C_{\text{daily\_egress}} = Q \cdot \left[ \left(1 - \frac{1}{Z}\right) \cdot \left( S_{\text{query}} + k \cdot S_{\text{chunk}} \right) \right] \cdot P_{\text{cross\_az}}
+C_{\text{daily-egress}} = Q \cdot \left[ \left(1 - \frac{1}{Z}\right) \cdot \left( S_{\text{query}} + k \cdot S_{\text{chunk}} \right) \right] \cdot P_{\text{cross-az}}
 $$
 
 Where:

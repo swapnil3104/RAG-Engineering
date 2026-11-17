@@ -150,14 +150,14 @@ sequenceDiagram
 
 ### # KV Cache Memory Footprint Formula
 $$
-\text{Memory}_{\text{KV}} = 2 \times 2 \times n_{\text{layers}} \times n_{\text{kv\_heads}} \times d_{\text{head}} \times L_{\text{ctx}} \times B \quad \text{[Bytes in FP16]}
+\text{Memory}_{\text{KV}} = 2 \times 2 \times n_{\text{layers}} \times n_{\text{kv-heads}} \times d_{\text{head}} \times L_{\text{ctx}} \times B \quad \text{[Bytes in FP16]}
 $$
 
 Where:
 * $2$ represents Key and Value tensors.
 * $2$ represents bytes per FP16 parameter (or $1$ byte for FP8 / INT8 quantization).
 * $n_{\text{layers}}$ is the number of transformer layers.
-* $n_{\text{kv\_heads}}$ is the number of Key/Value heads.
+* $n_{\text{kv-heads}}$ is the number of Key/Value heads.
 * $d_{\text{head}}$ is head dimension ($d_{\text{model}} / n_{\text{heads}}$).
 * $L_{\text{ctx}}$ is total sequence length (prompt + completion).
 * $B$ is batch size.

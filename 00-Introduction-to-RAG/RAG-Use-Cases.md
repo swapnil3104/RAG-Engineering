@@ -141,7 +141,7 @@ Internal enterprise HR portals enable employees to ask questions regarding benef
 
 ### The Role-Based Access Control (RBAC) Imperative:
 In an enterprise portal, queries must enforce user authorization at the database index level:
-$$\text{Filter} = (\text{department} == \text{user.dept}) \quad \text{AND} \quad (\text{security\_level} \le \text{user.clearance})$$
+$$\text{Filter} = (\text{department} == \text{user.dept}) \quad \text{AND} \quad (\text{security-level} \le \text{user.clearance})$$
 
 An employee in Marketing querying benefits cannot retrieve internal sales compensation quotas or engineering roadmaps.
 
@@ -258,14 +258,14 @@ if __name__ == "__main__":
 > 1. During ingestion, each document chunk is stamped with metadata containing allowed security groups: `{"allowed_roles": ["finance_read", "executives"], "org_id": "corp"}`.
 > 2. When a user queries the API, their authenticated JWT token is inspected to extract their verified security groups: `user_roles = ["finance_read"]`.
 > 3. The vector search query executes a filtered search:
->    $$\text{Search}(\mathbf{q}) \quad \text{WHERE} \quad \text{allowed\_roles IN } [\text{'finance\_read'}] \quad \text{AND} \quad \text{org\_id} = 'corp'$$
+>    $$\text{Search}(\mathbf{q}) \quad \text{WHERE} \quad \text{allowed-roles IN } [\text{'finance-read'}] \quad \text{AND} \quad \text{org-id} = 'corp'$$
 > 4. Unauthorized chunks are physically excluded from distance calculation, making cross-tenant data leaks mathematically impossible.
 
 ### Q2: How do you solve tabular data extraction in financial 10-K filings for RAG?
 > **Answer:** Standard text chunkers strip table borders and line breaks, causing numbers to detach from their column headers. The production solution involves:
 > 1. **Layout-Aware OCR / Parser:** Using tools like Table Transformer, Unstructured, or LlamaParse to detect bounding boxes around financial tables.
 > 2. **Structured Serialization:** Converting tables into structured Markdown (`| Column | Value |`) or HTML table syntax.
-> 3. **Summary Prepending:** Generating a 1-sentence synthetic summary of the table (e.g., *"Consolidated Statements of Operations for FY 2026 showing Net Income of $4.2B"*) and prepending it to the serialized table before embedding, ensuring dense vector search can locate the table semantically.
+> 3. **Summary Prepending:** Generating a 1-sentence synthetic summary of the table (e.g., *"Consolidated Statements of Operations for FY 2026 showing Net Income of \$4.2B"*) and prepending it to the serialized table before embedding, ensuring dense vector search can locate the table semantically.
 
 ---
 

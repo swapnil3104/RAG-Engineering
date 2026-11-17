@@ -182,7 +182,7 @@ When executing the notebooks, compare your outputs against these standardized be
 > **Defense:**
 > * PyPDF extracts text strings by traversing the raw content stream, which orders glyphs chronologically as emitted by the authoring software rather than by 2D visual layout.
 > * If a parser sorts text simply by vertical coordinate ($y$), a line in Column 2 with $y=500$ is merged with a line in Column 1 with $y=500$.
-> * The centroid algorithm partitions the page along the horizontal midpoint ($x = \frac{\text{page\_width}}{2}$). Elements with $x_{\text{centroid}} < \text{midpoint}$ are assigned to Column 1, while those with $x_{\text{centroid}} \ge \text{midpoint}$ are assigned to Column 2. Each column is then sorted independently from top to bottom, preserving semantic continuity.
+> * The centroid algorithm partitions the page along the horizontal midpoint ($x = \frac{\text{page-width}}{2}$). Elements with $x_{\text{centroid}} < \text{midpoint}$ are assigned to Column 1, while those with $x_{\text{centroid}} \ge \text{midpoint}$ are assigned to Column 2. Each column is then sorted independently from top to bottom, preserving semantic continuity.
 
 ### Q2: In Lab 04, how does Parent-Document retrieval resolve the conflict between vector search precision and LLM synthesis context?
 > **Defense:**

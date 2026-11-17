@@ -223,7 +223,7 @@ When executing the notebooks, your test runs should match these operational benc
 
 ### # RRF Formulation Summary
 $$
-\text{RRF\_Score}(d) = \sum_{m \in M} \frac{1}{60 + r_m(d)}
+\text{RRF-Score}(d) = \sum_{m \in M} \frac{1}{60 + r_m(d)}
 $$
 
 ### 🗺️ Hands-On Fundamentals Roadmap

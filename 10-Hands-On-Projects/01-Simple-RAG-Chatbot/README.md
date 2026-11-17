@@ -450,7 +450,7 @@ You should migrate to `pgvector` (or a dedicated cluster like Qdrant/Pinecone) w
 Using the token budgeting invariant:
 
 $$
-T_{\text{max}} \ge T_{\text{system}} + T_{\text{history}} + T_{\text{query}} + \sum_{i=1}^k T_{\text{chunk}_i} + T_{\text{reserved\_completion}}
+T_{\text{max}} \ge T_{\text{system}} + T_{\text{history}} + T_{\text{query}} + \sum_{i=1}^k T_{\text{chunk}_i} + T_{\text{reserved-completion}}
 $$
 
 In production, before dispatching to the LLM API, compute the exact token footprint using `tiktoken` (for OpenAI) or HuggingFace tokenizers. If the inequality is violated, prune the oldest conversation history turns first, followed by truncating lower-ranked context chunks based on their cosine distance score.

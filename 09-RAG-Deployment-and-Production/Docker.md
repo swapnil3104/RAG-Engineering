@@ -76,7 +76,7 @@ Reducing an image from $12\text{ GB}$ to $600\text{ MB}$ cuts pull duration from
 The runtime storage efficiency $\eta_{\text{image}}$ evaluates how much of the container contributes directly to execution versus discarded build tooling:
 
 $$
-\eta_{\text{image}} = \frac{S_{\text{runtime\_binaries}} + S_{\text{app\_code}}}{S_{\text{total\_image}}} = \frac{\sum S_{\text{active}}}{S_{\text{base}} + S_{\text{build\_tools}} + S_{\text{cache}} + S_{\text{active}}}
+\eta_{\text{image}} = \frac{S_{\text{runtime-binaries}} + S_{\text{app-code}}}{S_{\text{total-image}}} = \frac{\sum S_{\text{active}}}{S_{\text{base}} + S_{\text{build-tools}} + S_{\text{cache}} + S_{\text{active}}}
 $$
 
 In a high-quality multi-stage build, $\eta_{\text{image}} \ge 0.85$ (over 85% of bytes are actively executed at runtime), whereas naive builds commonly score $\eta_{\text{image}} \le 0.15$.
@@ -450,7 +450,7 @@ if __name__ == "__main__":
 | Formula Name | Formulation | Operational Purpose |
 | :--- | :--- | :--- |
 | **Cold Start Pull Latency** | $$T_{\text{pull}} = T_{\text{handshake}} + \sum \frac{S_l (1 - \mathbb{I}_{\text{cache}})}{B_{\text{net}}} + \sum T_{\text{extract}}$$ | Sizing images to meet Kubernetes Horizontal Pod Autoscaler targets. |
-| **Layer Storage Efficiency** | $$\eta_{\text{image}} = \frac{\sum S_{\text{active}}}{S_{\text{total\_image}}}$$ | Measuring the ratio of active application binaries to discarded build bloat. |
+| **Layer Storage Efficiency** | $$\eta_{\text{image}} = \frac{\sum S_{\text{active}}}{S_{\text{total-image}}}$$ | Measuring the ratio of active application binaries to discarded build bloat. |
 
 ### 🗺️ Multi-Stage Docker Pipeline Roadmap
 

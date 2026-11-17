@@ -108,13 +108,13 @@ sequenceDiagram
 In interactive systems, user perceived latency is governed by Time-To-First-Token ($\text{TTFT}$):
 
 $$
-\text{TTFT} = t_{\text{network}} + t_{\text{gateway}} + t_{\text{retrieval}} + t_{\text{prompt\_prep}} + t_{\text{LLM\_prefill}} + t_{\text{LLM\_decode\_token\_1}}
+\text{TTFT} = t_{\text{network}} + t_{\text{gateway}} + t_{\text{retrieval}} + t_{\text{prompt-prep}} + t_{\text{LLM-prefill}} + t_{\text{LLM-decode-token-1}}
 $$
 
 To sustain an interactive SLA of $\text{TTFT} \le 800\text{ ms}$ when LLM prefill requires $500\text{ ms}$:
 
 $$
-t_{\text{retrieval}} \le \text{TTFT}_{\text{target}} - (t_{\text{network}} + t_{\text{LLM\_prefill}} + t_{\text{LLM\_decode}}) \approx 800 - (50 + 500 + 50) = 200\text{ ms}
+t_{\text{retrieval}} \le \text{TTFT}_{\text{target}} - (t_{\text{network}} + t_{\text{LLM-prefill}} + t_{\text{LLM-decode}}) \approx 800 - (50 + 500 + 50) = 200\text{ ms}
 $$
 
 The internal retrieval pipeline budget breakdown:
@@ -138,7 +138,7 @@ $$
 Given a set of candidate passages $d \in \mathcal{D}$ and multiple ranked lists $R_m$ from different retrieval modalities (e.g., dense vector, sparse BM25, and graph relations):
 
 $$
-\text{RRF\_Score}(d \in \mathcal{D}) = \sum_{m \in \mathcal{M}} \frac{w_m}{k + r_m(d)}
+\text{RRF-Score}(d \in \mathcal{D}) = \sum_{m \in \mathcal{M}} \frac{w_m}{k + r_m(d)}
 $$
 
 where:

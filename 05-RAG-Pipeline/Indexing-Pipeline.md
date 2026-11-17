@@ -106,7 +106,7 @@ To guarantee deduplication at scale without incurring $O(N^2)$ pairwise vector c
 Every raw document $D$ and sliced chunk $c_i$ is mapped to a fixed-size digest using SHA-256:
 
 $$
-h(c_i) = \text{SHA-256}(\text{Normalize}(c_i.\text{text}) \circ c_i.\text{parent\_id})
+h(c_i) = \text{SHA-256}(\text{Normalize}(c_i.\text{text}) \circ c_i.\text{parent-id})
 $$
 
 Where $\text{Normalize}(\cdot)$ strips non-semantic whitespace, converts Unicode to NFKC form, and removes transient metadata (like ingestion timestamps). If $h(c_i)$ exists in the metadata index, the chunk embedding operation is completely bypassed.

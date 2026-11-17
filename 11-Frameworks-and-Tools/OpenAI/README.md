@@ -381,7 +381,7 @@ OpenAI's **Strict Structured Outputs** enforces correctness at the **token gener
 ### Q2: You need to build a RAG system indexing 50,000,000 document chunks. Would you choose OpenAI's Assistants API Vector Stores or a custom Qdrant cluster with `text-embedding-3-small`?
 **Answer:**
 For 50,000,000 chunks, architecting a **Custom Pipeline (Track 1) with an external Qdrant cluster** is required:
-1. **Cost & Storage Economics:** Storing 50 million chunks in OpenAI Vector Stores incur continuous per-GB per-day hosting fees ($0.10/GB/day after the free 1GB tier), which scales to thousands of dollars monthly. A self-hosted or dedicated Qdrant cluster using disk-backed memory mapping (mmap) and scalar quantization reduces hosting costs significantly.
+1. **Cost & Storage Economics:** Storing 50 million chunks in OpenAI Vector Stores incur continuous per-GB per-day hosting fees (\$0.10/GB/day after the free 1GB tier), which scales to thousands of dollars monthly. A self-hosted or dedicated Qdrant cluster using disk-backed memory mapping (mmap) and scalar quantization reduces hosting costs significantly.
 2. **Dimension Truncation:** With Track 1, we can truncate `text-embedding-3-small` to 512 dimensions, reducing RAM requirements by $66.7\%$.
 3. **Multi-Tenancy & RBAC:** Large enterprise datasets require complex partition filtering (e.g., `user_role = 'auditor' AND tenant_id = 'org_442'`). External vector databases provide native, granular pre-filtering that internal managed vector stores do not expose.
 
@@ -445,7 +445,7 @@ if __name__ == "__main__":
 
 | Feature / Primitive | API Call / Parameter | Operational Characteristics |
 | :--- | :--- | :--- |
-| **Embeddings Model** | `model="text-embedding-3-small"` | 1536 native dims; low-cost ($0.02 / 1M tokens) general-purpose retrieval. |
+| **Embeddings Model** | `model="text-embedding-3-small"` | 1536 native dims; low-cost (\$0.02 / 1M tokens) general-purpose retrieval. |
 | **Dimension Truncation** | `dimensions=512` | MRL native truncation saving 66.7% memory with minimal recall loss. |
 | **Strict Structured Outputs**| `response_format=PydanticModel` | Context-Free Grammar decoding masking invalid tokens for 100% schema fidelity. |
 | **Vector Store Creation** | `client.beta.vector_stores.create()` | Managed file chunking, embedding, and hybrid indexing in OpenAI cloud. |

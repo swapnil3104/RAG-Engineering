@@ -135,7 +135,7 @@ flowchart TD
 Manual curation of RAG test sets by human subject matter experts (SMEs) is prohibitively expensive, slow, and incapable of keeping pace with enterprise knowledge bases that change daily. Modern RAG engineering relies on **automated synthetic test set generation** using LLMs guided by structural heuristics.
 
 ### The Evol-Instruct Synthesis Pipeline for RAG
-Synthetic test generation adopts concepts from Evol-Instruct to transform raw document chunks into diverse, multi-difficulty test sets consisting of tuples: $(q_{\text{synth}}, C_{\text{ground\_truth}}, y^*_{\text{ground\_truth}})$.
+Synthetic test generation adopts concepts from Evol-Instruct to transform raw document chunks into diverse, multi-difficulty test sets consisting of tuples: $(q_{\text{synth}}, C_{\text{ground-truth}}, y^*_{\text{ground-truth}})$.
 
 ```mermaid
 flowchart TD

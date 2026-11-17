@@ -76,10 +76,10 @@ Where $\theta_{\text{threshold}}$ represents the acceptance cosine boundary:
 With a semantic cache hit ratio $H \in [0, 1]$, the average end-to-end latency $T_{\text{effective}}$ experienced by users is:
 
 $$
-T_{\text{effective}} = H \cdot T_{\text{cache\_hit}} + (1 - H) \cdot \left( T_{\text{cache\_probe}} + T_{\text{full\_rag\_pipeline}} \right)
+T_{\text{effective}} = H \cdot T_{\text{cache-hit}} + (1 - H) \cdot \left( T_{\text{cache-probe}} + T_{\text{full-rag-pipeline}} \right)
 $$
 
-For an enterprise deployment where $T_{\text{cache\_hit}} = 15\text{ms}$, $T_{\text{full\_pipeline}} = 1,200\text{ms}$, and $H = 0.45$ (45% hit rate):
+For an enterprise deployment where $T_{\text{cache-hit}} = 15\text{ms}$, $T_{\text{full-pipeline}} = 1,200\text{ms}$, and $H = 0.45$ (45% hit rate):
 
 $$
 T_{\text{effective}} = (0.45 \times 15) + (0.55 \times (15 + 1,200)) = 6.75 + 668.25 \approx 675\text{ ms}
@@ -93,12 +93,12 @@ Amortized response time drops by **almost 50% across all enterprise users**.
 Total financial savings $S_{\text{monthly}}$ achieved over $N$ monthly queries:
 
 $$
-S_{\text{monthly}} = N \cdot H \cdot \left( C_{\text{LLM\_tokens}} + C_{\text{vector\_compute}} \right) - C_{\text{cache\_infra}}
+S_{\text{monthly}} = N \cdot H \cdot \left( C_{\text{LLM-tokens}} + C_{\text{vector-compute}} \right) - C_{\text{cache-infra}}
 $$
 
 Where:
-- $C_{\text{LLM\_tokens}}$ is the combined prompt + completion API cost per query (e.g., $\$0.015$).
-- $C_{\text{cache\_infra}}$ is the hosting expense of the Redis cluster.
+- $C_{\text{LLM-tokens}}$ is the combined prompt + completion API cost per query (e.g., $\$0.015$).
+- $C_{\text{cache-infra}}$ is the hosting expense of the Redis cluster.
 
 ---
 

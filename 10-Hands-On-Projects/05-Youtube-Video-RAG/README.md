@@ -97,10 +97,10 @@ $$\text{URL} = \text{https://youtu.be/dQw4w9WgXcQ?t=522} \quad (\text{Formatted 
 
 | Transcription Method | Latency & Speed | Cost per Hour | Punctuation & Capitalization | Speaker Diarization | Best Applied To |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **YouTube Captions API** | ⚡ Instantaneous ($<1$s) | **$0.00 (Free)** | ⭐⭐⭐ Variable (Manual vs Auto) | ❌ Unsupported | Pre-recorded YouTube videos |
-| **OpenAI Whisper (API)** | 🕒 Moderate (~15s/hr) | ~$0.36 / hr | ⭐⭐⭐⭐⭐ Exceptional accuracy | ❌ Requires PyAnnote pipeline | Uploaded audio files & podcasts |
-| **Deepgram Nova-2** | ⚡ Real-Time ($<300$ms) | ~$0.26 / hr | ⭐⭐⭐⭐⭐ High fidelity | ⭐⭐⭐⭐ Native built-in | Live enterprise calls & streaming |
-| **AssemblyAI** | 🕒 Moderate (~30s/hr) | ~$0.37 / hr | ⭐⭐⭐⭐ High accuracy | ⭐⭐⭐⭐⭐ Native speaker tags | Multi-speaker conference panels |
+| **YouTube Captions API** | ⚡ Instantaneous ($<1$s) | **\$0.00 (Free)** | ⭐⭐⭐ Variable (Manual vs Auto) | ❌ Unsupported | Pre-recorded YouTube videos |
+| **OpenAI Whisper (API)** | 🕒 Moderate (~15s/hr) | ~\$0.36 / hr | ⭐⭐⭐⭐⭐ Exceptional accuracy | ❌ Requires PyAnnote pipeline | Uploaded audio files & podcasts |
+| **Deepgram Nova-2** | ⚡ Real-Time ($<300$ms) | ~\$0.26 / hr | ⭐⭐⭐⭐⭐ High fidelity | ⭐⭐⭐⭐ Native built-in | Live enterprise calls & streaming |
+| **AssemblyAI** | 🕒 Moderate (~30s/hr) | ~\$0.37 / hr | ⭐⭐⭐⭐ High accuracy | ⭐⭐⭐⭐⭐ Native speaker tags | Multi-speaker conference panels |
 
 ---
 

@@ -150,7 +150,7 @@ The gold standard for combining results from disparate ranking systems without r
 
 ### # Reciprocal Rank Fusion (RRF) Formula
 $$
-\text{RRF\_Score}(d \in D) = \sum_{m \in M} \frac{1}{k + r_m(d)}
+\text{RRF-Score}(d \in D) = \sum_{m \in M} \frac{1}{k + r_m(d)}
 $$
 
 Where:
@@ -539,7 +539,7 @@ if __name__ == "__main__":
 
 ### # RRF Formulation
 $$
-\text{RRF\_Score}(d) = \sum_{m \in M} \frac{1}{60 + r_m(d)}
+\text{RRF-Score}(d) = \sum_{m \in M} \frac{1}{60 + r_m(d)}
 $$
 
 ### 🗺️ Semantic Information Retrieval Roadmap

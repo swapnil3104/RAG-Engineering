@@ -102,8 +102,8 @@ In production, MMR can be computed blazingly fast using **NumPy / PyTorch matrix
    $$\mathbf{G} = \mathbf{V}_{\text{cand}} \cdot \mathbf{V}_{\text{cand}}^\top$$
 3. **Iterative Dynamic Programming Selection:**  
    Maintain a running vector $\mathbf{m}_{\text{max}} \in \mathbb{R}^N$ tracking $\max_{j \in \mathcal{S}} \mathbf{G}_{i, j}$. In each step:
-   $$\text{next\_idx} = \arg\max_{i \notin \mathcal{S}} \left[ \lambda \cdot \mathbf{s}_q[i] - (1 - \lambda) \cdot \mathbf{m}_{\text{max}}[i] \right]$$
-   Update $\mathbf{m}_{\text{max}} = \max(\mathbf{m}_{\text{max}}, \mathbf{G}[:, \text{next\_idx}])$ in $\mathcal{O}(N)$ time.
+   $$\text{next-idx} = \arg\max_{i \notin \mathcal{S}} \left[ \lambda \cdot \mathbf{s}_q[i] - (1 - \lambda) \cdot \mathbf{m}_{\text{max}}[i] \right]$$
+   Update $\mathbf{m}_{\text{max}} = \max(\mathbf{m}_{\text{max}}, \mathbf{G}[:, \text{next-idx}])$ in $\mathcal{O}(N)$ time.
 
 Total complexity drops to **a single matrix multiplication $\mathcal{O}(N^2 \cdot d)$ followed by $K$ vector scans $\mathcal{O}(K \cdot N)$**, taking less than $1\text{ ms}$ for $N=50$ candidates.
 

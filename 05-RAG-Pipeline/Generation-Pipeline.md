@@ -93,7 +93,7 @@ where $z_t \in \mathbb{R}^{|V|}$ represents the raw unnormalized logits and $\ta
   $$
 * **Min-$p$ Sampling:** Sets an adaptive probability threshold relative to the top token's probability $P_{\max}$:
   $$
-  \text{Keep token } i \iff P(y_t = i) \ge \text{min\_p} \times P_{\max}
+  \text{Keep token } i \iff P(y_t = i) \ge \text{min-p} \times P_{\max}
   $$
 
 ---
@@ -102,16 +102,16 @@ where $z_t \in \mathbb{R}^{|V|}$ represents the raw unnormalized logits and $\ta
 Every generation request operates under a hard context window limit $C_{\max}$ (e.g., $128\text{k}$ tokens):
 
 $$
-T_{\text{total}} = T_{\text{system}} + T_{\text{history}} + T_{\text{query}} + \sum_{i=1}^K T(c_i) + T_{\text{reserved\_output}} \le C_{\max}
+T_{\text{total}} = T_{\text{system}} + T_{\text{history}} + T_{\text{query}} + \sum_{i=1}^K T(c_i) + T_{\text{reserved-output}} \le C_{\max}
 $$
 
 To prevent mid-sentence token cutoff errors (`finish_reason = 'length'`), the pipeline enforces:
 
 $$
-T_{\text{context\_budget}} = C_{\text{max}} - \left( T_{\text{system}} + T_{\text{history}} + T_{\text{query}} + T_{\text{reserved\_output}} + \Delta_{\text{safety\_margin}} \right)
+T_{\text{context-budget}} = C_{\text{max}} - \left( T_{\text{system}} + T_{\text{history}} + T_{\text{query}} + T_{\text{reserved-output}} + \Delta_{\text{safety-margin}} \right)
 $$
 
-where $\Delta_{\text{safety\_margin}}$ is typically $256 - 512$ tokens to account for subword tokenizer discrepancies.
+where $\Delta_{\text{safety-margin}}$ is typically $256 - 512$ tokens to account for subword tokenizer discrepancies.
 
 ---
 

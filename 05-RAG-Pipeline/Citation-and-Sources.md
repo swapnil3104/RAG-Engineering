@@ -55,7 +55,7 @@ $$
 \text{Citation Precision}(R) = \frac{\sum_{i=1}^S |\mathcal{C}(s_i) \cap \mathcal{G}(s_i)|}{\sum_{i=1}^S |\mathcal{C}(s_i)|}
 $$
 
-* If the model asserts *"Net profit was $42M [Doc 2]"*, but `Doc 2` discusses operating expenses while `Doc 4` discusses net profit, Citation Precision drops.
+* If the model asserts *"Net profit was \$42M [Doc 2]"*, but `Doc 2` discusses operating expenses while `Doc 4` discusses net profit, Citation Precision drops.
 
 ---
 

@@ -72,11 +72,11 @@ Instead of reading multi-gigabyte weight tensors sequentially from disk into mem
 ### 2. Hybrid Layer Offloading Mathematics
 When a model possesses $L$ transformer layers and total parameters $N_{\text{params}}$, Ollama inspects available GPU VRAM ($V_{\text{available}}$) and computes the maximum number of layers $l_{\text{gpu}} \le L$ that can fit into GPU memory:
 
-$$l_{\text{gpu}} = \left\lfloor \frac{V_{\text{available}} - M_{\text{CUDA\_context}} - M_{\text{KV\_cache}}}{M_{\text{layer}}} \right\rfloor$$
+$$l_{\text{gpu}} = \left\lfloor \frac{V_{\text{available}} - M_{\text{CUDA-context}} - M_{\text{KV-cache}}}{M_{\text{layer}}} \right\rfloor$$
 
 Where:
 - $M_{\text{layer}}$ is the memory footprint of an individual transformer layer in the quantized precision.
-- $M_{\text{KV\_cache}} = 2 \times l_{\text{gpu}} \times n_{\text{heads}} \times d_{\text{head}} \times L_{\text{ctx}} \times b_{\text{bytes}}$ is the dynamically allocated Key-Value cache.
+- $M_{\text{KV-cache}} = 2 \times l_{\text{gpu}} \times n_{\text{heads}} \times d_{\text{head}} \times L_{\text{ctx}} \times b_{\text{bytes}}$ is the dynamically allocated Key-Value cache.
 - If $l_{\text{gpu}} = L$, the model runs at maximum GPU speed ($100\%$ VRAM offloaded). If $l_{\text{gpu}} < L$, execution runs in hybrid mode, passing intermediate activation tensors between GPU and CPU over the PCIe bus.
 
 ---

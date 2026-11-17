@@ -403,7 +403,7 @@ if __name__ == "__main__":
   - An independent **Adversarial Compliance Critic** audited the assembled credit memo for regulatory adherence.
 - **Results:**
   - Loan underwriting turnaround plummeted from **14 days to 38 minutes**.
-  - Regulatory audit non-compliance fines dropped to **$0**.
+  - Regulatory audit non-compliance fines dropped to **\$0**.
 
 ### Case Study 2: Global Cyber Threat Intelligence Synthesis
 - **Organization:** Multinational Cybersecurity Defense Operations Center (SOC).

@@ -457,7 +457,7 @@ if __name__ == "__main__":
   - Erroneous port dispatches (routing deep-draft ships to shallow berths) fell to **zero**.
 
 ### Case Study 2: FinTech Anti-Money Laundering (AML) Compliance Agent
-- **Organization:** Digital Banking Platform processing $20B+ monthly.
+- **Organization:** Digital Banking Platform processing \$20B+ monthly.
 - **Problem:** AML analysts were overwhelmed investigating suspicious activity reports (SARs) that required verifying transaction histories in Snowflake, identity documents in AWS S3, and sanctions lists on LexisNexis.
 - **Tool Architecture:**
   - The compliance agent was equipped with strictly typed read-only Snowflake SQL tools, OFAC fuzzy entity matchers, and PDF identity extractors.

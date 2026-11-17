@@ -58,7 +58,7 @@ flowchart LR
 | **Data Privacy & RBAC** | **Granular** (Metadata filtering per user query) | **None** (All fine-tuned weights exposed to all users)| **Session-bound** (Limited to active context) |
 | **GDPR "Right to be Forgotten"**| **Trivial** (`index.delete(doc_id)`) | **Impossible** without machine unlearning / retraining| **Instantaneous** (Ephemeral session state) |
 | **Upfront Engineering Cost** | Moderate (Parser, vector DB, hybrid retrieval) | High (Data collection, clean Q&A, GPU compute) | Very Low (No infrastructure required) |
-| **Inference Cost** | **Low to Moderate** (Passes Top-$K$ relevant chunks) | **Lowest** (Short, compact system prompt) | **Extremely High** ($0.50–$3.00+ per query) |
+| **Inference Cost** | **Low to Moderate** (Passes Top-$K$ relevant chunks) | **Lowest** (Short, compact system prompt) | **Extremely High** (\$0.50–\$3.00+ per query) |
 | **Inference Latency** | Extra 50ms–150ms for retrieval + reranking | Native baseline LLM inference speed | High (10s to 30s TTFT for 1M tokens) |
 
 ---
@@ -276,7 +276,7 @@ if __name__ == "__main__":
 ## 9. 🏢 Real-World Enterprise Case Studies
 
 ### 1. BloombergGPT vs. Modern Financial RAG
-* **The Attempt (BloombergGPT, 2023):** Built a 50B parameter model trained from scratch on 363B tokens of financial data ($ millions in compute).
+* **The Attempt (BloombergGPT, 2023):** Built a 50B parameter model trained from scratch on 363B tokens of financial data (\$ millions in compute).
 * **The Outcome:** While impressive at financial terminology, the model's knowledge became stale immediately after training cutoff. Financial institutions now pair smaller foundation models with **RAG pipelines** querying real-time Bloomberg terminal feeds and SEC filings.
 
 ### 2. Specialized Code Generation: SQL-Coder

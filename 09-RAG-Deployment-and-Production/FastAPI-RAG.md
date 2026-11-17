@@ -77,11 +77,11 @@ For a RAG service with $\lambda = 200\text{ req/s}$ and average non-blocking ser
 For a response generating $N$ tokens with streaming enabled versus non-streaming batch delivery:
 
 $$
-T_{\text{perceived\_streaming}} = T_{\text{retrieval}} + T_{\text{TTFT}}
+T_{\text{perceived-streaming}} = T_{\text{retrieval}} + T_{\text{TTFT}}
 $$
 
 $$
-T_{\text{non\_streaming}} = T_{\text{retrieval}} + T_{\text{TTFT}} + \sum_{i=1}^{N-1} T_{\text{ITL}}(i)
+T_{\text{non-streaming}} = T_{\text{retrieval}} + T_{\text{TTFT}} + \sum_{i=1}^{N-1} T_{\text{ITL}}(i)
 $$
 
 Where:

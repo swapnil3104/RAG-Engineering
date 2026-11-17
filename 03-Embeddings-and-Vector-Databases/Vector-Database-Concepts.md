@@ -222,7 +222,7 @@ flowchart TD
    $$\text{Shard ID} = \text{MurmurHash3}(\text{ID}) \pmod{\text{Total Shards}}$$
    Balances write traffic and memory footprint evenly across all nodes, but every query must scatter-gather across all shards.
 2. **Tenant-Based Routing (Namespace Partitioning):** All vectors for a specific enterprise client or organization are co-located within a dedicated shard:
-   $$\text{Shard ID} = \text{CRC32}(\text{tenant\_id}) \pmod{\text{Tenant Shards}}$$
+   $$\text{Shard ID} = \text{CRC32}(\text{tenant-id}) \pmod{\text{Tenant Shards}}$$
    Enables isolated, single-shard search execution, reducing query fan-out network traffic by $90\%$.
 
 ### 🔄 Consensus & Replication (Raft Engine)
