@@ -45,6 +45,7 @@ flowchart LR
         VQ -.->|"High Cosine Sim (~0.88)"| VD1
         VQ -.->|"Orthogonal / Low Sim (~0.04)"| VD2
     end
+```
 ## 2. 🏆 The Massive Text Embedding Benchmark (MTEB) Framework
 
 Historically, embedding models were evaluated solely on isolated semantic similarity benchmarks such as SentEval or STS (Semantic Textual Similarity). However, high performance on STS benchmark datasets frequently failed to translate to enterprise information retrieval. In 2022, Hugging Face and the research community introduced **MTEB (Massive Text Embedding Benchmark)** to standardize evaluation across diverse linguistic tasks.
