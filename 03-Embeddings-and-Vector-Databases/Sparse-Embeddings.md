@@ -28,15 +28,15 @@ $$
 
 ```mermaid
 flowchart LR
-    subgraph RawText [Input Document]
+    subgraph RawText ["Input Document"]
         Doc["'Kubernetes pod fails with ErrImagePull on node-42'"]
     end
 
-    subgraph SparseEncoder [Sparse Encoder / Inverted Mapper]
+    subgraph SparseEncoder ["Sparse Encoder / Inverted Mapper"]
         Doc --> LexEngine["Sparse Lexical / Neural Engine"]
     end
 
-    subgraph HighDimSpace [Vocabulary Space R^{|V|} (|V| = 30,522)]
+    subgraph HighDimSpace ["Vocabulary Space R^|V| (|V| = 30,522)"]
         LexEngine --> V1["Index 12458 ('kubernetes'): 2.84"]
         LexEngine --> V2["Index 18902 ('pod'): 1.95"]
         LexEngine --> V3["Index 27411 ('errimagepull'): 4.10"]
