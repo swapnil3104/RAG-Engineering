@@ -8,7 +8,7 @@
 5. [🎯 Asymmetric Search & Task Instruction Tuning](#5--asymmetric-search--task-instruction-tuning)
 6. [📏 Context Windows, Chunk Sizing & Attention Dilution](#6--context-windows-chunk-sizing--attention-dilution)
 7. [💻 Practical Implementation: Unified Embedding Evaluator](#7--practical-implementation-unified-embedding-evaluator)
-8. [🌍 Real-World Enterprise Selection Case Studies](#8--real-world-enterprise-case-studies)
+8. [🌍 Real-World Enterprise Selection Case Studies](#8--real-world-enterprise-selection-case-studies)
 9. [⚖️ Trade-Off Analysis: Commercial APIs vs. Self-Hosted Models](#9-️-trade-off-analysis-commercial-apis-vs-self-hosted-models)
 10. [🛠️ Best Practices & ❌ Common Production Pitfalls](#10-️-best-practices---common-production-pitfalls)
 11. [💼 Senior Interview Questions & System Design Scenarios](#11--senior-interview-questions--system-design-scenarios)
@@ -22,37 +22,29 @@
 In any Retrieval-Augmented Generation (RAG) system, the **embedding model** is the foundational transducer that bridges human linguistic ambiguity and machine geometric computation. An embedding model $f_\theta$ maps arbitrary variable-length discrete token sequences into fixed-dimensional, continuous dense vector representations $\mathbf{v} \in \mathbb{R}^d$:
 
 ### # Continuous Vector Embedding Mapping
-$$
-\mathbf{v} = f_\theta(x) \in \mathbb{R}^d, \quad \text{where } d \in [256, 4096]
-$$
+$$\mathbf{v} = f_\theta(x) \in \mathbb{R}^d, \quad \text{where } d \in [256, 4096]$$
 
 ```mermaid
 flowchart LR
-    subgraph InputSpace [Raw Text Sequences]
+    subgraph InputSpace ["Raw Text Sequences"]
         Q["User Query:<br/>'How does Raft handle network partitions?'"]
         D1["Corpus Doc 1:<br/>'In Raft, split-brain is prevented by majority quorum rule.'"]
         D2["Corpus Doc 2:<br/>'Kayaking down the rapids requires a sturdy life vest.'"]
     end
 
-    subgraph NeuralEncoder [Bi-Encoder Model f_θ]
+    subgraph NeuralEncoder ["Bi-Encoder Model f_θ"]
         Q --> Enc["Transformer Encoder<br/>(BGE / Voyage / OpenAI)"]
         D1 --> Enc
         D2 --> Enc
     end
 
-    subgraph GeometricSpace [Metric Hypersphere S^{d-1}]
+    subgraph GeometricSpace ["Metric Hypersphere S^(d-1)"]
         Enc --> VQ["v_q ∈ R^d"]
         Enc --> VD1["v_d1 ∈ R^d"]
         Enc --> VD2["v_d2 ∈ R^d"]
         VQ -.->|"High Cosine Sim (~0.88)"| VD1
         VQ -.->|"Orthogonal / Low Sim (~0.04)"| VD2
     end
-```
-
-The selection of an embedding model governs the **theoretical ceiling of retrieval recall**. While downstream rerankers, prompt engineering, and generative LLMs can refine and distill retrieved information, they cannot synthesize answers from documents that were never surfaced in the initial retrieval stage due to embedding model blind spots.
-
----
-
 ## 2. 🏆 The Massive Text Embedding Benchmark (MTEB) Framework
 
 Historically, embedding models were evaluated solely on isolated semantic similarity benchmarks such as SentEval or STS (Semantic Textual Similarity). However, high performance on STS benchmark datasets frequently failed to translate to enterprise information retrieval. In 2022, Hugging Face and the research community introduced **MTEB (Massive Text Embedding Benchmark)** to standardize evaluation across diverse linguistic tasks.
