@@ -50,15 +50,26 @@ flowchart LR
 Historically, embedding models were evaluated solely on isolated semantic similarity benchmarks such as SentEval or STS (Semantic Textual Similarity). However, high performance on STS benchmark datasets frequently failed to translate to enterprise information retrieval. In 2022, Hugging Face and the research community introduced **MTEB (Massive Text Embedding Benchmark)** to standardize evaluation across diverse linguistic tasks.
 
 ```mermaid
-flowchart TD
-    MTEB["Massive Text Embedding Benchmark (MTEB)"]
-    
-    MTEB --> Ret["Information Retrieval (BEIR Suite)<br/>(NDCG@10, MAP, Recall@k)"]
-    MTEB --> STS["Semantic Textual Similarity (STS)<br/>(Spearman Rank Correlation)"]
-    MTEB --> Rerank["Pairwise Reranking<br/>(MAP, MRR)"]
-    MTEB --> Class["Classification & Clustering<br/>(Accuracy, V-Measure)"]
-    MTEB --> Summ["Summarization & Pair Matching<br/>(Cosine / Pearson)"]
-    MTEB --> Multi["Multilingual & Code Retrieval<br/>(Cross-lingual Transfer)"]
+flowchart LR
+    subgraph InputSpace ["Raw Text Sequences"]
+        Q["User Query:<br/>'How does Raft handle network partitions?'"]
+        D1["Corpus Doc 1:<br/>'In Raft, split-brain is prevented by majority quorum rule.'"]
+        D2["Corpus Doc 2:<br/>'Kayaking down the rapids requires a sturdy life vest.'"]
+    end
+
+    subgraph NeuralEncoder ["Bi-Encoder Model f_θ"]
+        Q --> Enc["Transformer Encoder<br/>(BGE / Voyage / OpenAI)"]
+        D1 --> Enc
+        D2 --> Enc
+    end
+
+    subgraph GeometricSpace ["Metric Hypersphere S^(d-1)"]
+        Enc --> VQ["v_q ∈ R^d"]
+        Enc --> VD1["v_d1 ∈ R^d"]
+        Enc --> VD2["v_d2 ∈ R^d"]
+        VQ -.->|"High Cosine Sim (~0.88)"| VD1
+        VQ -.->|"Orthogonal / Low Sim (~0.04)"| VD2
+    end
 ```
 
 ### 🎯 Core MTEB Evaluation Dimensions
