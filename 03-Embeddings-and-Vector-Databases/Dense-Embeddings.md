@@ -191,14 +191,14 @@ In an anisotropic vector space, embeddings do not occupy the full hypersphere un
 
 ```mermaid
 flowchart LR
-    subgraph AnisotropicSpace [Anisotropic Latent Space (Narrow Cone)]
+    subgraph AnisotropicSpace ["Anisotropic Latent Space (Narrow Cone)"]
         C1["Collapsed Cone: Vectors clustered in narrow sector"]
         V_A["v_arbitrary_1"] --- V_B["v_arbitrary_2"]
         Note1["Cos Sim between unrelated sentences: 0.82!"]
     end
 
-    subgraph IsotropicSpace [Isotropic Latent Space (Uniformly Dispersed)]
-        Circle["Full Unit Hypersphere S^{d-1}"]
+    subgraph IsotropicSpace ["Isotropic Latent Space (Uniformly Dispersed)"]
+        Circle["Full Unit Hypersphere S^(d-1)"]
         V_X["v_topic_1"] -.->|"Orthogonal (Sim ≈ 0.0)"| V_Y["v_topic_2"]
         Note2["Unrelated sentences are orthogonal; high variance."]
     end
