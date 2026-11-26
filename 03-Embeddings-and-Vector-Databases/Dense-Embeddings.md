@@ -542,4 +542,6 @@ flowchart TD
     
     Path3 -->|"Yes (OpenAI v3 / Nomic)"| Path3A["MRL Truncation to 512 + SQ8<br/>(12x RAM Reduction)"]
     Path3 -->|"No (Legacy Fixed-Dim)"| Path3B["Product Quantization (PQ)<br/>or Binary Quantization (BQ) with Rerank"]
+
+
 ```
